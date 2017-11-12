@@ -1,6 +1,6 @@
 <table name="BeAkimbo"> 
 	<Localization directory="Loc" default="english.txt"/> 
-	<AssetUpdates id="21295" name="asset_updates" folder_name="BeAkimbo" version="2" provider="modworkshop"/> 
+	<AssetUpdates id="21295" name="asset_updates" folder_name="BeAkimbo" version="3" provider="modworkshop"/> 
 	<Hooks directory="Hooks"> 
 		<hook file="Menu_Function.lua" source_file="lib/managers/menumanager"/> 
 		<hook file="blackmarketmanager.lua" source_file="lib/managers/blackmarketmanager"/> 
@@ -12,7 +12,7 @@
 		<hook file="playertweakdata.lua" source_file="lib/tweak_data/playertweakdata"/> 
 	</Hooks> 
 	<WeaponNew> 
-		<weapon id="m16_beakimbo" based_on="m16" weapon_hold="jowi_pistol" name_id="bm_m16_beakimbo_name" desc_id ="bm_m16_beakimbo_desc" description_id="bm_m16_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="30" NR_CLIPS_MAX="3" AMMO_MAX="90"  > 
+		<weapon id="m16_beakimbo" based_on="m16" weapon_hold="jowi_pistol" name_id="bm_m16_beakimbo_name" desc_id ="bm_m16_beakimbo_desc" description_id="bm_m16_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="60" NR_CLIPS_MAX="6" AMMO_MAX="180"  > 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
@@ -120,7 +120,7 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="uzi_beakimbo" based_on="uzi" weapon_hold="jowi_pistol" name_id="bm_uzi_beakimbo_name" desc_id ="bm_uzi_beakimbo_desc" description_id="bm_uzi_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="40" NR_CLIPS_MAX="5" AMMO_MAX="200" global_value="hl_miami" texture_bundle_folder="hl_miami"> 
+		<weapon id="uzi_beakimbo" based_on="uzi" weapon_hold="jowi_pistol" name_id="bm_uzi_beakimbo_name" desc_id ="bm_uzi_beakimbo_desc" description_id="bm_uzi_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="80" NR_CLIPS_MAX="10" AMMO_MAX="400" global_value="hl_miami" texture_bundle_folder="hl_miami"> 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
@@ -192,7 +192,7 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="judge_beakimbo" based_on="judge" weapon_hold="jowi_pistol" name_id="bm_judge_beakimbo_name" desc_id ="bm_judge_beakimbo_desc" description_id="bm_judge_beakimbo_desc_long" DAMAGE="6" CLIP_AMMO_MAX="5" NR_CLIPS_MAX="5" AMMO_MAX="25" global_value="pd2_clan" texture_bundle_folder="pd2_million"> 
+		<weapon id="judge_beakimbo" based_on="judge" weapon_hold="jowi_pistol" name_id="bm_judge_beakimbo_name" desc_id ="bm_judge_beakimbo_desc" description_id="bm_judge_beakimbo_desc_long" DAMAGE="6" CLIP_AMMO_MAX="10" NR_CLIPS_MAX="10" AMMO_MAX="50" global_value="pd2_clan" texture_bundle_folder="pd2_million"> 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
@@ -256,7 +256,7 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="r93_beakimbo" based_on="r93" weapon_hold="jowi_pistol" name_id="bm_r93_beakimbo_name" desc_id ="bm_r93_beakimbo_desc" description_id="bm_r93_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="6" NR_CLIPS_MAX="5" AMMO_MAX="30" global_value="gage_pack_snp" texture_bundle_folder="gage_pack_snp"> 
+		<weapon id="r93_beakimbo" based_on="r93" weapon_hold="jowi_pistol" name_id="bm_r93_beakimbo_name" desc_id ="bm_r93_beakimbo_desc" description_id="bm_r93_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="12" NR_CLIPS_MAX="10" AMMO_MAX="60" global_value="gage_pack_snp" texture_bundle_folder="gage_pack_snp"> 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
@@ -316,7 +316,7 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="tec9_beakimbo" based_on="tec9" weapon_hold="jowi_pistol" name_id="bm_tec9_beakimbo_name" desc_id ="bm_tec9_beakimbo_desc" description_id="bm_tec9_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="20" NR_CLIPS_MAX="11" AMMO_MAX="220" global_value="hl_miami" texture_bundle_folder="hl_miami"> 
+		<weapon id="tec9_beakimbo" based_on="tec9" weapon_hold="jowi_pistol" name_id="bm_tec9_beakimbo_name" desc_id ="bm_tec9_beakimbo_desc" description_id="bm_tec9_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="40" NR_CLIPS_MAX="22" AMMO_MAX="440" global_value="hl_miami" texture_bundle_folder="hl_miami"> 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
@@ -381,7 +381,7 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="siltstone_beakimbo" based_on="siltstone" weapon_hold="jowi_pistol" name_id="bm_siltstone_beakimbo_name" desc_id ="bm_siltstone_beakimbo_desc" description_id="bm_siltstone_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="10" NR_CLIPS_MAX="3" AMMO_MAX="30" global_value="grv" texture_bundle_folder="grv"> 
+		<weapon id="siltstone_beakimbo" based_on="siltstone" weapon_hold="jowi_pistol" name_id="bm_siltstone_beakimbo_name" desc_id ="bm_siltstone_beakimbo_desc" description_id="bm_siltstone_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="20" NR_CLIPS_MAX="6" AMMO_MAX="60" global_value="grv" texture_bundle_folder="grv"> 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
@@ -452,7 +452,7 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="c96_beakimbo" based_on="c96" weapon_hold="jowi_pistol" name_id="bm_c96_beakimbo_name" desc_id ="bm_c96_beakimbo_desc" description_id="bm_c96_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="10" NR_CLIPS_MAX="9" AMMO_MAX="90" global_value="gage_pack_historical" texture_bundle_folder="gage_pack_historical"> 
+		<weapon id="c96_beakimbo" based_on="c96" weapon_hold="jowi_pistol" name_id="bm_c96_beakimbo_name" desc_id ="bm_c96_beakimbo_desc" description_id="bm_c96_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="20" NR_CLIPS_MAX="18" AMMO_MAX="180" global_value="gage_pack_historical" texture_bundle_folder="gage_pack_historical"> 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
@@ -502,7 +502,7 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="sub2000_beakimbo" based_on="sub2000" weapon_hold="jowi_pistol" name_id="bm_sub2000_beakimbo_name" desc_id ="bm_sub2000_beakimbo_desc" description_id="bm_sub2000_beakimbo_desc_long" DAMAGE="2" CLIP_AMMO_MAX="33" NR_CLIPS_MAX="2" AMMO_MAX="66" global_value="kenaz" texture_bundle_folder="kenaz"> 
+		<weapon id="sub2000_beakimbo" based_on="sub2000" weapon_hold="jowi_pistol" name_id="bm_sub2000_beakimbo_name" desc_id ="bm_sub2000_beakimbo_desc" description_id="bm_sub2000_beakimbo_desc_long" DAMAGE="2" CLIP_AMMO_MAX="66" NR_CLIPS_MAX="4" AMMO_MAX="132" global_value="kenaz" texture_bundle_folder="kenaz"> 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
@@ -576,7 +576,7 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="aa12_beakimbo" based_on="aa12" weapon_hold="jowi_pistol" name_id="bm_aa12_beakimbo_name" desc_id ="bm_aa12_beakimbo_desc" description_id="bm_aa12_beakimbo_desc_long" DAMAGE="6" CLIP_AMMO_MAX="8" NR_CLIPS_MAX="9" AMMO_MAX="72" global_value="bbq" texture_bundle_folder="bbq"> 
+		<weapon id="aa12_beakimbo" based_on="aa12" weapon_hold="jowi_pistol" name_id="bm_aa12_beakimbo_name" desc_id ="bm_aa12_beakimbo_desc" description_id="bm_aa12_beakimbo_desc_long" DAMAGE="6" CLIP_AMMO_MAX="16" NR_CLIPS_MAX="18" AMMO_MAX="144" global_value="bbq" texture_bundle_folder="bbq"> 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
@@ -649,7 +649,7 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="hk21_beakimbo" based_on="hk21" weapon_hold="jowi_pistol" name_id="bm_hk21_beakimbo_name" desc_id ="bm_hk21_beakimbo_desc" description_id="bm_hk21_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="150" NR_CLIPS_MAX="2" AMMO_MAX="300" global_value="gage_pack_lmg" texture_bundle_folder="gage_pack_lmg"> 
+		<weapon id="hk21_beakimbo" based_on="hk21" weapon_hold="jowi_pistol" name_id="bm_hk21_beakimbo_name" desc_id ="bm_hk21_beakimbo_desc" description_id="bm_hk21_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="300" NR_CLIPS_MAX="4" AMMO_MAX="600" global_value="gage_pack_lmg" texture_bundle_folder="gage_pack_lmg"> 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
@@ -704,7 +704,7 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="spas12_beakimbo" based_on="spas12" weapon_hold="jowi_pistol" name_id="bm_spas12_beakimbo_name" desc_id ="bm_spas12_beakimbo_desc" description_id="bm_spas12_beakimbo_desc_long" DAMAGE="6" CLIP_AMMO_MAX="6" NR_CLIPS_MAX="11" AMMO_MAX="66" global_value="pd2_clan" > 
+		<weapon id="spas12_beakimbo" based_on="spas12" weapon_hold="jowi_pistol" name_id="bm_spas12_beakimbo_name" desc_id ="bm_spas12_beakimbo_desc" description_id="bm_spas12_beakimbo_desc_long" DAMAGE="6" CLIP_AMMO_MAX="12" NR_CLIPS_MAX="22" AMMO_MAX="132" global_value="pd2_clan" > 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
@@ -771,7 +771,7 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="g26_beakimbo" based_on="g26" weapon_hold="jowi_pistol" name_id="bm_g26_beakimbo_name" desc_id ="bm_g26_beakimbo_desc" description_id="bm_g26_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="10" NR_CLIPS_MAX="15" AMMO_MAX="150" global_value="pd2_clan" > 
+		<weapon id="g26_beakimbo" based_on="g26" weapon_hold="jowi_pistol" name_id="bm_g26_beakimbo_name" desc_id ="bm_g26_beakimbo_desc" description_id="bm_g26_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="20" NR_CLIPS_MAX="30" AMMO_MAX="300" global_value="pd2_clan" > 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
@@ -822,7 +822,7 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="packrat_beakimbo" based_on="packrat" weapon_hold="jowi_pistol" name_id="bm_packrat_beakimbo_name" desc_id ="bm_packrat_beakimbo_desc" description_id="bm_packrat_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="15" NR_CLIPS_MAX="6" AMMO_MAX="90" global_value="pim" texture_bundle_folder="pim"> 
+		<weapon id="packrat_beakimbo" based_on="packrat" weapon_hold="jowi_pistol" name_id="bm_packrat_beakimbo_name" desc_id ="bm_packrat_beakimbo_desc" description_id="bm_packrat_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="30" NR_CLIPS_MAX="12" AMMO_MAX="180" global_value="pim" texture_bundle_folder="pim"> 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
@@ -876,7 +876,7 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="amcar_beakimbo" based_on="amcar" weapon_hold="jowi_pistol" name_id="bm_amcar_beakimbo_name" desc_id ="bm_amcar_beakimbo_desc" description_id="bm_amcar_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="20" NR_CLIPS_MAX="11" AMMO_MAX="220"  > 
+		<weapon id="amcar_beakimbo" based_on="amcar" weapon_hold="jowi_pistol" name_id="bm_amcar_beakimbo_name" desc_id ="bm_amcar_beakimbo_desc" description_id="bm_amcar_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="40" NR_CLIPS_MAX="22" AMMO_MAX="440"  > 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
@@ -956,7 +956,7 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="g3_beakimbo" based_on="g3" weapon_hold="jowi_pistol" name_id="bm_g3_beakimbo_name" desc_id ="bm_g3_beakimbo_desc" description_id="bm_g3_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="20" NR_CLIPS_MAX="5" AMMO_MAX="100" global_value="gage_pack_assault" texture_bundle_folder="gage_pack_assault"> 
+		<weapon id="g3_beakimbo" based_on="g3" weapon_hold="jowi_pistol" name_id="bm_g3_beakimbo_name" desc_id ="bm_g3_beakimbo_desc" description_id="bm_g3_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="40" NR_CLIPS_MAX="10" AMMO_MAX="200" global_value="gage_pack_assault" texture_bundle_folder="gage_pack_assault"> 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
@@ -1037,7 +1037,7 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="sterling_beakimbo" based_on="sterling" weapon_hold="jowi_pistol" name_id="bm_sterling_beakimbo_name" desc_id ="bm_sterling_beakimbo_desc" description_id="bm_sterling_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="20" NR_CLIPS_MAX="11" AMMO_MAX="220" global_value="gage_pack_historical" texture_bundle_folder="gage_pack_historical"> 
+		<weapon id="sterling_beakimbo" based_on="sterling" weapon_hold="jowi_pistol" name_id="bm_sterling_beakimbo_name" desc_id ="bm_sterling_beakimbo_desc" description_id="bm_sterling_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="40" NR_CLIPS_MAX="22" AMMO_MAX="440" global_value="gage_pack_historical" texture_bundle_folder="gage_pack_historical"> 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
@@ -1108,7 +1108,7 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="ksg_beakimbo" based_on="ksg" weapon_hold="jowi_pistol" name_id="bm_ksg_beakimbo_name" desc_id ="bm_ksg_beakimbo_desc" description_id="bm_ksg_beakimbo_desc_long" DAMAGE="6" CLIP_AMMO_MAX="14" NR_CLIPS_MAX="3" AMMO_MAX="42" global_value="gage_pack_shotgun" texture_bundle_folder="gage_pack_shotgun"> 
+		<weapon id="ksg_beakimbo" based_on="ksg" weapon_hold="jowi_pistol" name_id="bm_ksg_beakimbo_name" desc_id ="bm_ksg_beakimbo_desc" description_id="bm_ksg_beakimbo_desc_long" DAMAGE="6" CLIP_AMMO_MAX="28" NR_CLIPS_MAX="6" AMMO_MAX="84" global_value="gage_pack_shotgun" texture_bundle_folder="gage_pack_shotgun"> 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
@@ -1175,7 +1175,7 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="cobray_beakimbo" based_on="cobray" weapon_hold="jowi_pistol" name_id="bm_cobray_beakimbo_name" desc_id ="bm_cobray_beakimbo_desc" description_id="bm_cobray_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="32" NR_CLIPS_MAX="5" AMMO_MAX="160" global_value="hlm2_deluxe" texture_bundle_folder="hlm2"> 
+		<weapon id="cobray_beakimbo" based_on="cobray" weapon_hold="jowi_pistol" name_id="bm_cobray_beakimbo_name" desc_id ="bm_cobray_beakimbo_desc" description_id="bm_cobray_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="64" NR_CLIPS_MAX="10" AMMO_MAX="320" global_value="hlm2_deluxe" texture_bundle_folder="hlm2"> 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
@@ -1255,7 +1255,7 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="g36_beakimbo" based_on="g36" weapon_hold="jowi_pistol" name_id="bm_g36_beakimbo_name" desc_id ="bm_g36_beakimbo_desc" description_id="bm_g36_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="30" NR_CLIPS_MAX="8" AMMO_MAX="240"  > 
+		<weapon id="g36_beakimbo" based_on="g36" weapon_hold="jowi_pistol" name_id="bm_g36_beakimbo_name" desc_id ="bm_g36_beakimbo_desc" description_id="bm_g36_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="60" NR_CLIPS_MAX="16" AMMO_MAX="480"  > 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
@@ -1335,7 +1335,7 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="flint_beakimbo" based_on="flint" weapon_hold="jowi_pistol" name_id="bm_flint_beakimbo_name" desc_id ="bm_flint_beakimbo_desc" description_id="bm_flint_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="35" NR_CLIPS_MAX="3" AMMO_MAX="105" global_value="grv" texture_bundle_folder="grv"> 
+		<weapon id="flint_beakimbo" based_on="flint" weapon_hold="jowi_pistol" name_id="bm_flint_beakimbo_name" desc_id ="bm_flint_beakimbo_desc" description_id="bm_flint_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="70" NR_CLIPS_MAX="6" AMMO_MAX="210" global_value="grv" texture_bundle_folder="grv"> 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
@@ -1427,7 +1427,7 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="huntsman_beakimbo" based_on="huntsman" weapon_hold="jowi_pistol" name_id="bm_huntsman_beakimbo_name" desc_id ="bm_huntsman_beakimbo_desc" description_id="bm_huntsman_beakimbo_desc_long" DAMAGE="6" CLIP_AMMO_MAX="2" NR_CLIPS_MAX="16" AMMO_MAX="32"  > 
+		<weapon id="huntsman_beakimbo" based_on="huntsman" weapon_hold="jowi_pistol" name_id="bm_huntsman_beakimbo_name" desc_id ="bm_huntsman_beakimbo_desc" description_id="bm_huntsman_beakimbo_desc_long" DAMAGE="6" CLIP_AMMO_MAX="4" NR_CLIPS_MAX="32" AMMO_MAX="64"  > 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
@@ -1464,7 +1464,7 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="usp_beakimbo" based_on="usp" weapon_hold="jowi_pistol" name_id="bm_usp_beakimbo_name" desc_id ="bm_usp_beakimbo_desc" description_id="bm_usp_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="13" NR_CLIPS_MAX="7" AMMO_MAX="91" global_value="pd2_clan" > 
+		<weapon id="usp_beakimbo" based_on="usp" weapon_hold="jowi_pistol" name_id="bm_usp_beakimbo_name" desc_id ="bm_usp_beakimbo_desc" description_id="bm_usp_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="26" NR_CLIPS_MAX="14" AMMO_MAX="182" global_value="pd2_clan" > 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
@@ -1515,7 +1515,7 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="benelli_beakimbo" based_on="benelli" weapon_hold="jowi_pistol" name_id="bm_benelli_beakimbo_name" desc_id ="bm_benelli_beakimbo_desc" description_id="bm_benelli_beakimbo_desc_long" DAMAGE="6" CLIP_AMMO_MAX="8" NR_CLIPS_MAX="8" AMMO_MAX="64" global_value="gage_pack_shotgun" texture_bundle_folder="gage_pack_shotgun"> 
+		<weapon id="benelli_beakimbo" based_on="benelli" weapon_hold="jowi_pistol" name_id="bm_benelli_beakimbo_name" desc_id ="bm_benelli_beakimbo_desc" description_id="bm_benelli_beakimbo_desc_long" DAMAGE="6" CLIP_AMMO_MAX="16" NR_CLIPS_MAX="16" AMMO_MAX="128" global_value="gage_pack_shotgun" texture_bundle_folder="gage_pack_shotgun"> 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
@@ -1582,7 +1582,7 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="ppk_beakimbo" based_on="ppk" weapon_hold="jowi_pistol" name_id="bm_ppk_beakimbo_name" desc_id ="bm_ppk_beakimbo_desc" description_id="bm_ppk_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="14" NR_CLIPS_MAX="11" AMMO_MAX="154" global_value="armored_transport" texture_bundle_folder="dlc1"> 
+		<weapon id="ppk_beakimbo" based_on="ppk" weapon_hold="jowi_pistol" name_id="bm_ppk_beakimbo_name" desc_id ="bm_ppk_beakimbo_desc" description_id="bm_ppk_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="28" NR_CLIPS_MAX="22" AMMO_MAX="308" global_value="armored_transport" texture_bundle_folder="dlc1"> 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
@@ -1633,7 +1633,7 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="rpk_beakimbo" based_on="rpk" weapon_hold="jowi_pistol" name_id="bm_rpk_beakimbo_name" desc_id ="bm_rpk_beakimbo_desc" description_id="bm_rpk_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="100" NR_CLIPS_MAX="3" AMMO_MAX="300" global_value="gage_pack_lmg" texture_bundle_folder="gage_pack_lmg"> 
+		<weapon id="rpk_beakimbo" based_on="rpk" weapon_hold="jowi_pistol" name_id="bm_rpk_beakimbo_name" desc_id ="bm_rpk_beakimbo_desc" description_id="bm_rpk_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="200" NR_CLIPS_MAX="6" AMMO_MAX="600" global_value="gage_pack_lmg" texture_bundle_folder="gage_pack_lmg"> 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
@@ -1702,7 +1702,7 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="msr_beakimbo" based_on="msr" weapon_hold="jowi_pistol" name_id="bm_msr_beakimbo_name" desc_id ="bm_msr_beakimbo_desc" description_id="bm_msr_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="10" NR_CLIPS_MAX="4" AMMO_MAX="40" global_value="gage_pack_snp" texture_bundle_folder="gage_pack_snp"> 
+		<weapon id="msr_beakimbo" based_on="msr" weapon_hold="jowi_pistol" name_id="bm_msr_beakimbo_name" desc_id ="bm_msr_beakimbo_desc" description_id="bm_msr_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="20" NR_CLIPS_MAX="8" AMMO_MAX="80" global_value="gage_pack_snp" texture_bundle_folder="gage_pack_snp"> 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
@@ -1762,7 +1762,7 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="scar_beakimbo" based_on="scar" weapon_hold="jowi_pistol" name_id="bm_scar_beakimbo_name" desc_id ="bm_scar_beakimbo_desc" description_id="bm_scar_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="20" NR_CLIPS_MAX="5" AMMO_MAX="100" global_value="gage_pack" texture_bundle_folder="gage_pack"> 
+		<weapon id="scar_beakimbo" based_on="scar" weapon_hold="jowi_pistol" name_id="bm_scar_beakimbo_name" desc_id ="bm_scar_beakimbo_desc" description_id="bm_scar_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="40" NR_CLIPS_MAX="10" AMMO_MAX="200" global_value="gage_pack" texture_bundle_folder="gage_pack"> 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
@@ -1845,7 +1845,7 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="erma_beakimbo" based_on="erma" weapon_hold="jowi_pistol" name_id="bm_erma_beakimbo_name" desc_id ="bm_erma_beakimbo_desc" description_id="bm_erma_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="40" NR_CLIPS_MAX="2" AMMO_MAX="80"  texture_bundle_folder="old"> 
+		<weapon id="erma_beakimbo" based_on="erma" weapon_hold="jowi_pistol" name_id="bm_erma_beakimbo_name" desc_id ="bm_erma_beakimbo_desc" description_id="bm_erma_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="80" NR_CLIPS_MAX="4" AMMO_MAX="160"  texture_bundle_folder="old"> 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
@@ -1913,7 +1913,7 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="tecci_beakimbo" based_on="tecci" weapon_hold="jowi_pistol" name_id="bm_tecci_beakimbo_name" desc_id ="bm_tecci_beakimbo_desc" description_id="bm_tecci_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="100" NR_CLIPS_MAX="2" AMMO_MAX="200" global_value="opera" texture_bundle_folder="opera"> 
+		<weapon id="tecci_beakimbo" based_on="tecci" weapon_hold="jowi_pistol" name_id="bm_tecci_beakimbo_name" desc_id ="bm_tecci_beakimbo_desc" description_id="bm_tecci_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="200" NR_CLIPS_MAX="4" AMMO_MAX="400" global_value="opera" texture_bundle_folder="opera"> 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
@@ -2012,7 +2012,7 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="glock_18c_beakimbo" based_on="glock_18c" weapon_hold="jowi_pistol" name_id="bm_glock_18c_beakimbo_name" desc_id ="bm_glock_18c_beakimbo_desc" description_id="bm_glock_18c_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="20" NR_CLIPS_MAX="8" AMMO_MAX="160"  > 
+		<weapon id="glock_18c_beakimbo" based_on="glock_18c" weapon_hold="jowi_pistol" name_id="bm_glock_18c_beakimbo_name" desc_id ="bm_glock_18c_beakimbo_desc" description_id="bm_glock_18c_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="40" NR_CLIPS_MAX="16" AMMO_MAX="320"  > 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
@@ -2064,7 +2064,7 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="olympic_beakimbo" based_on="olympic" weapon_hold="jowi_pistol" name_id="bm_olympic_beakimbo_name" desc_id ="bm_olympic_beakimbo_desc" description_id="bm_olympic_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="25" NR_CLIPS_MAX="6" AMMO_MAX="150"  > 
+		<weapon id="olympic_beakimbo" based_on="olympic" weapon_hold="jowi_pistol" name_id="bm_olympic_beakimbo_name" desc_id ="bm_olympic_beakimbo_desc" description_id="bm_olympic_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="50" NR_CLIPS_MAX="12" AMMO_MAX="300"  > 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
@@ -2168,7 +2168,7 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="glock_17_beakimbo" based_on="glock_17" weapon_hold="jowi_pistol" name_id="bm_glock_17_beakimbo_name" desc_id ="bm_glock_17_beakimbo_desc" description_id="bm_glock_17_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="17" NR_CLIPS_MAX="9" AMMO_MAX="153"  > 
+		<weapon id="glock_17_beakimbo" based_on="glock_17" weapon_hold="jowi_pistol" name_id="bm_glock_17_beakimbo_name" desc_id ="bm_glock_17_beakimbo_desc" description_id="bm_glock_17_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="34" NR_CLIPS_MAX="18" AMMO_MAX="306"  > 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
@@ -2216,7 +2216,7 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="basset_beakimbo" based_on="basset" weapon_hold="jowi_pistol" name_id="bm_basset_beakimbo_name" desc_id ="bm_basset_beakimbo_desc" description_id="bm_basset_beakimbo_desc_long" DAMAGE="6" CLIP_AMMO_MAX="8" NR_CLIPS_MAX="13" AMMO_MAX="104"  texture_bundle_folder="dsg"> 
+		<weapon id="basset_beakimbo" based_on="basset" weapon_hold="jowi_pistol" name_id="bm_basset_beakimbo_name" desc_id ="bm_basset_beakimbo_desc" description_id="bm_basset_beakimbo_desc_long" DAMAGE="6" CLIP_AMMO_MAX="16" NR_CLIPS_MAX="26" AMMO_MAX="208"  texture_bundle_folder="dsg"> 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
@@ -2291,7 +2291,7 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="boot_beakimbo" based_on="boot" weapon_hold="jowi_pistol" name_id="bm_boot_beakimbo_name" desc_id ="bm_boot_beakimbo_desc" description_id="bm_boot_beakimbo_desc_long" DAMAGE="6" CLIP_AMMO_MAX="7" NR_CLIPS_MAX="3" AMMO_MAX="21" global_value="wild" texture_bundle_folder="wild"> 
+		<weapon id="boot_beakimbo" based_on="boot" weapon_hold="jowi_pistol" name_id="bm_boot_beakimbo_name" desc_id ="bm_boot_beakimbo_desc" description_id="bm_boot_beakimbo_desc_long" DAMAGE="6" CLIP_AMMO_MAX="14" NR_CLIPS_MAX="6" AMMO_MAX="42" global_value="wild" texture_bundle_folder="wild"> 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
@@ -2350,7 +2350,7 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="contraband_beakimbo" based_on="contraband" weapon_hold="jowi_pistol" name_id="bm_contraband_beakimbo_name" desc_id ="bm_contraband_beakimbo_desc" description_id="bm_contraband_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="20" NR_CLIPS_MAX="2" AMMO_MAX="40" global_value="chico" texture_bundle_folder="chico"> 
+		<weapon id="contraband_beakimbo" based_on="contraband" weapon_hold="jowi_pistol" name_id="bm_contraband_beakimbo_name" desc_id ="bm_contraband_beakimbo_desc" description_id="bm_contraband_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="40" NR_CLIPS_MAX="4" AMMO_MAX="80" global_value="chico" texture_bundle_folder="chico"> 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
@@ -2429,7 +2429,7 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="famas_beakimbo" based_on="famas" weapon_hold="jowi_pistol" name_id="bm_famas_beakimbo_name" desc_id ="bm_famas_beakimbo_desc" description_id="bm_famas_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="30" NR_CLIPS_MAX="8" AMMO_MAX="240" global_value="gage_pack_assault" texture_bundle_folder="gage_pack_assault"> 
+		<weapon id="famas_beakimbo" based_on="famas" weapon_hold="jowi_pistol" name_id="bm_famas_beakimbo_name" desc_id ="bm_famas_beakimbo_desc" description_id="bm_famas_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="60" NR_CLIPS_MAX="16" AMMO_MAX="480" global_value="gage_pack_assault" texture_bundle_folder="gage_pack_assault"> 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
@@ -2501,7 +2501,7 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="m1928_beakimbo" based_on="m1928" weapon_hold="jowi_pistol" name_id="bm_m1928_beakimbo_name" desc_id ="bm_m1928_beakimbo_desc" description_id="bm_m1928_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="50" NR_CLIPS_MAX="3" AMMO_MAX="150" global_value="pd2_clan" texture_bundle_folder="pines"> 
+		<weapon id="m1928_beakimbo" based_on="m1928" weapon_hold="jowi_pistol" name_id="bm_m1928_beakimbo_name" desc_id ="bm_m1928_beakimbo_desc" description_id="bm_m1928_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="100" NR_CLIPS_MAX="6" AMMO_MAX="300" global_value="pd2_clan" texture_bundle_folder="pines"> 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
@@ -2576,7 +2576,7 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="p90_beakimbo" based_on="p90" weapon_hold="jowi_pistol" name_id="bm_p90_beakimbo_name" desc_id ="bm_p90_beakimbo_desc" description_id="bm_p90_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="50" NR_CLIPS_MAX="3" AMMO_MAX="150"  > 
+		<weapon id="p90_beakimbo" based_on="p90" weapon_hold="jowi_pistol" name_id="bm_p90_beakimbo_name" desc_id ="bm_p90_beakimbo_desc" description_id="bm_p90_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="100" NR_CLIPS_MAX="6" AMMO_MAX="300"  > 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
@@ -2646,7 +2646,7 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="ching_beakimbo" based_on="ching" weapon_hold="jowi_pistol" name_id="bm_ching_beakimbo_name" desc_id ="bm_ching_beakimbo_desc" description_id="bm_ching_beakimbo_desc_long" DAMAGE="2" CLIP_AMMO_MAX="8" NR_CLIPS_MAX="9" AMMO_MAX="72"  texture_bundle_folder="old"> 
+		<weapon id="ching_beakimbo" based_on="ching" weapon_hold="jowi_pistol" name_id="bm_ching_beakimbo_name" desc_id ="bm_ching_beakimbo_desc" description_id="bm_ching_beakimbo_desc_long" DAMAGE="2" CLIP_AMMO_MAX="16" NR_CLIPS_MAX="18" AMMO_MAX="144"  texture_bundle_folder="old"> 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
@@ -2723,7 +2723,7 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="sparrow_beakimbo" based_on="sparrow" weapon_hold="jowi_pistol" name_id="bm_sparrow_beakimbo_name" desc_id ="bm_sparrow_beakimbo_desc" description_id="bm_sparrow_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="12" NR_CLIPS_MAX="5" AMMO_MAX="60" global_value="berry" texture_bundle_folder="rip"> 
+		<weapon id="sparrow_beakimbo" based_on="sparrow" weapon_hold="jowi_pistol" name_id="bm_sparrow_beakimbo_name" desc_id ="bm_sparrow_beakimbo_desc" description_id="bm_sparrow_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="24" NR_CLIPS_MAX="10" AMMO_MAX="120" global_value="berry" texture_bundle_folder="rip"> 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
@@ -2781,7 +2781,7 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="peacemaker_beakimbo" based_on="peacemaker" weapon_hold="jowi_pistol" name_id="bm_peacemaker_beakimbo_name" desc_id ="bm_peacemaker_beakimbo_desc" description_id="bm_peacemaker_beakimbo_desc_long" DAMAGE="6" CLIP_AMMO_MAX="6" NR_CLIPS_MAX="9" AMMO_MAX="54" global_value="west" texture_bundle_folder="west"> 
+		<weapon id="peacemaker_beakimbo" based_on="peacemaker" weapon_hold="jowi_pistol" name_id="bm_peacemaker_beakimbo_name" desc_id ="bm_peacemaker_beakimbo_desc" description_id="bm_peacemaker_beakimbo_desc_long" DAMAGE="6" CLIP_AMMO_MAX="12" NR_CLIPS_MAX="18" AMMO_MAX="108" global_value="west" texture_bundle_folder="west"> 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
@@ -2815,7 +2815,7 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="mosin_beakimbo" based_on="mosin" weapon_hold="jowi_pistol" name_id="bm_mosin_beakimbo_name" desc_id ="bm_mosin_beakimbo_desc" description_id="bm_mosin_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="5" NR_CLIPS_MAX="5" AMMO_MAX="25" global_value="gage_pack_historical" texture_bundle_folder="gage_pack_historical"> 
+		<weapon id="mosin_beakimbo" based_on="mosin" weapon_hold="jowi_pistol" name_id="bm_mosin_beakimbo_name" desc_id ="bm_mosin_beakimbo_desc" description_id="bm_mosin_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="10" NR_CLIPS_MAX="10" AMMO_MAX="50" global_value="gage_pack_historical" texture_bundle_folder="gage_pack_historical"> 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
@@ -2878,7 +2878,7 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="hajk_beakimbo" based_on="hajk" weapon_hold="jowi_pistol" name_id="bm_hajk_beakimbo_name" desc_id ="bm_hajk_beakimbo_desc" description_id="bm_hajk_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="30" NR_CLIPS_MAX="3" AMMO_MAX="90" global_value="born" texture_bundle_folder="born"> 
+		<weapon id="hajk_beakimbo" based_on="hajk" weapon_hold="jowi_pistol" name_id="bm_hajk_beakimbo_name" desc_id ="bm_hajk_beakimbo_desc" description_id="bm_hajk_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="60" NR_CLIPS_MAX="6" AMMO_MAX="180" global_value="born" texture_bundle_folder="born"> 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
@@ -2959,7 +2959,7 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="mac10_beakimbo" based_on="mac10" weapon_hold="jowi_pistol" name_id="bm_mac10_beakimbo_name" desc_id ="bm_mac10_beakimbo_desc" description_id="bm_mac10_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="40" NR_CLIPS_MAX="4" AMMO_MAX="160"  > 
+		<weapon id="mac10_beakimbo" based_on="mac10" weapon_hold="jowi_pistol" name_id="bm_mac10_beakimbo_name" desc_id ="bm_mac10_beakimbo_desc" description_id="bm_mac10_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="80" NR_CLIPS_MAX="8" AMMO_MAX="320"  > 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
@@ -3034,7 +3034,7 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="serbu_beakimbo" based_on="serbu" weapon_hold="jowi_pistol" name_id="bm_serbu_beakimbo_name" desc_id ="bm_serbu_beakimbo_desc" description_id="bm_serbu_beakimbo_desc_long" DAMAGE="6" CLIP_AMMO_MAX="6" NR_CLIPS_MAX="7" AMMO_MAX="42"  > 
+		<weapon id="serbu_beakimbo" based_on="serbu" weapon_hold="jowi_pistol" name_id="bm_serbu_beakimbo_name" desc_id ="bm_serbu_beakimbo_desc" description_id="bm_serbu_beakimbo_desc_long" DAMAGE="6" CLIP_AMMO_MAX="12" NR_CLIPS_MAX="14" AMMO_MAX="84"  > 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
@@ -3123,7 +3123,7 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="new_m4_beakimbo" based_on="new_m4" weapon_hold="jowi_pistol" name_id="bm_new_m4_beakimbo_name" desc_id ="bm_new_m4_beakimbo_desc" description_id="bm_new_m4_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="30" NR_CLIPS_MAX="5" AMMO_MAX="150"  > 
+		<weapon id="new_m4_beakimbo" based_on="new_m4" weapon_hold="jowi_pistol" name_id="bm_new_m4_beakimbo_name" desc_id ="bm_new_m4_beakimbo_desc" description_id="bm_new_m4_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="60" NR_CLIPS_MAX="10" AMMO_MAX="300"  > 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
@@ -3234,7 +3234,7 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="pl14_beakimbo" based_on="pl14" weapon_hold="jowi_pistol" name_id="bm_pl14_beakimbo_name" desc_id ="bm_pl14_beakimbo_desc" description_id="bm_pl14_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="12" NR_CLIPS_MAX="5" AMMO_MAX="60"  texture_bundle_folder="mad"> 
+		<weapon id="pl14_beakimbo" based_on="pl14" weapon_hold="jowi_pistol" name_id="bm_pl14_beakimbo_name" desc_id ="bm_pl14_beakimbo_desc" description_id="bm_pl14_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="24" NR_CLIPS_MAX="10" AMMO_MAX="120"  texture_bundle_folder="mad"> 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
@@ -3283,7 +3283,7 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="colt_1911_beakimbo" based_on="colt_1911" weapon_hold="jowi_pistol" name_id="bm_colt_1911_beakimbo_name" desc_id ="bm_colt_1911_beakimbo_desc" description_id="bm_colt_1911_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="10" NR_CLIPS_MAX="9" AMMO_MAX="90"  > 
+		<weapon id="colt_1911_beakimbo" based_on="colt_1911" weapon_hold="jowi_pistol" name_id="bm_colt_1911_beakimbo_name" desc_id ="bm_colt_1911_beakimbo_desc" description_id="bm_colt_1911_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="20" NR_CLIPS_MAX="18" AMMO_MAX="180"  > 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
@@ -3342,7 +3342,7 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="m95_beakimbo" based_on="m95" weapon_hold="jowi_pistol" name_id="bm_m95_beakimbo_name" desc_id ="bm_m95_beakimbo_desc" description_id="bm_m95_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="5" NR_CLIPS_MAX="3" AMMO_MAX="15" global_value="gage_pack_snp" texture_bundle_folder="gage_pack_snp"> 
+		<weapon id="m95_beakimbo" based_on="m95" weapon_hold="jowi_pistol" name_id="bm_m95_beakimbo_name" desc_id ="bm_m95_beakimbo_desc" description_id="bm_m95_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="10" NR_CLIPS_MAX="6" AMMO_MAX="30" global_value="gage_pack_snp" texture_bundle_folder="gage_pack_snp"> 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
@@ -3413,7 +3413,7 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="mp7_beakimbo" based_on="mp7" weapon_hold="jowi_pistol" name_id="bm_mp7_beakimbo_name" desc_id ="bm_mp7_beakimbo_desc" description_id="bm_mp7_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="20" NR_CLIPS_MAX="8" AMMO_MAX="160" global_value="gage_pack" texture_bundle_folder="gage_pack"> 
+		<weapon id="mp7_beakimbo" based_on="mp7" weapon_hold="jowi_pistol" name_id="bm_mp7_beakimbo_name" desc_id ="bm_mp7_beakimbo_desc" description_id="bm_mp7_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="40" NR_CLIPS_MAX="16" AMMO_MAX="320" global_value="gage_pack" texture_bundle_folder="gage_pack"> 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
@@ -3480,7 +3480,7 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="hs2000_beakimbo" based_on="hs2000" weapon_hold="jowi_pistol" name_id="bm_hs2000_beakimbo_name" desc_id ="bm_hs2000_beakimbo_desc" description_id="bm_hs2000_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="19" NR_CLIPS_MAX="5" AMMO_MAX="95" global_value="the_bomb" texture_bundle_folder="the_bomb"> 
+		<weapon id="hs2000_beakimbo" based_on="hs2000" weapon_hold="jowi_pistol" name_id="bm_hs2000_beakimbo_name" desc_id ="bm_hs2000_beakimbo_desc" description_id="bm_hs2000_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="38" NR_CLIPS_MAX="10" AMMO_MAX="190" global_value="the_bomb" texture_bundle_folder="the_bomb"> 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
@@ -3528,7 +3528,7 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="baka_beakimbo" based_on="baka" weapon_hold="jowi_pistol" name_id="bm_baka_beakimbo_name" desc_id ="bm_baka_beakimbo_desc" description_id="bm_baka_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="32" NR_CLIPS_MAX="7" AMMO_MAX="224" global_value="dragon" texture_bundle_folder="dragon"> 
+		<weapon id="baka_beakimbo" based_on="baka" weapon_hold="jowi_pistol" name_id="bm_baka_beakimbo_name" desc_id ="bm_baka_beakimbo_desc" description_id="bm_baka_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="64" NR_CLIPS_MAX="14" AMMO_MAX="448" global_value="dragon" texture_bundle_folder="dragon"> 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
@@ -3583,7 +3583,7 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="fal_beakimbo" based_on="fal" weapon_hold="jowi_pistol" name_id="bm_fal_beakimbo_name" desc_id ="bm_fal_beakimbo_desc" description_id="bm_fal_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="20" NR_CLIPS_MAX="5" AMMO_MAX="100" global_value="big_bank" texture_bundle_folder="big_bank"> 
+		<weapon id="fal_beakimbo" based_on="fal" weapon_hold="jowi_pistol" name_id="bm_fal_beakimbo_name" desc_id ="bm_fal_beakimbo_desc" description_id="bm_fal_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="40" NR_CLIPS_MAX="10" AMMO_MAX="200" global_value="big_bank" texture_bundle_folder="big_bank"> 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
@@ -3659,7 +3659,7 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="akm_gold_beakimbo" based_on="akm_gold" weapon_hold="jowi_pistol" name_id="bm_akm_gold_beakimbo_name" desc_id ="bm_akm_gold_beakimbo_desc" description_id="bm_akm_gold_beakimbo_desc_long" DAMAGE="1.25" CLIP_AMMO_MAX="30" NR_CLIPS_MAX="3" AMMO_MAX="90" global_value="pd2_clan" > 
+		<weapon id="akm_gold_beakimbo" based_on="akm_gold" weapon_hold="jowi_pistol" name_id="bm_akm_gold_beakimbo_name" desc_id ="bm_akm_gold_beakimbo_desc" description_id="bm_akm_gold_beakimbo_desc_long" DAMAGE="1.25" CLIP_AMMO_MAX="60" NR_CLIPS_MAX="6" AMMO_MAX="180" global_value="pd2_clan" > 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
@@ -3760,90 +3760,7 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="ak5_beakimbo" based_on="ak5" weapon_hold="jowi_pistol" name_id="bm_ak5_beakimbo_name" desc_id ="bm_ak5_beakimbo_desc" description_id="bm_ak5_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="30" NR_CLIPS_MAX="5" AMMO_MAX="150"  > 
-			<use_data selection_index="2"/> 
-			<categories> 
-				<value_node value="akimbo"/> 
-				<value_node value="assault_rifle"/> 
-			</categories> 
-			<stats/> 
-			<stats_modifiers/> 
-		</weapon> 
-		<factory id="wpn_fps_ass_ak5_beakimbo" based_on="wpn_fps_ass_ak5" unit="units/payday2/weapons/wpn_fps_ass_ak5/wpn_fps_ass_ak5_beakimbo"> 
-			<default_blueprint> 
-				<value_node value="wpn_fps_ass_ak5_b_std"/> 
-				<value_node value="wpn_fps_ass_ak5_body_ak5"/> 
-				<value_node value="wpn_fps_ass_ak5_fg_ak5a"/> 
-				<value_node value="wpn_fps_ass_ak5_s_ak5a"/> 
-				<value_node value="wpn_fps_m4_uupg_m_std_vanilla"/> 
-			</default_blueprint> 
-			<uses_parts> 
-				<value_node value="wpn_fps_ass_ak5_b_std"/> 
-				<value_node value="wpn_fps_ass_ak5_body_ak5"/> 
-				<value_node value="wpn_fps_ass_ak5_body_rail"/> 
-				<value_node value="wpn_fps_ass_ak5_fg_ak5a"/> 
-				<value_node value="wpn_fps_ass_ak5_fg_ak5c"/> 
-				<value_node value="wpn_fps_ass_ak5_fg_fnc"/> 
-				<value_node value="wpn_fps_ass_ak5_s_ak5a"/> 
-				<value_node value="wpn_fps_ass_ak5_s_ak5b"/> 
-				<value_node value="wpn_fps_ass_ak5_s_ak5c"/> 
-				<value_node value="wpn_fps_m4_uupg_m_std_vanilla"/> 
-				<value_node value="wpn_fps_upg_m4_m_drum"/> 
-				<value_node value="wpn_fps_upg_m4_m_pmag"/> 
-				<value_node value="wpn_fps_upg_m4_m_straight"/> 
-				<value_node value="wpn_fps_upg_o_specter"/> 
-				<value_node value="wpn_fps_upg_o_aimpoint"/> 
-				<value_node value="wpn_fps_upg_o_docter"/> 
-				<value_node value="wpn_fps_upg_o_eotech"/> 
-				<value_node value="wpn_fps_upg_o_t1micro"/> 
-				<value_node value="wpn_fps_upg_o_cmore"/> 
-				<value_node value="wpn_fps_upg_o_aimpoint_2"/> 
-				<value_node value="wpn_fps_upg_o_acog"/> 
-				<value_node value="wpn_fps_upg_vg_ass_smg_verticalgrip"/> 
-				<value_node value="wpn_fps_upg_vg_ass_smg_stubby"/> 
-				<value_node value="wpn_fps_upg_vg_ass_smg_afg"/> 
-				<value_node value="wpn_fps_upg_fl_ass_smg_sho_peqbox"/> 
-				<value_node value="wpn_fps_upg_fl_ass_smg_sho_surefire"/> 
-				<value_node value="wpn_fps_upg_ns_ass_smg_large"/> 
-				<value_node value="wpn_fps_upg_ns_ass_smg_medium"/> 
-				<value_node value="wpn_fps_upg_ns_ass_smg_small"/> 
-				<value_node value="wpn_fps_upg_ns_ass_smg_firepig"/> 
-				<value_node value="wpn_fps_upg_ns_ass_smg_stubby"/> 
-				<value_node value="wpn_fps_upg_ns_ass_smg_tank"/> 
-				<value_node value="wpn_fps_upg_i_singlefire"/> 
-				<value_node value="wpn_fps_upg_i_autofire"/> 
-				<value_node value="wpn_fps_upg_m4_m_quad"/> 
-				<value_node value="wpn_fps_ass_l85a2_m_emag"/> 
-				<value_node value="wpn_fps_upg_ass_ns_jprifles"/> 
-				<value_node value="wpn_fps_upg_ass_ns_linear"/> 
-				<value_node value="wpn_fps_upg_ass_ns_surefire"/> 
-				<value_node value="wpn_fps_upg_o_eotech_xps"/> 
-				<value_node value="wpn_fps_upg_o_reflex"/> 
-				<value_node value="wpn_fps_upg_o_rx01"/> 
-				<value_node value="wpn_fps_upg_o_rx30"/> 
-				<value_node value="wpn_fps_upg_o_cs"/> 
-				<value_node value="wpn_fps_upg_fl_ass_peq15"/> 
-				<value_node value="wpn_fps_upg_fl_ass_laser"/> 
-				<value_node value="wpn_fps_upg_m4_m_l5"/> 
-				<value_node value="wpn_fps_ass_ak5_b_short"/> 
-				<value_node value="wpn_fps_upg_ass_ns_battle"/> 
-				<value_node value="wpn_fps_upg_fl_ass_utg"/> 
-				<value_node value="wpn_fps_upg_o_45rds"/> 
-				<value_node value="wpn_fps_upg_o_spot"/> 
-				<value_node value="wpn_fps_m4_upg_m_quick"/> 
-				<value_node value="wpn_fps_upg_o_xpsg33_magnifier"/> 
-				<value_node value="wpn_fps_upg_o_45rds_v2"/> 
-				<value_node value="wpn_fps_upg_o_coyote"/> 
-				<value_node value="wpn_fps_upg_bonus_concealment_p1"/> 
-				<value_node value="wpn_fps_upg_bonus_spread_p1"/> 
-				<value_node value="wpn_fps_upg_bonus_team_exp_money_p3"/> 
-				<value_node value="wpn_fps_upg_bonus_recoil_p1"/> 
-			</uses_parts> 
-		</factory> 
-		<stance/> 
-	</WeaponNew> 
-	<WeaponNew> 
-		<weapon id="mp9_beakimbo" based_on="mp9" weapon_hold="jowi_pistol" name_id="bm_mp9_beakimbo_name" desc_id ="bm_mp9_beakimbo_desc" description_id="bm_mp9_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="30" NR_CLIPS_MAX="7" AMMO_MAX="210"  > 
+		<weapon id="mp9_beakimbo" based_on="mp9" weapon_hold="jowi_pistol" name_id="bm_mp9_beakimbo_name" desc_id ="bm_mp9_beakimbo_desc" description_id="bm_mp9_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="60" NR_CLIPS_MAX="14" AMMO_MAX="420"  > 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
@@ -3911,7 +3828,7 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="ak74_beakimbo" based_on="ak74" weapon_hold="jowi_pistol" name_id="bm_ak74_beakimbo_name" desc_id ="bm_ak74_beakimbo_desc" description_id="bm_ak74_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="30" NR_CLIPS_MAX="5" AMMO_MAX="150"  > 
+		<weapon id="ak74_beakimbo" based_on="ak74" weapon_hold="jowi_pistol" name_id="bm_ak74_beakimbo_name" desc_id ="bm_ak74_beakimbo_desc" description_id="bm_ak74_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="60" NR_CLIPS_MAX="10" AMMO_MAX="300"  > 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
@@ -4021,7 +3938,7 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="m37_beakimbo" based_on="m37" weapon_hold="jowi_pistol" name_id="bm_m37_beakimbo_name" desc_id ="bm_m37_beakimbo_desc" description_id="bm_m37_beakimbo_desc_long" DAMAGE="6" CLIP_AMMO_MAX="7" NR_CLIPS_MAX="4" AMMO_MAX="28" global_value="peta" texture_bundle_folder="peta"> 
+		<weapon id="m37_beakimbo" based_on="m37" weapon_hold="jowi_pistol" name_id="bm_m37_beakimbo_name" desc_id ="bm_m37_beakimbo_desc" description_id="bm_m37_beakimbo_desc_long" DAMAGE="6" CLIP_AMMO_MAX="14" NR_CLIPS_MAX="8" AMMO_MAX="56" global_value="peta" texture_bundle_folder="peta"> 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
@@ -4072,7 +3989,7 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="deagle_beakimbo" based_on="deagle" weapon_hold="jowi_pistol" name_id="bm_deagle_beakimbo_name" desc_id ="bm_deagle_beakimbo_desc" description_id="bm_deagle_beakimbo_desc_long" DAMAGE="2" CLIP_AMMO_MAX="10" NR_CLIPS_MAX="5" AMMO_MAX="50"  > 
+		<weapon id="deagle_beakimbo" based_on="deagle" weapon_hold="jowi_pistol" name_id="bm_deagle_beakimbo_name" desc_id ="bm_deagle_beakimbo_desc" description_id="bm_deagle_beakimbo_desc_long" DAMAGE="2" CLIP_AMMO_MAX="20" NR_CLIPS_MAX="10" AMMO_MAX="100"  > 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
@@ -4151,7 +4068,7 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="breech_beakimbo" based_on="breech" weapon_hold="jowi_pistol" name_id="bm_breech_beakimbo_name" desc_id ="bm_breech_beakimbo_desc" description_id="bm_breech_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="8" NR_CLIPS_MAX="7" AMMO_MAX="56"  texture_bundle_folder="old"> 
+		<weapon id="breech_beakimbo" based_on="breech" weapon_hold="jowi_pistol" name_id="bm_breech_beakimbo_name" desc_id ="bm_breech_beakimbo_desc" description_id="bm_breech_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="16" NR_CLIPS_MAX="14" AMMO_MAX="112"  texture_bundle_folder="old"> 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
@@ -4187,7 +4104,7 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="shrew_beakimbo" based_on="shrew" weapon_hold="jowi_pistol" name_id="bm_shrew_beakimbo_name" desc_id ="bm_shrew_beakimbo_desc" description_id="bm_shrew_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="17" NR_CLIPS_MAX="9" AMMO_MAX="153"  texture_bundle_folder="myh"> 
+		<weapon id="shrew_beakimbo" based_on="shrew" weapon_hold="jowi_pistol" name_id="bm_shrew_beakimbo_name" desc_id ="bm_shrew_beakimbo_desc" description_id="bm_shrew_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="34" NR_CLIPS_MAX="18" AMMO_MAX="306"  texture_bundle_folder="myh"> 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
@@ -4243,7 +4160,7 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="g22c_beakimbo" based_on="g22c" weapon_hold="jowi_pistol" name_id="bm_g22c_beakimbo_name" desc_id ="bm_g22c_beakimbo_desc" description_id="bm_g22c_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="16" NR_CLIPS_MAX="6" AMMO_MAX="96" global_value="pd2_clan" > 
+		<weapon id="g22c_beakimbo" based_on="g22c" weapon_hold="jowi_pistol" name_id="bm_g22c_beakimbo_name" desc_id ="bm_g22c_beakimbo_desc" description_id="bm_g22c_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="32" NR_CLIPS_MAX="12" AMMO_MAX="192" global_value="pd2_clan" > 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
@@ -4295,7 +4212,7 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="m45_beakimbo" based_on="m45" weapon_hold="jowi_pistol" name_id="bm_m45_beakimbo_name" desc_id ="bm_m45_beakimbo_desc" description_id="bm_m45_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="40" NR_CLIPS_MAX="2" AMMO_MAX="80" global_value="armored_transport" texture_bundle_folder="dlc1"> 
+		<weapon id="m45_beakimbo" based_on="m45" weapon_hold="jowi_pistol" name_id="bm_m45_beakimbo_name" desc_id ="bm_m45_beakimbo_desc" description_id="bm_m45_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="80" NR_CLIPS_MAX="4" AMMO_MAX="160" global_value="armored_transport" texture_bundle_folder="dlc1"> 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
@@ -4364,7 +4281,7 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="akmsu_beakimbo" based_on="akmsu" weapon_hold="jowi_pistol" name_id="bm_akmsu_beakimbo_name" desc_id ="bm_akmsu_beakimbo_desc" description_id="bm_akmsu_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="30" NR_CLIPS_MAX="3" AMMO_MAX="90"  > 
+		<weapon id="akmsu_beakimbo" based_on="akmsu" weapon_hold="jowi_pistol" name_id="bm_akmsu_beakimbo_name" desc_id ="bm_akmsu_beakimbo_desc" description_id="bm_akmsu_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="60" NR_CLIPS_MAX="6" AMMO_MAX="180"  > 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
@@ -4455,7 +4372,7 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="mg42_beakimbo" based_on="mg42" weapon_hold="jowi_pistol" name_id="bm_mg42_beakimbo_name" desc_id ="bm_mg42_beakimbo_desc" description_id="bm_mg42_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="150" NR_CLIPS_MAX="3" AMMO_MAX="450" global_value="gage_pack_historical" texture_bundle_folder="gage_pack_historical"> 
+		<weapon id="mg42_beakimbo" based_on="mg42" weapon_hold="jowi_pistol" name_id="bm_mg42_beakimbo_name" desc_id ="bm_mg42_beakimbo_desc" description_id="bm_mg42_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="300" NR_CLIPS_MAX="6" AMMO_MAX="900" global_value="gage_pack_historical" texture_bundle_folder="gage_pack_historical"> 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
@@ -4502,7 +4419,7 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="p226_beakimbo" based_on="p226" weapon_hold="jowi_pistol" name_id="bm_p226_beakimbo_name" desc_id ="bm_p226_beakimbo_desc" description_id="bm_p226_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="12" NR_CLIPS_MAX="7" AMMO_MAX="84" global_value="gage_pack" texture_bundle_folder="gage_pack"> 
+		<weapon id="p226_beakimbo" based_on="p226" weapon_hold="jowi_pistol" name_id="bm_p226_beakimbo_name" desc_id ="bm_p226_beakimbo_desc" description_id="bm_p226_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="24" NR_CLIPS_MAX="14" AMMO_MAX="168" global_value="gage_pack" texture_bundle_folder="gage_pack"> 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
@@ -4558,7 +4475,7 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="asval_beakimbo" based_on="asval" weapon_hold="jowi_pistol" name_id="bm_asval_beakimbo_name" desc_id ="bm_asval_beakimbo_desc" description_id="bm_asval_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="20" NR_CLIPS_MAX="11" AMMO_MAX="220" global_value="character_pack_sokol" texture_bundle_folder="character_pack_sokol"> 
+		<weapon id="asval_beakimbo" based_on="asval" weapon_hold="jowi_pistol" name_id="bm_asval_beakimbo_name" desc_id ="bm_asval_beakimbo_desc" description_id="bm_asval_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="40" NR_CLIPS_MAX="22" AMMO_MAX="440" global_value="character_pack_sokol" texture_bundle_folder="character_pack_sokol"> 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
@@ -4618,7 +4535,7 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="desertfox_beakimbo" based_on="desertfox" weapon_hold="jowi_pistol" name_id="bm_desertfox_beakimbo_name" desc_id ="bm_desertfox_beakimbo_desc" description_id="bm_desertfox_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="5" NR_CLIPS_MAX="6" AMMO_MAX="30" global_value="pim" texture_bundle_folder="pim"> 
+		<weapon id="desertfox_beakimbo" based_on="desertfox" weapon_hold="jowi_pistol" name_id="bm_desertfox_beakimbo_name" desc_id ="bm_desertfox_beakimbo_desc" description_id="bm_desertfox_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="10" NR_CLIPS_MAX="12" AMMO_MAX="60" global_value="pim" texture_bundle_folder="pim"> 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
@@ -4679,7 +4596,7 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="akm_beakimbo" based_on="akm" weapon_hold="jowi_pistol" name_id="bm_akm_beakimbo_name" desc_id ="bm_akm_beakimbo_desc" description_id="bm_akm_beakimbo_desc_long" DAMAGE="1.25" CLIP_AMMO_MAX="30" NR_CLIPS_MAX="3" AMMO_MAX="90"  > 
+		<weapon id="akm_beakimbo" based_on="akm" weapon_hold="jowi_pistol" name_id="bm_akm_beakimbo_name" desc_id ="bm_akm_beakimbo_desc" description_id="bm_akm_beakimbo_desc_long" DAMAGE="1.25" CLIP_AMMO_MAX="60" NR_CLIPS_MAX="6" AMMO_MAX="180"  > 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
@@ -4780,7 +4697,7 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="new_mp5_beakimbo" based_on="new_mp5" weapon_hold="jowi_pistol" name_id="bm_new_mp5_beakimbo_name" desc_id ="bm_new_mp5_beakimbo_desc" description_id="bm_new_mp5_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="30" NR_CLIPS_MAX="7" AMMO_MAX="210"  > 
+		<weapon id="new_mp5_beakimbo" based_on="new_mp5" weapon_hold="jowi_pistol" name_id="bm_new_mp5_beakimbo_name" desc_id ="bm_new_mp5_beakimbo_desc" description_id="bm_new_mp5_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="60" NR_CLIPS_MAX="14" AMMO_MAX="420"  > 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
@@ -4855,7 +4772,7 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="coal_beakimbo" based_on="coal" weapon_hold="jowi_pistol" name_id="bm_coal_beakimbo_name" desc_id ="bm_coal_beakimbo_desc" description_id="bm_coal_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="64" NR_CLIPS_MAX="2" AMMO_MAX="128" global_value="grv" texture_bundle_folder="grv"> 
+		<weapon id="coal_beakimbo" based_on="coal" weapon_hold="jowi_pistol" name_id="bm_coal_beakimbo_name" desc_id ="bm_coal_beakimbo_desc" description_id="bm_coal_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="128" NR_CLIPS_MAX="4" AMMO_MAX="256" global_value="grv" texture_bundle_folder="grv"> 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
@@ -4935,77 +4852,7 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="vhs_beakimbo" based_on="vhs" weapon_hold="jowi_pistol" name_id="bm_vhs_beakimbo_name" desc_id ="bm_vhs_beakimbo_desc" description_id="bm_vhs_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="30" NR_CLIPS_MAX="5" AMMO_MAX="150" global_value="character_pack_dragan" texture_bundle_folder="character_pack_dragan"> 
-			<use_data selection_index="2"/> 
-			<categories> 
-				<value_node value="akimbo"/> 
-				<value_node value="assault_rifle"/> 
-			</categories> 
-			<stats/> 
-			<stats_modifiers/> 
-		</weapon> 
-		<factory id="wpn_fps_ass_vhs_beakimbo" based_on="wpn_fps_ass_vhs" unit="units/pd2_dlc_dragan/weapons/wpn_fps_ass_vhs/wpn_fps_ass_vhs_beakimbo"> 
-			<default_blueprint> 
-				<value_node value="wpn_fps_ass_vhs_body"/> 
-				<value_node value="wpn_fps_ass_vhs_m"/> 
-				<value_node value="wpn_fps_ass_vhs_b_standard"/> 
-				<value_node value="wpn_fps_ass_vhs_o_standard"/> 
-				<value_node value="wpn_fps_ass_vhs_ns_vhs"/> 
-			</default_blueprint> 
-			<uses_parts> 
-				<value_node value="wpn_fps_ass_vhs_body"/> 
-				<value_node value="wpn_fps_ass_vhs_m"/> 
-				<value_node value="wpn_fps_ass_vhs_b_short"/> 
-				<value_node value="wpn_fps_ass_vhs_b_silenced"/> 
-				<value_node value="wpn_fps_ass_vhs_b_sniper"/> 
-				<value_node value="wpn_fps_ass_vhs_b_standard"/> 
-				<value_node value="wpn_fps_ass_vhs_o_standard"/> 
-				<value_node value="wpn_fps_ass_vhs_ns_vhs"/> 
-				<value_node value="wpn_fps_upg_o_specter"/> 
-				<value_node value="wpn_fps_upg_o_aimpoint"/> 
-				<value_node value="wpn_fps_upg_o_docter"/> 
-				<value_node value="wpn_fps_upg_o_eotech"/> 
-				<value_node value="wpn_fps_upg_o_t1micro"/> 
-				<value_node value="wpn_fps_upg_o_cmore"/> 
-				<value_node value="wpn_fps_upg_o_aimpoint_2"/> 
-				<value_node value="wpn_fps_upg_o_acog"/> 
-				<value_node value="wpn_fps_upg_fl_ass_smg_sho_peqbox"/> 
-				<value_node value="wpn_fps_upg_fl_ass_smg_sho_surefire"/> 
-				<value_node value="wpn_fps_upg_ns_ass_smg_large"/> 
-				<value_node value="wpn_fps_upg_ns_ass_smg_medium"/> 
-				<value_node value="wpn_fps_upg_ns_ass_smg_small"/> 
-				<value_node value="wpn_fps_upg_ns_ass_smg_firepig"/> 
-				<value_node value="wpn_fps_upg_ns_ass_smg_stubby"/> 
-				<value_node value="wpn_fps_upg_ns_ass_smg_tank"/> 
-				<value_node value="wpn_fps_upg_o_eotech_xps"/> 
-				<value_node value="wpn_fps_upg_o_reflex"/> 
-				<value_node value="wpn_fps_upg_o_rx01"/> 
-				<value_node value="wpn_fps_upg_o_rx30"/> 
-				<value_node value="wpn_fps_upg_o_cs"/> 
-				<value_node value="wpn_fps_upg_ass_ns_jprifles"/> 
-				<value_node value="wpn_fps_upg_ass_ns_linear"/> 
-				<value_node value="wpn_fps_upg_ass_ns_surefire"/> 
-				<value_node value="wpn_fps_upg_fl_ass_peq15"/> 
-				<value_node value="wpn_fps_upg_fl_ass_laser"/> 
-				<value_node value="wpn_fps_upg_i_singlefire"/> 
-				<value_node value="wpn_fps_upg_i_autofire"/> 
-				<value_node value="wpn_fps_upg_ass_ns_battle"/> 
-				<value_node value="wpn_fps_upg_fl_ass_utg"/> 
-				<value_node value="wpn_fps_upg_o_45rds"/> 
-				<value_node value="wpn_fps_upg_o_spot"/> 
-				<value_node value="wpn_fps_upg_o_xpsg33_magnifier"/> 
-				<value_node value="wpn_fps_upg_o_45rds_v2"/> 
-				<value_node value="wpn_fps_upg_o_coyote"/> 
-				<value_node value="wpn_fps_upg_bonus_concealment_p1"/> 
-				<value_node value="wpn_fps_upg_bonus_spread_p1"/> 
-				<value_node value="wpn_fps_upg_bonus_team_exp_money_p3"/> 
-				<value_node value="wpn_fps_upg_bonus_recoil_p1"/> 
-			</uses_parts> 
-		</factory> 
-		<stance/> 
-	</WeaponNew> 
-	<WeaponNew> 
-		<weapon id="m249_beakimbo" based_on="m249" weapon_hold="jowi_pistol" name_id="bm_m249_beakimbo_name" desc_id ="bm_m249_beakimbo_desc" description_id="bm_m249_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="200" NR_CLIPS_MAX="2" AMMO_MAX="400" global_value="gage_pack_lmg" texture_bundle_folder="gage_pack_lmg"> 
+		<weapon id="m249_beakimbo" based_on="m249" weapon_hold="jowi_pistol" name_id="bm_m249_beakimbo_name" desc_id ="bm_m249_beakimbo_desc" description_id="bm_m249_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="400" NR_CLIPS_MAX="4" AMMO_MAX="800" global_value="gage_pack_lmg" texture_bundle_folder="gage_pack_lmg"> 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
@@ -5064,7 +4911,7 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="r870_beakimbo" based_on="r870" weapon_hold="jowi_pistol" name_id="bm_r870_beakimbo_name" desc_id ="bm_r870_beakimbo_desc" description_id="bm_r870_beakimbo_desc_long" DAMAGE="6" CLIP_AMMO_MAX="6" NR_CLIPS_MAX="7" AMMO_MAX="42"  > 
+		<weapon id="r870_beakimbo" based_on="r870" weapon_hold="jowi_pistol" name_id="bm_r870_beakimbo_name" desc_id ="bm_r870_beakimbo_desc" description_id="bm_r870_beakimbo_desc_long" DAMAGE="6" CLIP_AMMO_MAX="12" NR_CLIPS_MAX="14" AMMO_MAX="84"  > 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
@@ -5154,73 +5001,7 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="wa2000_beakimbo" based_on="wa2000" weapon_hold="jowi_pistol" name_id="bm_wa2000_beakimbo_name" desc_id ="bm_wa2000_beakimbo_desc" description_id="bm_wa2000_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="10" NR_CLIPS_MAX="4" AMMO_MAX="40" global_value="turtles" texture_bundle_folder="turtles"> 
-			<use_data selection_index="2"/> 
-			<categories> 
-				<value_node value="akimbo"/> 
-				<value_node value="snp"/> 
-			</categories> 
-			<stats/> 
-			<stats_modifiers/> 
-		</weapon> 
-		<factory id="wpn_fps_snp_wa2000_beakimbo" based_on="wpn_fps_snp_wa2000" unit="units/pd2_dlc_turtles/weapons/wpn_fps_snp_wa2000/wpn_fps_snp_wa2000_beakimbo"> 
-			<default_blueprint> 
-				<value_node value="wpn_fps_snp_wa2000_body_standard"/> 
-				<value_node value="wpn_fps_snp_wa2000_m_standard"/> 
-				<value_node value="wpn_fps_snp_wa2000_b_standard"/> 
-				<value_node value="wpn_fps_snp_wa2000_g_standard"/> 
-				<value_node value="wpn_fps_snp_wa2000_s_standard"/> 
-				<value_node value="wpn_fps_upg_o_shortdot"/> 
-			</default_blueprint> 
-			<uses_parts> 
-				<value_node value="wpn_fps_snp_wa2000_body_standard"/> 
-				<value_node value="wpn_fps_snp_wa2000_m_standard"/> 
-				<value_node value="wpn_fps_snp_wa2000_b_standard"/> 
-				<value_node value="wpn_fps_snp_wa2000_g_standard"/> 
-				<value_node value="wpn_fps_snp_wa2000_s_standard"/> 
-				<value_node value="wpn_fps_snp_wa2000_g_walnut"/> 
-				<value_node value="wpn_fps_snp_wa2000_g_stealth"/> 
-				<value_node value="wpn_fps_snp_wa2000_g_light"/> 
-				<value_node value="wpn_fps_snp_wa2000_b_long"/> 
-				<value_node value="wpn_fps_snp_wa2000_b_suppressed"/> 
-				<value_node value="wpn_fps_upg_o_specter"/> 
-				<value_node value="wpn_fps_upg_o_aimpoint"/> 
-				<value_node value="wpn_fps_upg_o_docter"/> 
-				<value_node value="wpn_fps_upg_o_eotech"/> 
-				<value_node value="wpn_fps_upg_o_t1micro"/> 
-				<value_node value="wpn_fps_upg_o_cmore"/> 
-				<value_node value="wpn_fps_upg_o_aimpoint_2"/> 
-				<value_node value="wpn_fps_upg_o_acog"/> 
-				<value_node value="wpn_fps_upg_o_shortdot"/> 
-				<value_node value="wpn_fps_upg_o_leupold"/> 
-				<value_node value="wpn_fps_upg_o_45iron"/> 
-				<value_node value="wpn_fps_upg_fl_ass_smg_sho_peqbox"/> 
-				<value_node value="wpn_fps_upg_fl_ass_smg_sho_surefire"/> 
-				<value_node value="wpn_fps_upg_o_eotech_xps"/> 
-				<value_node value="wpn_fps_upg_o_reflex"/> 
-				<value_node value="wpn_fps_upg_o_rx01"/> 
-				<value_node value="wpn_fps_upg_o_rx30"/> 
-				<value_node value="wpn_fps_upg_o_cs"/> 
-				<value_node value="wpn_fps_upg_fl_ass_peq15"/> 
-				<value_node value="wpn_fps_upg_fl_ass_laser"/> 
-				<value_node value="wpn_fps_upg_fl_ass_utg"/> 
-				<value_node value="wpn_fps_upg_o_spot"/> 
-				<value_node value="wpn_fps_upg_o_box"/> 
-				<value_node value="wpn_fps_upg_o_45rds"/> 
-				<value_node value="wpn_fps_upg_o_xpsg33_magnifier"/> 
-				<value_node value="wpn_fps_upg_o_45rds_v2"/> 
-				<value_node value="wpn_fps_upg_o_coyote"/> 
-				<value_node value="wpn_fps_upg_bonus_concealment_p1"/> 
-				<value_node value="wpn_fps_upg_bonus_total_ammo_p1"/> 
-				<value_node value="wpn_fps_upg_bonus_spread_p1"/> 
-				<value_node value="wpn_fps_upg_bonus_team_exp_money_p3"/> 
-				<value_node value="wpn_fps_upg_bonus_recoil_p1"/> 
-			</uses_parts> 
-		</factory> 
-		<stance/> 
-	</WeaponNew> 
-	<WeaponNew> 
-		<weapon id="sr2_beakimbo" based_on="sr2" weapon_hold="jowi_pistol" name_id="bm_sr2_beakimbo_name" desc_id ="bm_sr2_beakimbo_desc" description_id="bm_sr2_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="32" NR_CLIPS_MAX="5" AMMO_MAX="160"  texture_bundle_folder="coco"> 
+		<weapon id="sr2_beakimbo" based_on="sr2" weapon_hold="jowi_pistol" name_id="bm_sr2_beakimbo_name" desc_id ="bm_sr2_beakimbo_desc" description_id="bm_sr2_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="64" NR_CLIPS_MAX="10" AMMO_MAX="320"  texture_bundle_folder="coco"> 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
@@ -5292,7 +5073,7 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="galil_beakimbo" based_on="galil" weapon_hold="jowi_pistol" name_id="bm_galil_beakimbo_name" desc_id ="bm_galil_beakimbo_desc" description_id="bm_galil_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="30" NR_CLIPS_MAX="5" AMMO_MAX="150" global_value="gage_pack_assault" texture_bundle_folder="gage_pack_assault"> 
+		<weapon id="galil_beakimbo" based_on="galil" weapon_hold="jowi_pistol" name_id="bm_galil_beakimbo_name" desc_id ="bm_galil_beakimbo_desc" description_id="bm_galil_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="60" NR_CLIPS_MAX="10" AMMO_MAX="300" global_value="gage_pack_assault" texture_bundle_folder="gage_pack_assault"> 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
@@ -5370,7 +5151,7 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="new_m14_beakimbo" based_on="new_m14" weapon_hold="jowi_pistol" name_id="bm_new_m14_beakimbo_name" desc_id ="bm_new_m14_beakimbo_desc" description_id="bm_new_m14_beakimbo_desc_long" DAMAGE="2" CLIP_AMMO_MAX="10" NR_CLIPS_MAX="7" AMMO_MAX="70"  > 
+		<weapon id="new_m14_beakimbo" based_on="new_m14" weapon_hold="jowi_pistol" name_id="bm_new_m14_beakimbo_name" desc_id ="bm_new_m14_beakimbo_desc" description_id="bm_new_m14_beakimbo_desc_long" DAMAGE="2" CLIP_AMMO_MAX="20" NR_CLIPS_MAX="14" AMMO_MAX="140"  > 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
@@ -5444,7 +5225,90 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="scorpion_beakimbo" based_on="scorpion" weapon_hold="jowi_pistol" name_id="bm_scorpion_beakimbo_name" desc_id ="bm_scorpion_beakimbo_desc" description_id="bm_scorpion_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="20" NR_CLIPS_MAX="11" AMMO_MAX="220" global_value="hl_miami" texture_bundle_folder="hl_miami"> 
+		<weapon id="ak5_beakimbo" based_on="ak5" weapon_hold="jowi_pistol" name_id="bm_ak5_beakimbo_name" desc_id ="bm_ak5_beakimbo_desc" description_id="bm_ak5_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="60" NR_CLIPS_MAX="10" AMMO_MAX="300"  > 
+			<use_data selection_index="2"/> 
+			<categories> 
+				<value_node value="akimbo"/> 
+				<value_node value="assault_rifle"/> 
+			</categories> 
+			<stats/> 
+			<stats_modifiers/> 
+		</weapon> 
+		<factory id="wpn_fps_ass_ak5_beakimbo" based_on="wpn_fps_ass_ak5" unit="units/payday2/weapons/wpn_fps_ass_ak5/wpn_fps_ass_ak5_beakimbo"> 
+			<default_blueprint> 
+				<value_node value="wpn_fps_ass_ak5_b_std"/> 
+				<value_node value="wpn_fps_ass_ak5_body_ak5"/> 
+				<value_node value="wpn_fps_ass_ak5_fg_ak5a"/> 
+				<value_node value="wpn_fps_ass_ak5_s_ak5a"/> 
+				<value_node value="wpn_fps_m4_uupg_m_std_vanilla"/> 
+			</default_blueprint> 
+			<uses_parts> 
+				<value_node value="wpn_fps_ass_ak5_b_std"/> 
+				<value_node value="wpn_fps_ass_ak5_body_ak5"/> 
+				<value_node value="wpn_fps_ass_ak5_body_rail"/> 
+				<value_node value="wpn_fps_ass_ak5_fg_ak5a"/> 
+				<value_node value="wpn_fps_ass_ak5_fg_ak5c"/> 
+				<value_node value="wpn_fps_ass_ak5_fg_fnc"/> 
+				<value_node value="wpn_fps_ass_ak5_s_ak5a"/> 
+				<value_node value="wpn_fps_ass_ak5_s_ak5b"/> 
+				<value_node value="wpn_fps_ass_ak5_s_ak5c"/> 
+				<value_node value="wpn_fps_m4_uupg_m_std_vanilla"/> 
+				<value_node value="wpn_fps_upg_m4_m_drum"/> 
+				<value_node value="wpn_fps_upg_m4_m_pmag"/> 
+				<value_node value="wpn_fps_upg_m4_m_straight"/> 
+				<value_node value="wpn_fps_upg_o_specter"/> 
+				<value_node value="wpn_fps_upg_o_aimpoint"/> 
+				<value_node value="wpn_fps_upg_o_docter"/> 
+				<value_node value="wpn_fps_upg_o_eotech"/> 
+				<value_node value="wpn_fps_upg_o_t1micro"/> 
+				<value_node value="wpn_fps_upg_o_cmore"/> 
+				<value_node value="wpn_fps_upg_o_aimpoint_2"/> 
+				<value_node value="wpn_fps_upg_o_acog"/> 
+				<value_node value="wpn_fps_upg_vg_ass_smg_verticalgrip"/> 
+				<value_node value="wpn_fps_upg_vg_ass_smg_stubby"/> 
+				<value_node value="wpn_fps_upg_vg_ass_smg_afg"/> 
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_peqbox"/> 
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_surefire"/> 
+				<value_node value="wpn_fps_upg_ns_ass_smg_large"/> 
+				<value_node value="wpn_fps_upg_ns_ass_smg_medium"/> 
+				<value_node value="wpn_fps_upg_ns_ass_smg_small"/> 
+				<value_node value="wpn_fps_upg_ns_ass_smg_firepig"/> 
+				<value_node value="wpn_fps_upg_ns_ass_smg_stubby"/> 
+				<value_node value="wpn_fps_upg_ns_ass_smg_tank"/> 
+				<value_node value="wpn_fps_upg_i_singlefire"/> 
+				<value_node value="wpn_fps_upg_i_autofire"/> 
+				<value_node value="wpn_fps_upg_m4_m_quad"/> 
+				<value_node value="wpn_fps_ass_l85a2_m_emag"/> 
+				<value_node value="wpn_fps_upg_ass_ns_jprifles"/> 
+				<value_node value="wpn_fps_upg_ass_ns_linear"/> 
+				<value_node value="wpn_fps_upg_ass_ns_surefire"/> 
+				<value_node value="wpn_fps_upg_o_eotech_xps"/> 
+				<value_node value="wpn_fps_upg_o_reflex"/> 
+				<value_node value="wpn_fps_upg_o_rx01"/> 
+				<value_node value="wpn_fps_upg_o_rx30"/> 
+				<value_node value="wpn_fps_upg_o_cs"/> 
+				<value_node value="wpn_fps_upg_fl_ass_peq15"/> 
+				<value_node value="wpn_fps_upg_fl_ass_laser"/> 
+				<value_node value="wpn_fps_upg_m4_m_l5"/> 
+				<value_node value="wpn_fps_ass_ak5_b_short"/> 
+				<value_node value="wpn_fps_upg_ass_ns_battle"/> 
+				<value_node value="wpn_fps_upg_fl_ass_utg"/> 
+				<value_node value="wpn_fps_upg_o_45rds"/> 
+				<value_node value="wpn_fps_upg_o_spot"/> 
+				<value_node value="wpn_fps_m4_upg_m_quick"/> 
+				<value_node value="wpn_fps_upg_o_xpsg33_magnifier"/> 
+				<value_node value="wpn_fps_upg_o_45rds_v2"/> 
+				<value_node value="wpn_fps_upg_o_coyote"/> 
+				<value_node value="wpn_fps_upg_bonus_concealment_p1"/> 
+				<value_node value="wpn_fps_upg_bonus_spread_p1"/> 
+				<value_node value="wpn_fps_upg_bonus_team_exp_money_p3"/> 
+				<value_node value="wpn_fps_upg_bonus_recoil_p1"/> 
+			</uses_parts> 
+		</factory> 
+		<stance/> 
+	</WeaponNew> 
+	<WeaponNew> 
+		<weapon id="scorpion_beakimbo" based_on="scorpion" weapon_hold="jowi_pistol" name_id="bm_scorpion_beakimbo_name" desc_id ="bm_scorpion_beakimbo_desc" description_id="bm_scorpion_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="40" NR_CLIPS_MAX="22" AMMO_MAX="440" global_value="hl_miami" texture_bundle_folder="hl_miami"> 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
@@ -5515,133 +5379,63 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="schakal_beakimbo" based_on="schakal" weapon_hold="jowi_pistol" name_id="bm_schakal_beakimbo_name" desc_id ="bm_schakal_beakimbo_desc" description_id="bm_schakal_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="30" NR_CLIPS_MAX="3" AMMO_MAX="90" global_value="pim" texture_bundle_folder="pim"> 
+		<weapon id="model70_beakimbo" based_on="model70" weapon_hold="jowi_pistol" name_id="bm_model70_beakimbo_name" desc_id ="bm_model70_beakimbo_desc" description_id="bm_model70_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="10" NR_CLIPS_MAX="12" AMMO_MAX="60"  texture_bundle_folder="berry"> 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
-				<value_node value="smg"/> 
+				<value_node value="snp"/> 
 			</categories> 
 			<stats/> 
 			<stats_modifiers/> 
 		</weapon> 
-		<factory id="wpn_fps_smg_schakal_beakimbo" based_on="wpn_fps_smg_schakal" unit="units/pd2_dlc_pim/weapons/wpn_fps_smg_schakal/wpn_fps_smg_schakal_beakimbo"> 
+		<factory id="wpn_fps_snp_model70_beakimbo" based_on="wpn_fps_snp_model70" unit="units/pd2_dlc_berry/weapons/wpn_fps_snp_model70/wpn_fps_snp_model70_beakimbo"> 
 			<default_blueprint> 
-				<value_node value="wpn_fps_smg_schakal_b_standard"/> 
-				<value_node value="wpn_fps_smg_schakal_body_lower"/> 
-				<value_node value="wpn_fps_smg_schakal_body_upper"/> 
-				<value_node value="wpn_fps_smg_schakal_m_standard"/> 
-				<value_node value="wpn_fps_smg_schakal_s_standard"/> 
-				<value_node value="wpn_fps_smg_schakal_dh_standard"/> 
-				<value_node value="wpn_fps_smg_schakal_bolt_standard"/> 
-				<value_node value="wpn_fps_upg_vg_ass_smg_verticalgrip"/> 
-				<value_node value="wpn_fps_smg_schakal_extra_magrelease"/> 
+				<value_node value="wpn_fps_snp_model70_b_standard"/> 
+				<value_node value="wpn_fps_snp_model70_body_standard"/> 
+				<value_node value="wpn_fps_snp_model70_s_standard"/> 
+				<value_node value="wpn_fps_snp_model70_m_standard"/> 
+				<value_node value="wpn_fps_upg_o_shortdot_vanilla"/> 
 			</default_blueprint> 
 			<uses_parts> 
-				<value_node value="wpn_fps_smg_schakal_b_civil"/> 
-				<value_node value="wpn_fps_smg_schakal_b_standard"/> 
-				<value_node value="wpn_fps_smg_schakal_body_lower"/> 
-				<value_node value="wpn_fps_smg_schakal_body_upper"/> 
-				<value_node value="wpn_fps_smg_schakal_m_long"/> 
-				<value_node value="wpn_fps_smg_schakal_m_short"/> 
-				<value_node value="wpn_fps_smg_schakal_m_standard"/> 
-				<value_node value="wpn_fps_smg_schakal_ns_silencer"/> 
-				<value_node value="wpn_fps_smg_schakal_s_civil"/> 
-				<value_node value="wpn_fps_smg_schakal_s_folded"/> 
-				<value_node value="wpn_fps_smg_schakal_s_standard"/> 
-				<value_node value="wpn_fps_smg_schakal_dh_standard"/> 
-				<value_node value="wpn_fps_smg_schakal_bolt_standard"/> 
-				<value_node value="wpn_fps_smg_schakal_vg_extra"/> 
-				<value_node value="wpn_fps_smg_schakal_vg_surefire"/> 
-				<value_node value="wpn_fps_smg_schakal_extra_magrelease"/> 
-				<value_node value="wpn_fps_upg_ns_ass_smg_large"/> 
-				<value_node value="wpn_fps_upg_ns_ass_smg_medium"/> 
-				<value_node value="wpn_fps_upg_ns_ass_smg_small"/> 
-				<value_node value="wpn_fps_upg_ns_ass_smg_firepig"/> 
-				<value_node value="wpn_fps_upg_ns_ass_smg_stubby"/> 
-				<value_node value="wpn_fps_upg_ns_ass_smg_tank"/> 
-				<value_node value="wpn_fps_upg_fl_ass_smg_sho_peqbox"/> 
-				<value_node value="wpn_fps_upg_fl_ass_smg_sho_surefire"/> 
-				<value_node value="wpn_fps_upg_vg_ass_smg_verticalgrip"/> 
-				<value_node value="wpn_fps_upg_vg_ass_smg_stubby"/> 
-				<value_node value="wpn_fps_upg_vg_ass_smg_afg"/> 
-				<value_node value="wpn_fps_upg_i_singlefire"/> 
-				<value_node value="wpn_fps_upg_i_autofire"/> 
-				<value_node value="wpn_fps_upg_ass_ns_jprifles"/> 
-				<value_node value="wpn_fps_upg_ass_ns_linear"/> 
-				<value_node value="wpn_fps_upg_ass_ns_surefire"/> 
-				<value_node value="wpn_fps_upg_fl_ass_peq15"/> 
-				<value_node value="wpn_fps_upg_fl_ass_laser"/> 
+				<value_node value="wpn_fps_snp_model70_b_standard"/> 
+				<value_node value="wpn_fps_snp_model70_s_standard"/> 
+				<value_node value="wpn_fps_snp_model70_body_standard"/> 
+				<value_node value="wpn_fps_snp_model70_m_standard"/> 
+				<value_node value="wpn_fps_snp_model70_o_rail"/> 
+				<value_node value="wpn_fps_snp_model70_fl_rail"/> 
+				<value_node value="wpn_fps_snp_model70_iron_sight"/> 
 				<value_node value="wpn_fps_upg_o_specter"/> 
 				<value_node value="wpn_fps_upg_o_aimpoint"/> 
 				<value_node value="wpn_fps_upg_o_docter"/> 
 				<value_node value="wpn_fps_upg_o_eotech"/> 
 				<value_node value="wpn_fps_upg_o_t1micro"/> 
+				<value_node value="wpn_fps_upg_o_rx30"/> 
+				<value_node value="wpn_fps_upg_o_rx01"/> 
+				<value_node value="wpn_fps_upg_o_reflex"/> 
+				<value_node value="wpn_fps_upg_o_eotech_xps"/> 
 				<value_node value="wpn_fps_upg_o_cmore"/> 
 				<value_node value="wpn_fps_upg_o_aimpoint_2"/> 
 				<value_node value="wpn_fps_upg_o_acog"/> 
-				<value_node value="wpn_fps_upg_o_eotech_xps"/> 
-				<value_node value="wpn_fps_upg_o_reflex"/> 
-				<value_node value="wpn_fps_upg_o_rx01"/> 
-				<value_node value="wpn_fps_upg_o_rx30"/> 
 				<value_node value="wpn_fps_upg_o_cs"/> 
-				<value_node value="wpn_fps_upg_ass_ns_battle"/> 
-				<value_node value="wpn_fps_upg_fl_ass_utg"/> 
-				<value_node value="wpn_fps_upg_o_spot"/> 
-				<value_node value="wpn_fps_upg_o_xpsg33_magnifier"/> 
-				<value_node value="wpn_fps_upg_o_coyote"/> 
-				<value_node value="wpn_fps_upg_bonus_concealment_p1"/> 
-				<value_node value="wpn_fps_upg_bonus_spread_p1"/> 
-				<value_node value="wpn_fps_upg_bonus_team_exp_money_p3"/> 
-				<value_node value="wpn_fps_upg_bonus_recoil_p1"/> 
-			</uses_parts> 
-		</factory> 
-		<stance/> 
-	</WeaponNew> 
-	<WeaponNew> 
-		<weapon id="par_beakimbo" based_on="par" weapon_hold="jowi_pistol" name_id="bm_par_beakimbo_name" desc_id ="bm_par_beakimbo_desc" description_id="bm_par_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="200" NR_CLIPS_MAX="2" AMMO_MAX="400"  texture_bundle_folder="par"> 
-			<use_data selection_index="2"/> 
-			<categories> 
-				<value_node value="akimbo"/> 
-				<value_node value="lmg"/> 
-			</categories> 
-			<stats/> 
-			<stats_modifiers/> 
-		</weapon> 
-		<factory id="wpn_fps_lmg_par_beakimbo" based_on="wpn_fps_lmg_par" unit="units/pd2_dlc_par/weapons/wpn_fps_lmg_par/wpn_fps_lmg_par_beakimbo"> 
-			<default_blueprint> 
-				<value_node value="wpn_fps_lmg_par_b_standard"/> 
-				<value_node value="wpn_fps_lmg_par_body_standard"/> 
-				<value_node value="wpn_fps_lmg_par_m_standard"/> 
-				<value_node value="wpn_fps_lmg_par_s_standard"/> 
-				<value_node value="wpn_fps_lmg_par_upper_reciever"/> 
-			</default_blueprint> 
-			<uses_parts> 
-				<value_node value="wpn_fps_lmg_par_b_short"/> 
-				<value_node value="wpn_fps_lmg_par_b_standard"/> 
-				<value_node value="wpn_fps_lmg_par_body_standard"/> 
-				<value_node value="wpn_fps_lmg_par_m_standard"/> 
-				<value_node value="wpn_fps_lmg_par_s_standard"/> 
-				<value_node value="wpn_fps_lmg_par_s_plastic"/> 
-				<value_node value="wpn_fps_lmg_par_upper_reciever"/> 
-				<value_node value="wpn_fps_upg_ns_ass_smg_firepig"/> 
-				<value_node value="wpn_fps_upg_ns_ass_smg_stubby"/> 
-				<value_node value="wpn_fps_upg_ns_ass_smg_tank"/> 
-				<value_node value="wpn_fps_upg_ns_ass_smg_large"/> 
-				<value_node value="wpn_fps_upg_ns_ass_smg_medium"/> 
-				<value_node value="wpn_fps_upg_ns_ass_smg_small"/> 
+				<value_node value="wpn_fps_upg_o_shortdot_vanilla"/> 
+				<value_node value="wpn_fps_upg_o_leupold"/> 
+				<value_node value="wpn_fps_upg_o_45iron"/> 
 				<value_node value="wpn_fps_upg_fl_ass_smg_sho_peqbox"/> 
 				<value_node value="wpn_fps_upg_fl_ass_smg_sho_surefire"/> 
-				<value_node value="wpn_fps_upg_ass_ns_jprifles"/> 
-				<value_node value="wpn_fps_upg_ass_ns_linear"/> 
-				<value_node value="wpn_fps_upg_ass_ns_surefire"/> 
+				<value_node value="wpn_fps_upg_fl_ass_utg"/> 
 				<value_node value="wpn_fps_upg_fl_ass_peq15"/> 
 				<value_node value="wpn_fps_upg_fl_ass_laser"/> 
-				<value_node value="wpn_fps_upg_ass_ns_battle"/> 
-				<value_node value="wpn_fps_upg_fl_ass_utg"/> 
-				<value_node value="wpn_fps_lmg_svinet_b_standard"/> 
-				<value_node value="wpn_fps_lmg_svinet_s_legend"/> 
-				<value_node value="wpn_fps_upg_bp_lmg_lionbipod"/> 
+				<value_node value="wpn_fps_snp_model70_b_legend"/> 
+				<value_node value="wpn_fps_snp_model70_s_legend"/> 
+				<value_node value="wpn_fps_snp_model70_ns_suppressor"/> 
+				<value_node value="wpn_fps_upg_o_spot"/> 
+				<value_node value="wpn_fps_upg_o_box"/> 
+				<value_node value="wpn_fps_upg_o_45rds"/> 
+				<value_node value="wpn_fps_upg_o_xpsg33_magnifier"/> 
+				<value_node value="wpn_fps_upg_o_45rds_v2"/> 
+				<value_node value="wpn_fps_upg_o_coyote"/> 
 				<value_node value="wpn_fps_upg_bonus_concealment_p1"/> 
+				<value_node value="wpn_fps_upg_bonus_total_ammo_p1"/> 
 				<value_node value="wpn_fps_upg_bonus_spread_p1"/> 
 				<value_node value="wpn_fps_upg_bonus_team_exp_money_p3"/> 
 				<value_node value="wpn_fps_upg_bonus_recoil_p1"/> 
@@ -5650,7 +5444,7 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="polymer_beakimbo" based_on="polymer" weapon_hold="jowi_pistol" name_id="bm_polymer_beakimbo_name" desc_id ="bm_polymer_beakimbo_desc" description_id="bm_polymer_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="30" NR_CLIPS_MAX="5" AMMO_MAX="150" global_value="turtles" texture_bundle_folder="turtles"> 
+		<weapon id="polymer_beakimbo" based_on="polymer" weapon_hold="jowi_pistol" name_id="bm_polymer_beakimbo_name" desc_id ="bm_polymer_beakimbo_desc" description_id="bm_polymer_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="60" NR_CLIPS_MAX="10" AMMO_MAX="300" global_value="turtles" texture_bundle_folder="turtles"> 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
@@ -5735,62 +5529,7 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="new_raging_bull_beakimbo" based_on="new_raging_bull" weapon_hold="jowi_pistol" name_id="bm_new_raging_bull_beakimbo_name" desc_id ="bm_new_raging_bull_beakimbo_desc" description_id="bm_new_raging_bull_beakimbo_desc_long" DAMAGE="2" CLIP_AMMO_MAX="6" NR_CLIPS_MAX="9" AMMO_MAX="54"  > 
-			<use_data selection_index="2"/> 
-			<categories> 
-				<value_node value="akimbo"/> 
-				<value_node value="pistol"/> 
-			</categories> 
-			<stats/> 
-			<stats_modifiers/> 
-		</weapon> 
-		<factory id="wpn_fps_pis_rage_beakimbo" based_on="wpn_fps_pis_rage" unit="units/payday2/weapons/wpn_fps_pis_rage/wpn_fps_pis_rage_beakimbo"> 
-			<default_blueprint> 
-				<value_node value="wpn_fps_pis_rage_body_standard"/> 
-				<value_node value="wpn_fps_pis_rage_b_standard"/> 
-				<value_node value="wpn_fps_pis_rage_g_standard"/> 
-			</default_blueprint> 
-			<uses_parts> 
-				<value_node value="wpn_fps_pis_rage_body_standard"/> 
-				<value_node value="wpn_fps_pis_rage_body_smooth"/> 
-				<value_node value="wpn_fps_pis_rage_b_standard"/> 
-				<value_node value="wpn_fps_pis_rage_b_short"/> 
-				<value_node value="wpn_fps_pis_rage_b_long"/> 
-				<value_node value="wpn_fps_pis_rage_b_comp1"/> 
-				<value_node value="wpn_fps_pis_rage_b_comp2"/> 
-				<value_node value="wpn_fps_pis_rage_g_standard"/> 
-				<value_node value="wpn_fps_pis_rage_g_ergo"/> 
-				<value_node value="wpn_fps_upg_o_specter"/> 
-				<value_node value="wpn_fps_upg_o_aimpoint"/> 
-				<value_node value="wpn_fps_upg_o_docter"/> 
-				<value_node value="wpn_fps_upg_o_eotech"/> 
-				<value_node value="wpn_fps_upg_o_t1micro"/> 
-				<value_node value="wpn_fps_upg_o_cmore"/> 
-				<value_node value="wpn_fps_upg_o_aimpoint_2"/> 
-				<value_node value="wpn_fps_upg_o_acog"/> 
-				<value_node value="wpn_fps_upg_o_eotech_xps"/> 
-				<value_node value="wpn_fps_upg_o_reflex"/> 
-				<value_node value="wpn_fps_upg_o_rx01"/> 
-				<value_node value="wpn_fps_upg_o_rx30"/> 
-				<value_node value="wpn_fps_upg_o_cs"/> 
-				<value_node value="wpn_fps_upg_pis_ns_flash"/> 
-				<value_node value="wpn_fps_pis_rage_extra"/> 
-				<value_node value="wpn_fps_pis_rage_o_adapter"/> 
-				<value_node value="wpn_fps_pis_rage_lock"/> 
-				<value_node value="wpn_fps_upg_o_spot"/> 
-				<value_node value="wpn_fps_upg_o_xpsg33_magnifier"/> 
-				<value_node value="wpn_fps_upg_o_coyote"/> 
-				<value_node value="wpn_fps_upg_bonus_concealment_p1"/> 
-				<value_node value="wpn_fps_upg_bonus_concealment_p3"/> 
-				<value_node value="wpn_fps_upg_bonus_spread_p1"/> 
-				<value_node value="wpn_fps_upg_bonus_team_exp_money_p3"/> 
-				<value_node value="wpn_fps_upg_bonus_recoil_p1"/> 
-			</uses_parts> 
-		</factory> 
-		<stance/> 
-	</WeaponNew> 
-	<WeaponNew> 
-		<weapon id="aug_beakimbo" based_on="aug" weapon_hold="jowi_pistol" name_id="bm_aug_beakimbo_name" desc_id ="bm_aug_beakimbo_desc" description_id="bm_aug_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="30" NR_CLIPS_MAX="5" AMMO_MAX="150"  > 
+		<weapon id="aug_beakimbo" based_on="aug" weapon_hold="jowi_pistol" name_id="bm_aug_beakimbo_name" desc_id ="bm_aug_beakimbo_desc" description_id="bm_aug_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="60" NR_CLIPS_MAX="10" AMMO_MAX="300"  > 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
@@ -5866,63 +5605,53 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="model70_beakimbo" based_on="model70" weapon_hold="jowi_pistol" name_id="bm_model70_beakimbo_name" desc_id ="bm_model70_beakimbo_desc" description_id="bm_model70_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="5" NR_CLIPS_MAX="6" AMMO_MAX="30"  texture_bundle_folder="berry"> 
+		<weapon id="new_raging_bull_beakimbo" based_on="new_raging_bull" weapon_hold="jowi_pistol" name_id="bm_new_raging_bull_beakimbo_name" desc_id ="bm_new_raging_bull_beakimbo_desc" description_id="bm_new_raging_bull_beakimbo_desc_long" DAMAGE="2" CLIP_AMMO_MAX="12" NR_CLIPS_MAX="18" AMMO_MAX="108"  > 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
-				<value_node value="snp"/> 
+				<value_node value="pistol"/> 
 			</categories> 
 			<stats/> 
 			<stats_modifiers/> 
 		</weapon> 
-		<factory id="wpn_fps_snp_model70_beakimbo" based_on="wpn_fps_snp_model70" unit="units/pd2_dlc_berry/weapons/wpn_fps_snp_model70/wpn_fps_snp_model70_beakimbo"> 
+		<factory id="wpn_fps_pis_rage_beakimbo" based_on="wpn_fps_pis_rage" unit="units/payday2/weapons/wpn_fps_pis_rage/wpn_fps_pis_rage_beakimbo"> 
 			<default_blueprint> 
-				<value_node value="wpn_fps_snp_model70_b_standard"/> 
-				<value_node value="wpn_fps_snp_model70_body_standard"/> 
-				<value_node value="wpn_fps_snp_model70_s_standard"/> 
-				<value_node value="wpn_fps_snp_model70_m_standard"/> 
-				<value_node value="wpn_fps_upg_o_shortdot_vanilla"/> 
+				<value_node value="wpn_fps_pis_rage_body_standard"/> 
+				<value_node value="wpn_fps_pis_rage_b_standard"/> 
+				<value_node value="wpn_fps_pis_rage_g_standard"/> 
 			</default_blueprint> 
 			<uses_parts> 
-				<value_node value="wpn_fps_snp_model70_b_standard"/> 
-				<value_node value="wpn_fps_snp_model70_s_standard"/> 
-				<value_node value="wpn_fps_snp_model70_body_standard"/> 
-				<value_node value="wpn_fps_snp_model70_m_standard"/> 
-				<value_node value="wpn_fps_snp_model70_o_rail"/> 
-				<value_node value="wpn_fps_snp_model70_fl_rail"/> 
-				<value_node value="wpn_fps_snp_model70_iron_sight"/> 
+				<value_node value="wpn_fps_pis_rage_body_standard"/> 
+				<value_node value="wpn_fps_pis_rage_body_smooth"/> 
+				<value_node value="wpn_fps_pis_rage_b_standard"/> 
+				<value_node value="wpn_fps_pis_rage_b_short"/> 
+				<value_node value="wpn_fps_pis_rage_b_long"/> 
+				<value_node value="wpn_fps_pis_rage_b_comp1"/> 
+				<value_node value="wpn_fps_pis_rage_b_comp2"/> 
+				<value_node value="wpn_fps_pis_rage_g_standard"/> 
+				<value_node value="wpn_fps_pis_rage_g_ergo"/> 
 				<value_node value="wpn_fps_upg_o_specter"/> 
 				<value_node value="wpn_fps_upg_o_aimpoint"/> 
 				<value_node value="wpn_fps_upg_o_docter"/> 
 				<value_node value="wpn_fps_upg_o_eotech"/> 
 				<value_node value="wpn_fps_upg_o_t1micro"/> 
-				<value_node value="wpn_fps_upg_o_rx30"/> 
-				<value_node value="wpn_fps_upg_o_rx01"/> 
-				<value_node value="wpn_fps_upg_o_reflex"/> 
-				<value_node value="wpn_fps_upg_o_eotech_xps"/> 
 				<value_node value="wpn_fps_upg_o_cmore"/> 
 				<value_node value="wpn_fps_upg_o_aimpoint_2"/> 
 				<value_node value="wpn_fps_upg_o_acog"/> 
+				<value_node value="wpn_fps_upg_o_eotech_xps"/> 
+				<value_node value="wpn_fps_upg_o_reflex"/> 
+				<value_node value="wpn_fps_upg_o_rx01"/> 
+				<value_node value="wpn_fps_upg_o_rx30"/> 
 				<value_node value="wpn_fps_upg_o_cs"/> 
-				<value_node value="wpn_fps_upg_o_shortdot_vanilla"/> 
-				<value_node value="wpn_fps_upg_o_leupold"/> 
-				<value_node value="wpn_fps_upg_o_45iron"/> 
-				<value_node value="wpn_fps_upg_fl_ass_smg_sho_peqbox"/> 
-				<value_node value="wpn_fps_upg_fl_ass_smg_sho_surefire"/> 
-				<value_node value="wpn_fps_upg_fl_ass_utg"/> 
-				<value_node value="wpn_fps_upg_fl_ass_peq15"/> 
-				<value_node value="wpn_fps_upg_fl_ass_laser"/> 
-				<value_node value="wpn_fps_snp_model70_b_legend"/> 
-				<value_node value="wpn_fps_snp_model70_s_legend"/> 
-				<value_node value="wpn_fps_snp_model70_ns_suppressor"/> 
+				<value_node value="wpn_fps_upg_pis_ns_flash"/> 
+				<value_node value="wpn_fps_pis_rage_extra"/> 
+				<value_node value="wpn_fps_pis_rage_o_adapter"/> 
+				<value_node value="wpn_fps_pis_rage_lock"/> 
 				<value_node value="wpn_fps_upg_o_spot"/> 
-				<value_node value="wpn_fps_upg_o_box"/> 
-				<value_node value="wpn_fps_upg_o_45rds"/> 
 				<value_node value="wpn_fps_upg_o_xpsg33_magnifier"/> 
-				<value_node value="wpn_fps_upg_o_45rds_v2"/> 
 				<value_node value="wpn_fps_upg_o_coyote"/> 
 				<value_node value="wpn_fps_upg_bonus_concealment_p1"/> 
-				<value_node value="wpn_fps_upg_bonus_total_ammo_p1"/> 
+				<value_node value="wpn_fps_upg_bonus_concealment_p3"/> 
 				<value_node value="wpn_fps_upg_bonus_spread_p1"/> 
 				<value_node value="wpn_fps_upg_bonus_team_exp_money_p3"/> 
 				<value_node value="wpn_fps_upg_bonus_recoil_p1"/> 
@@ -5931,7 +5660,59 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="b682_beakimbo" based_on="b682" weapon_hold="jowi_pistol" name_id="bm_b682_beakimbo_name" desc_id ="bm_b682_beakimbo_desc" description_id="bm_b682_beakimbo_desc_long" DAMAGE="6" CLIP_AMMO_MAX="2" NR_CLIPS_MAX="14" AMMO_MAX="28" global_value="pd2_clan" texture_bundle_folder="character_pack_bonnie"> 
+		<weapon id="par_beakimbo" based_on="par" weapon_hold="jowi_pistol" name_id="bm_par_beakimbo_name" desc_id ="bm_par_beakimbo_desc" description_id="bm_par_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="400" NR_CLIPS_MAX="4" AMMO_MAX="800"  texture_bundle_folder="par"> 
+			<use_data selection_index="2"/> 
+			<categories> 
+				<value_node value="akimbo"/> 
+				<value_node value="lmg"/> 
+			</categories> 
+			<stats/> 
+			<stats_modifiers/> 
+		</weapon> 
+		<factory id="wpn_fps_lmg_par_beakimbo" based_on="wpn_fps_lmg_par" unit="units/pd2_dlc_par/weapons/wpn_fps_lmg_par/wpn_fps_lmg_par_beakimbo"> 
+			<default_blueprint> 
+				<value_node value="wpn_fps_lmg_par_b_standard"/> 
+				<value_node value="wpn_fps_lmg_par_body_standard"/> 
+				<value_node value="wpn_fps_lmg_par_m_standard"/> 
+				<value_node value="wpn_fps_lmg_par_s_standard"/> 
+				<value_node value="wpn_fps_lmg_par_upper_reciever"/> 
+			</default_blueprint> 
+			<uses_parts> 
+				<value_node value="wpn_fps_lmg_par_b_short"/> 
+				<value_node value="wpn_fps_lmg_par_b_standard"/> 
+				<value_node value="wpn_fps_lmg_par_body_standard"/> 
+				<value_node value="wpn_fps_lmg_par_m_standard"/> 
+				<value_node value="wpn_fps_lmg_par_s_standard"/> 
+				<value_node value="wpn_fps_lmg_par_s_plastic"/> 
+				<value_node value="wpn_fps_lmg_par_upper_reciever"/> 
+				<value_node value="wpn_fps_upg_ns_ass_smg_firepig"/> 
+				<value_node value="wpn_fps_upg_ns_ass_smg_stubby"/> 
+				<value_node value="wpn_fps_upg_ns_ass_smg_tank"/> 
+				<value_node value="wpn_fps_upg_ns_ass_smg_large"/> 
+				<value_node value="wpn_fps_upg_ns_ass_smg_medium"/> 
+				<value_node value="wpn_fps_upg_ns_ass_smg_small"/> 
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_peqbox"/> 
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_surefire"/> 
+				<value_node value="wpn_fps_upg_ass_ns_jprifles"/> 
+				<value_node value="wpn_fps_upg_ass_ns_linear"/> 
+				<value_node value="wpn_fps_upg_ass_ns_surefire"/> 
+				<value_node value="wpn_fps_upg_fl_ass_peq15"/> 
+				<value_node value="wpn_fps_upg_fl_ass_laser"/> 
+				<value_node value="wpn_fps_upg_ass_ns_battle"/> 
+				<value_node value="wpn_fps_upg_fl_ass_utg"/> 
+				<value_node value="wpn_fps_lmg_svinet_b_standard"/> 
+				<value_node value="wpn_fps_lmg_svinet_s_legend"/> 
+				<value_node value="wpn_fps_upg_bp_lmg_lionbipod"/> 
+				<value_node value="wpn_fps_upg_bonus_concealment_p1"/> 
+				<value_node value="wpn_fps_upg_bonus_spread_p1"/> 
+				<value_node value="wpn_fps_upg_bonus_team_exp_money_p3"/> 
+				<value_node value="wpn_fps_upg_bonus_recoil_p1"/> 
+			</uses_parts> 
+		</factory> 
+		<stance/> 
+	</WeaponNew> 
+	<WeaponNew> 
+		<weapon id="b682_beakimbo" based_on="b682" weapon_hold="jowi_pistol" name_id="bm_b682_beakimbo_name" desc_id ="bm_b682_beakimbo_desc" description_id="bm_b682_beakimbo_desc_long" DAMAGE="6" CLIP_AMMO_MAX="4" NR_CLIPS_MAX="28" AMMO_MAX="56" global_value="pd2_clan" texture_bundle_folder="character_pack_bonnie"> 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
@@ -5969,7 +5750,90 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="winchester1874_beakimbo" based_on="winchester1874" weapon_hold="jowi_pistol" name_id="bm_winchester1874_beakimbo_name" desc_id ="bm_winchester1874_beakimbo_desc" description_id="bm_winchester1874_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="15" NR_CLIPS_MAX="3" AMMO_MAX="45" global_value="west" texture_bundle_folder="west"> 
+		<weapon id="schakal_beakimbo" based_on="schakal" weapon_hold="jowi_pistol" name_id="bm_schakal_beakimbo_name" desc_id ="bm_schakal_beakimbo_desc" description_id="bm_schakal_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="60" NR_CLIPS_MAX="6" AMMO_MAX="180" global_value="pim" texture_bundle_folder="pim"> 
+			<use_data selection_index="2"/> 
+			<categories> 
+				<value_node value="akimbo"/> 
+				<value_node value="smg"/> 
+			</categories> 
+			<stats/> 
+			<stats_modifiers/> 
+		</weapon> 
+		<factory id="wpn_fps_smg_schakal_beakimbo" based_on="wpn_fps_smg_schakal" unit="units/pd2_dlc_pim/weapons/wpn_fps_smg_schakal/wpn_fps_smg_schakal_beakimbo"> 
+			<default_blueprint> 
+				<value_node value="wpn_fps_smg_schakal_b_standard"/> 
+				<value_node value="wpn_fps_smg_schakal_body_lower"/> 
+				<value_node value="wpn_fps_smg_schakal_body_upper"/> 
+				<value_node value="wpn_fps_smg_schakal_m_standard"/> 
+				<value_node value="wpn_fps_smg_schakal_s_standard"/> 
+				<value_node value="wpn_fps_smg_schakal_dh_standard"/> 
+				<value_node value="wpn_fps_smg_schakal_bolt_standard"/> 
+				<value_node value="wpn_fps_upg_vg_ass_smg_verticalgrip"/> 
+				<value_node value="wpn_fps_smg_schakal_extra_magrelease"/> 
+			</default_blueprint> 
+			<uses_parts> 
+				<value_node value="wpn_fps_smg_schakal_b_civil"/> 
+				<value_node value="wpn_fps_smg_schakal_b_standard"/> 
+				<value_node value="wpn_fps_smg_schakal_body_lower"/> 
+				<value_node value="wpn_fps_smg_schakal_body_upper"/> 
+				<value_node value="wpn_fps_smg_schakal_m_long"/> 
+				<value_node value="wpn_fps_smg_schakal_m_short"/> 
+				<value_node value="wpn_fps_smg_schakal_m_standard"/> 
+				<value_node value="wpn_fps_smg_schakal_ns_silencer"/> 
+				<value_node value="wpn_fps_smg_schakal_s_civil"/> 
+				<value_node value="wpn_fps_smg_schakal_s_folded"/> 
+				<value_node value="wpn_fps_smg_schakal_s_standard"/> 
+				<value_node value="wpn_fps_smg_schakal_dh_standard"/> 
+				<value_node value="wpn_fps_smg_schakal_bolt_standard"/> 
+				<value_node value="wpn_fps_smg_schakal_vg_extra"/> 
+				<value_node value="wpn_fps_smg_schakal_vg_surefire"/> 
+				<value_node value="wpn_fps_smg_schakal_extra_magrelease"/> 
+				<value_node value="wpn_fps_upg_ns_ass_smg_large"/> 
+				<value_node value="wpn_fps_upg_ns_ass_smg_medium"/> 
+				<value_node value="wpn_fps_upg_ns_ass_smg_small"/> 
+				<value_node value="wpn_fps_upg_ns_ass_smg_firepig"/> 
+				<value_node value="wpn_fps_upg_ns_ass_smg_stubby"/> 
+				<value_node value="wpn_fps_upg_ns_ass_smg_tank"/> 
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_peqbox"/> 
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_surefire"/> 
+				<value_node value="wpn_fps_upg_vg_ass_smg_verticalgrip"/> 
+				<value_node value="wpn_fps_upg_vg_ass_smg_stubby"/> 
+				<value_node value="wpn_fps_upg_vg_ass_smg_afg"/> 
+				<value_node value="wpn_fps_upg_i_singlefire"/> 
+				<value_node value="wpn_fps_upg_i_autofire"/> 
+				<value_node value="wpn_fps_upg_ass_ns_jprifles"/> 
+				<value_node value="wpn_fps_upg_ass_ns_linear"/> 
+				<value_node value="wpn_fps_upg_ass_ns_surefire"/> 
+				<value_node value="wpn_fps_upg_fl_ass_peq15"/> 
+				<value_node value="wpn_fps_upg_fl_ass_laser"/> 
+				<value_node value="wpn_fps_upg_o_specter"/> 
+				<value_node value="wpn_fps_upg_o_aimpoint"/> 
+				<value_node value="wpn_fps_upg_o_docter"/> 
+				<value_node value="wpn_fps_upg_o_eotech"/> 
+				<value_node value="wpn_fps_upg_o_t1micro"/> 
+				<value_node value="wpn_fps_upg_o_cmore"/> 
+				<value_node value="wpn_fps_upg_o_aimpoint_2"/> 
+				<value_node value="wpn_fps_upg_o_acog"/> 
+				<value_node value="wpn_fps_upg_o_eotech_xps"/> 
+				<value_node value="wpn_fps_upg_o_reflex"/> 
+				<value_node value="wpn_fps_upg_o_rx01"/> 
+				<value_node value="wpn_fps_upg_o_rx30"/> 
+				<value_node value="wpn_fps_upg_o_cs"/> 
+				<value_node value="wpn_fps_upg_ass_ns_battle"/> 
+				<value_node value="wpn_fps_upg_fl_ass_utg"/> 
+				<value_node value="wpn_fps_upg_o_spot"/> 
+				<value_node value="wpn_fps_upg_o_xpsg33_magnifier"/> 
+				<value_node value="wpn_fps_upg_o_coyote"/> 
+				<value_node value="wpn_fps_upg_bonus_concealment_p1"/> 
+				<value_node value="wpn_fps_upg_bonus_spread_p1"/> 
+				<value_node value="wpn_fps_upg_bonus_team_exp_money_p3"/> 
+				<value_node value="wpn_fps_upg_bonus_recoil_p1"/> 
+			</uses_parts> 
+		</factory> 
+		<stance/> 
+	</WeaponNew> 
+	<WeaponNew> 
+		<weapon id="winchester1874_beakimbo" based_on="winchester1874" weapon_hold="jowi_pistol" name_id="bm_winchester1874_beakimbo_name" desc_id ="bm_winchester1874_beakimbo_desc" description_id="bm_winchester1874_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="30" NR_CLIPS_MAX="6" AMMO_MAX="90" global_value="west" texture_bundle_folder="west"> 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
@@ -6003,7 +5867,7 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="lemming_beakimbo" based_on="lemming" weapon_hold="jowi_pistol" name_id="bm_lemming_beakimbo_name" desc_id ="bm_lemming_beakimbo_desc" description_id="bm_lemming_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="15" NR_CLIPS_MAX="3" AMMO_MAX="45" global_value="pd2_clan" texture_bundle_folder="fi7"> 
+		<weapon id="lemming_beakimbo" based_on="lemming" weapon_hold="jowi_pistol" name_id="bm_lemming_beakimbo_name" desc_id ="bm_lemming_beakimbo_desc" description_id="bm_lemming_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="30" NR_CLIPS_MAX="6" AMMO_MAX="90" global_value="pd2_clan" texture_bundle_folder="fi7"> 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
@@ -6054,7 +5918,143 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="saiga_beakimbo" based_on="saiga" weapon_hold="jowi_pistol" name_id="bm_saiga_beakimbo_name" desc_id ="bm_saiga_beakimbo_desc" description_id="bm_saiga_beakimbo_desc_long" DAMAGE="6" CLIP_AMMO_MAX="7" NR_CLIPS_MAX="10" AMMO_MAX="70"  > 
+		<weapon id="wa2000_beakimbo" based_on="wa2000" weapon_hold="jowi_pistol" name_id="bm_wa2000_beakimbo_name" desc_id ="bm_wa2000_beakimbo_desc" description_id="bm_wa2000_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="20" NR_CLIPS_MAX="8" AMMO_MAX="80" global_value="turtles" texture_bundle_folder="turtles"> 
+			<use_data selection_index="2"/> 
+			<categories> 
+				<value_node value="akimbo"/> 
+				<value_node value="snp"/> 
+			</categories> 
+			<stats/> 
+			<stats_modifiers/> 
+		</weapon> 
+		<factory id="wpn_fps_snp_wa2000_beakimbo" based_on="wpn_fps_snp_wa2000" unit="units/pd2_dlc_turtles/weapons/wpn_fps_snp_wa2000/wpn_fps_snp_wa2000_beakimbo"> 
+			<default_blueprint> 
+				<value_node value="wpn_fps_snp_wa2000_body_standard"/> 
+				<value_node value="wpn_fps_snp_wa2000_m_standard"/> 
+				<value_node value="wpn_fps_snp_wa2000_b_standard"/> 
+				<value_node value="wpn_fps_snp_wa2000_g_standard"/> 
+				<value_node value="wpn_fps_snp_wa2000_s_standard"/> 
+				<value_node value="wpn_fps_upg_o_shortdot"/> 
+			</default_blueprint> 
+			<uses_parts> 
+				<value_node value="wpn_fps_snp_wa2000_body_standard"/> 
+				<value_node value="wpn_fps_snp_wa2000_m_standard"/> 
+				<value_node value="wpn_fps_snp_wa2000_b_standard"/> 
+				<value_node value="wpn_fps_snp_wa2000_g_standard"/> 
+				<value_node value="wpn_fps_snp_wa2000_s_standard"/> 
+				<value_node value="wpn_fps_snp_wa2000_g_walnut"/> 
+				<value_node value="wpn_fps_snp_wa2000_g_stealth"/> 
+				<value_node value="wpn_fps_snp_wa2000_g_light"/> 
+				<value_node value="wpn_fps_snp_wa2000_b_long"/> 
+				<value_node value="wpn_fps_snp_wa2000_b_suppressed"/> 
+				<value_node value="wpn_fps_upg_o_specter"/> 
+				<value_node value="wpn_fps_upg_o_aimpoint"/> 
+				<value_node value="wpn_fps_upg_o_docter"/> 
+				<value_node value="wpn_fps_upg_o_eotech"/> 
+				<value_node value="wpn_fps_upg_o_t1micro"/> 
+				<value_node value="wpn_fps_upg_o_cmore"/> 
+				<value_node value="wpn_fps_upg_o_aimpoint_2"/> 
+				<value_node value="wpn_fps_upg_o_acog"/> 
+				<value_node value="wpn_fps_upg_o_shortdot"/> 
+				<value_node value="wpn_fps_upg_o_leupold"/> 
+				<value_node value="wpn_fps_upg_o_45iron"/> 
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_peqbox"/> 
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_surefire"/> 
+				<value_node value="wpn_fps_upg_o_eotech_xps"/> 
+				<value_node value="wpn_fps_upg_o_reflex"/> 
+				<value_node value="wpn_fps_upg_o_rx01"/> 
+				<value_node value="wpn_fps_upg_o_rx30"/> 
+				<value_node value="wpn_fps_upg_o_cs"/> 
+				<value_node value="wpn_fps_upg_fl_ass_peq15"/> 
+				<value_node value="wpn_fps_upg_fl_ass_laser"/> 
+				<value_node value="wpn_fps_upg_fl_ass_utg"/> 
+				<value_node value="wpn_fps_upg_o_spot"/> 
+				<value_node value="wpn_fps_upg_o_box"/> 
+				<value_node value="wpn_fps_upg_o_45rds"/> 
+				<value_node value="wpn_fps_upg_o_xpsg33_magnifier"/> 
+				<value_node value="wpn_fps_upg_o_45rds_v2"/> 
+				<value_node value="wpn_fps_upg_o_coyote"/> 
+				<value_node value="wpn_fps_upg_bonus_concealment_p1"/> 
+				<value_node value="wpn_fps_upg_bonus_total_ammo_p1"/> 
+				<value_node value="wpn_fps_upg_bonus_spread_p1"/> 
+				<value_node value="wpn_fps_upg_bonus_team_exp_money_p3"/> 
+				<value_node value="wpn_fps_upg_bonus_recoil_p1"/> 
+			</uses_parts> 
+		</factory> 
+		<stance/> 
+	</WeaponNew> 
+	<WeaponNew> 
+		<weapon id="vhs_beakimbo" based_on="vhs" weapon_hold="jowi_pistol" name_id="bm_vhs_beakimbo_name" desc_id ="bm_vhs_beakimbo_desc" description_id="bm_vhs_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="60" NR_CLIPS_MAX="10" AMMO_MAX="300" global_value="character_pack_dragan" texture_bundle_folder="character_pack_dragan"> 
+			<use_data selection_index="2"/> 
+			<categories> 
+				<value_node value="akimbo"/> 
+				<value_node value="assault_rifle"/> 
+			</categories> 
+			<stats/> 
+			<stats_modifiers/> 
+		</weapon> 
+		<factory id="wpn_fps_ass_vhs_beakimbo" based_on="wpn_fps_ass_vhs" unit="units/pd2_dlc_dragan/weapons/wpn_fps_ass_vhs/wpn_fps_ass_vhs_beakimbo"> 
+			<default_blueprint> 
+				<value_node value="wpn_fps_ass_vhs_body"/> 
+				<value_node value="wpn_fps_ass_vhs_m"/> 
+				<value_node value="wpn_fps_ass_vhs_b_standard"/> 
+				<value_node value="wpn_fps_ass_vhs_o_standard"/> 
+				<value_node value="wpn_fps_ass_vhs_ns_vhs"/> 
+			</default_blueprint> 
+			<uses_parts> 
+				<value_node value="wpn_fps_ass_vhs_body"/> 
+				<value_node value="wpn_fps_ass_vhs_m"/> 
+				<value_node value="wpn_fps_ass_vhs_b_short"/> 
+				<value_node value="wpn_fps_ass_vhs_b_silenced"/> 
+				<value_node value="wpn_fps_ass_vhs_b_sniper"/> 
+				<value_node value="wpn_fps_ass_vhs_b_standard"/> 
+				<value_node value="wpn_fps_ass_vhs_o_standard"/> 
+				<value_node value="wpn_fps_ass_vhs_ns_vhs"/> 
+				<value_node value="wpn_fps_upg_o_specter"/> 
+				<value_node value="wpn_fps_upg_o_aimpoint"/> 
+				<value_node value="wpn_fps_upg_o_docter"/> 
+				<value_node value="wpn_fps_upg_o_eotech"/> 
+				<value_node value="wpn_fps_upg_o_t1micro"/> 
+				<value_node value="wpn_fps_upg_o_cmore"/> 
+				<value_node value="wpn_fps_upg_o_aimpoint_2"/> 
+				<value_node value="wpn_fps_upg_o_acog"/> 
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_peqbox"/> 
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_surefire"/> 
+				<value_node value="wpn_fps_upg_ns_ass_smg_large"/> 
+				<value_node value="wpn_fps_upg_ns_ass_smg_medium"/> 
+				<value_node value="wpn_fps_upg_ns_ass_smg_small"/> 
+				<value_node value="wpn_fps_upg_ns_ass_smg_firepig"/> 
+				<value_node value="wpn_fps_upg_ns_ass_smg_stubby"/> 
+				<value_node value="wpn_fps_upg_ns_ass_smg_tank"/> 
+				<value_node value="wpn_fps_upg_o_eotech_xps"/> 
+				<value_node value="wpn_fps_upg_o_reflex"/> 
+				<value_node value="wpn_fps_upg_o_rx01"/> 
+				<value_node value="wpn_fps_upg_o_rx30"/> 
+				<value_node value="wpn_fps_upg_o_cs"/> 
+				<value_node value="wpn_fps_upg_ass_ns_jprifles"/> 
+				<value_node value="wpn_fps_upg_ass_ns_linear"/> 
+				<value_node value="wpn_fps_upg_ass_ns_surefire"/> 
+				<value_node value="wpn_fps_upg_fl_ass_peq15"/> 
+				<value_node value="wpn_fps_upg_fl_ass_laser"/> 
+				<value_node value="wpn_fps_upg_i_singlefire"/> 
+				<value_node value="wpn_fps_upg_i_autofire"/> 
+				<value_node value="wpn_fps_upg_ass_ns_battle"/> 
+				<value_node value="wpn_fps_upg_fl_ass_utg"/> 
+				<value_node value="wpn_fps_upg_o_45rds"/> 
+				<value_node value="wpn_fps_upg_o_spot"/> 
+				<value_node value="wpn_fps_upg_o_xpsg33_magnifier"/> 
+				<value_node value="wpn_fps_upg_o_45rds_v2"/> 
+				<value_node value="wpn_fps_upg_o_coyote"/> 
+				<value_node value="wpn_fps_upg_bonus_concealment_p1"/> 
+				<value_node value="wpn_fps_upg_bonus_spread_p1"/> 
+				<value_node value="wpn_fps_upg_bonus_team_exp_money_p3"/> 
+				<value_node value="wpn_fps_upg_bonus_recoil_p1"/> 
+			</uses_parts> 
+		</factory> 
+		<stance/> 
+	</WeaponNew> 
+	<WeaponNew> 
+		<weapon id="saiga_beakimbo" based_on="saiga" weapon_hold="jowi_pistol" name_id="bm_saiga_beakimbo_name" desc_id ="bm_saiga_beakimbo_desc" description_id="bm_saiga_beakimbo_desc_long" DAMAGE="6" CLIP_AMMO_MAX="14" NR_CLIPS_MAX="20" AMMO_MAX="140"  > 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
@@ -6144,7 +6144,7 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="b92fs_beakimbo" based_on="b92fs" weapon_hold="jowi_pistol" name_id="bm_b92fs_beakimbo_name" desc_id ="bm_b92fs_beakimbo_desc" description_id="bm_b92fs_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="14" NR_CLIPS_MAX="11" AMMO_MAX="154"  > 
+		<weapon id="b92fs_beakimbo" based_on="b92fs" weapon_hold="jowi_pistol" name_id="bm_b92fs_beakimbo_name" desc_id ="bm_b92fs_beakimbo_desc" description_id="bm_b92fs_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="28" NR_CLIPS_MAX="22" AMMO_MAX="308"  > 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
@@ -6205,7 +6205,7 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="chinchilla_beakimbo" based_on="chinchilla" weapon_hold="jowi_pistol" name_id="bm_chinchilla_beakimbo_name" desc_id ="bm_chinchilla_beakimbo_desc" description_id="bm_chinchilla_beakimbo_desc_long" DAMAGE="2" CLIP_AMMO_MAX="6" NR_CLIPS_MAX="9" AMMO_MAX="54"  texture_bundle_folder="max"> 
+		<weapon id="chinchilla_beakimbo" based_on="chinchilla" weapon_hold="jowi_pistol" name_id="bm_chinchilla_beakimbo_name" desc_id ="bm_chinchilla_beakimbo_desc" description_id="bm_chinchilla_beakimbo_desc_long" DAMAGE="2" CLIP_AMMO_MAX="12" NR_CLIPS_MAX="18" AMMO_MAX="108"  texture_bundle_folder="max"> 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
@@ -6248,7 +6248,7 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="s552_beakimbo" based_on="s552" weapon_hold="jowi_pistol" name_id="bm_s552_beakimbo_name" desc_id ="bm_s552_beakimbo_desc" description_id="bm_s552_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="30" NR_CLIPS_MAX="8" AMMO_MAX="240" global_value="armored_transport" texture_bundle_folder="dlc1"> 
+		<weapon id="s552_beakimbo" based_on="s552" weapon_hold="jowi_pistol" name_id="bm_s552_beakimbo_name" desc_id ="bm_s552_beakimbo_desc" description_id="bm_s552_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="60" NR_CLIPS_MAX="16" AMMO_MAX="480" global_value="armored_transport" texture_bundle_folder="dlc1"> 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
@@ -6332,7 +6332,7 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="mateba_beakimbo" based_on="mateba" weapon_hold="jowi_pistol" name_id="bm_mateba_beakimbo_name" desc_id ="bm_mateba_beakimbo_desc" description_id="bm_mateba_beakimbo_desc_long" DAMAGE="2" CLIP_AMMO_MAX="6" NR_CLIPS_MAX="9" AMMO_MAX="54" global_value="arena" texture_bundle_folder="dlc_arena"> 
+		<weapon id="mateba_beakimbo" based_on="mateba" weapon_hold="jowi_pistol" name_id="bm_mateba_beakimbo_name" desc_id ="bm_mateba_beakimbo_desc" description_id="bm_mateba_beakimbo_desc_long" DAMAGE="2" CLIP_AMMO_MAX="12" NR_CLIPS_MAX="18" AMMO_MAX="108" global_value="arena" texture_bundle_folder="dlc_arena"> 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
@@ -6372,7 +6372,7 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="striker_beakimbo" based_on="striker" weapon_hold="jowi_pistol" name_id="bm_striker_beakimbo_name" desc_id ="bm_striker_beakimbo_desc" description_id="bm_striker_beakimbo_desc_long" DAMAGE="6" CLIP_AMMO_MAX="12" NR_CLIPS_MAX="6" AMMO_MAX="72" global_value="gage_pack_shotgun" texture_bundle_folder="gage_pack_shotgun"> 
+		<weapon id="striker_beakimbo" based_on="striker" weapon_hold="jowi_pistol" name_id="bm_striker_beakimbo_name" desc_id ="bm_striker_beakimbo_desc" description_id="bm_striker_beakimbo_desc_long" DAMAGE="6" CLIP_AMMO_MAX="24" NR_CLIPS_MAX="12" AMMO_MAX="144" global_value="gage_pack_shotgun" texture_bundle_folder="gage_pack_shotgun"> 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
@@ -6435,7 +6435,7 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="l85a2_beakimbo" based_on="l85a2" weapon_hold="jowi_pistol" name_id="bm_l85a2_beakimbo_name" desc_id ="bm_l85a2_beakimbo_desc" description_id="bm_l85a2_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="30" NR_CLIPS_MAX="5" AMMO_MAX="150" global_value="character_pack_clover" texture_bundle_folder="character_pack_clover"> 
+		<weapon id="l85a2_beakimbo" based_on="l85a2" weapon_hold="jowi_pistol" name_id="bm_l85a2_beakimbo_name" desc_id ="bm_l85a2_beakimbo_desc" description_id="bm_l85a2_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="60" NR_CLIPS_MAX="10" AMMO_MAX="300" global_value="character_pack_clover" texture_bundle_folder="character_pack_clover"> 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
@@ -6517,7 +6517,7 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="rota_beakimbo" based_on="rota" weapon_hold="jowi_pistol" name_id="bm_rota_beakimbo_name" desc_id ="bm_rota_beakimbo_desc" description_id="bm_rota_beakimbo_desc_long" DAMAGE="6" CLIP_AMMO_MAX="6" NR_CLIPS_MAX="9" AMMO_MAX="54" global_value="rota" texture_bundle_folder="rota"> 
+		<weapon id="rota_beakimbo" based_on="rota" weapon_hold="jowi_pistol" name_id="bm_rota_beakimbo_name" desc_id ="bm_rota_beakimbo_desc" description_id="bm_rota_beakimbo_desc_long" DAMAGE="6" CLIP_AMMO_MAX="12" NR_CLIPS_MAX="18" AMMO_MAX="108" global_value="rota" texture_bundle_folder="rota"> 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
@@ -6592,7 +6592,7 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="tti_beakimbo" based_on="tti" weapon_hold="jowi_pistol" name_id="bm_tti_beakimbo_name" desc_id ="bm_tti_beakimbo_desc" description_id="bm_tti_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="20" NR_CLIPS_MAX="2" AMMO_MAX="40" global_value="spa" texture_bundle_folder="spa"> 
+		<weapon id="tti_beakimbo" based_on="tti" weapon_hold="jowi_pistol" name_id="bm_tti_beakimbo_name" desc_id ="bm_tti_beakimbo_desc" description_id="bm_tti_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="40" NR_CLIPS_MAX="4" AMMO_MAX="80" global_value="spa" texture_bundle_folder="spa"> 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
@@ -6702,7 +6702,7 @@
 		<unit path="units/pd2_dlc_pines/weapons/wpn_fps_smg_m1928/wpn_fps_smg_thompson_beakimbo" force="true"/> 
 		<unit path="units/pd2_dlc_par/weapons/wpn_fps_lmg_par/wpn_fps_lmg_par_beakimbo" force="true"/> 
 		<unit path="units/payday2/weapons/wpn_fps_pis_g22c/wpn_fps_pis_g22c_beakimbo" force="true"/> 
-		<unit path="units/payday2/weapons/wpn_fps_ass_g36/wpn_fps_ass_g36_beakimbo" force="true"/> 
+		<unit path="units/pd2_dlc_gage_lmg/weapons/wpn_fps_lmg_hk21/wpn_fps_lmg_hk21_beakimbo" force="true"/> 
 		<unit path="units/payday2/weapons/wpn_fps_smg_mp9/wpn_fps_smg_mp9_beakimbo" force="true"/> 
 		<unit path="units/pd2_dlc_born/weapons/wpn_fps_smg_hajk/wpn_fps_smg_hajk_beakimbo" force="true"/> 
 		<unit path="units/payday2/weapons/wpn_fps_smg_mac10/wpn_fps_smg_mac10_beakimbo" force="true"/> 
@@ -6734,35 +6734,35 @@
 		<unit path="units/pd2_dlc_clover/weapons/wpn_fps_ass_l85a2/wpn_fps_ass_l85a2_beakimbo" force="true"/> 
 		<unit path="units/pd2_dlc_gage_shot/weapons/wpn_fps_sho_striker/wpn_fps_sho_striker_beakimbo" force="true"/> 
 		<unit path="units/pd2_dlc1/weapons/wpn_fps_smg_m45/wpn_fps_smg_m45_beakimbo" force="true"/> 
-		<unit path="units/pd2_dlc_gage_lmg/weapons/wpn_fps_lmg_m249/wpn_fps_lmg_m249_beakimbo" force="true"/> 
+		<unit path="units/pd2_dlc_coco/weapons/wpn_fps_smg_sr2/wpn_fps_smg_sr2_beakimbo" force="true"/> 
 		<unit path="units/pd2_million/weapons/wpn_fps_pis_judge/wpn_fps_pis_judge_beakimbo" force="true"/> 
 		<unit path="units/pd2_dlc1/weapons/wpn_fps_ass_s552/wpn_fps_ass_s552_beakimbo" force="true"/> 
 		<unit path="units/pd2_dlc_max/weapons/wpn_fps_pis_chinchilla/wpn_fps_pis_chinchilla_beakimbo" force="true"/> 
 		<unit path="units/payday2/weapons/wpn_fps_shot_saiga/wpn_fps_shot_saiga_beakimbo" force="true"/> 
-		<unit path="units/pd2_dlc_gage_assault/weapons/wpn_fps_ass_galil/wpn_fps_ass_galil_beakimbo" force="true"/> 
-		<unit path="units/pd2_dlc_west/weapons/wpn_fps_snp_winchester/wpn_fps_snp_winchester_beakimbo" force="true"/> 
-		<unit path="units/pd2_dlc_bonnie/weapons/wpn_fps_shot_b682/wpn_fps_shot_b682_beakimbo" force="true"/> 
-		<unit path="units/payday2/weapons/wpn_fps_ass_aug/wpn_fps_ass_aug_beakimbo" force="true"/> 
-		<unit path="units/pd2_dlc_pim/weapons/wpn_fps_smg_schakal/wpn_fps_smg_schakal_beakimbo" force="true"/> 
+		<unit path="units/pd2_dlc_dragan/weapons/wpn_fps_ass_vhs/wpn_fps_ass_vhs_beakimbo" force="true"/> 
+		<unit path="units/pd2_dlc_turtles/weapons/wpn_fps_snp_wa2000/wpn_fps_snp_wa2000_beakimbo" force="true"/> 
 		<unit path="units/pd2_dlc_miami/weapons/wpn_fps_smg_scorpion/wpn_fps_smg_scorpion_beakimbo" force="true"/> 
+		<unit path="units/pd2_dlc_west/weapons/wpn_fps_snp_winchester/wpn_fps_snp_winchester_beakimbo" force="true"/> 
+		<unit path="units/pd2_dlc_dec5/weapons/wpn_fps_pis_p226/wpn_fps_pis_p226_beakimbo" force="true"/> 
+		<unit path="units/pd2_dlc_bonnie/weapons/wpn_fps_shot_b682/wpn_fps_shot_b682_beakimbo" force="true"/> 
 		<unit path="units/pd2_dlc_gage_snp/weapons/wpn_fps_snp_r93/wpn_fps_snp_r93_beakimbo" force="true"/> 
 		<unit path="units/pd2_dlc_gage_assault/weapons/wpn_fps_ass_g3/wpn_fps_ass_g3_beakimbo" force="true"/> 
 		<unit path="units/payday2/weapons/wpn_fps_smg_mp5/wpn_fps_smg_mp5_beakimbo" force="true"/> 
 		<unit path="units/pd2_dlc_character_sokol/weapons/wpn_fps_ass_asval/wpn_fps_ass_asval_beakimbo" force="true"/> 
 		<unit path="units/pd2_dlc_gage_historical/weapons/wpn_fps_smg_sterling/wpn_fps_smg_sterling_beakimbo" force="true"/> 
-		<unit path="units/payday2/weapons/wpn_fps_ass_m14/wpn_fps_ass_m14_beakimbo" force="true"/> 
+		<unit path="units/payday2/weapons/wpn_fps_ass_aug/wpn_fps_ass_aug_beakimbo" force="true"/> 
 		<unit path="units/pd2_dlc_pim/weapons/wpn_fps_snp_desertfox/wpn_fps_snp_desertfox_beakimbo" force="true"/> 
 		<unit path="units/pd2_dlc_miami/weapons/wpn_fps_smg_tec9/wpn_fps_smg_tec9_beakimbo" force="true"/> 
 		<unit path="units/pd2_dlc_fi7/weapons/wpn_fps_pis_lemming/wpn_fps_pis_lemming_beakimbo" force="true"/> 
-		<unit path="units/pd2_dlc_coco/weapons/wpn_fps_smg_sr2/wpn_fps_smg_sr2_beakimbo" force="true"/> 
+		<unit path="units/payday2/weapons/wpn_fps_ass_m14/wpn_fps_ass_m14_beakimbo" force="true"/> 
 		<unit path="units/payday2/weapons/wpn_fps_shot_huntsman/wpn_fps_shot_huntsman_beakimbo" force="true"/> 
-		<unit path="units/pd2_dlc_dec5/weapons/wpn_fps_pis_p226/wpn_fps_pis_p226_beakimbo" force="true"/> 
+		<unit path="units/pd2_dlc_gage_assault/weapons/wpn_fps_ass_galil/wpn_fps_ass_galil_beakimbo" force="true"/> 
 		<unit path="units/payday2/weapons/wpn_fps_smg_p90/wpn_fps_smg_p90_beakimbo" force="true"/> 
 		<unit path="units/pd2_dlc_arena/weapons/wpn_fps_pis_2006m/wpn_fps_pis_2006m_beakimbo" force="true"/> 
 		<unit path="units/payday2/weapons/wpn_fps_smg_olympic/wpn_fps_smg_olympic_beakimbo" force="true"/> 
-		<unit path="units/pd2_dlc_dragan/weapons/wpn_fps_ass_vhs/wpn_fps_ass_vhs_beakimbo" force="true"/> 
+		<unit path="units/pd2_dlc_gage_lmg/weapons/wpn_fps_lmg_m249/wpn_fps_lmg_m249_beakimbo" force="true"/> 
 		<unit path="units/pd2_dlc_dec5/weapons/wpn_fps_smg_mp7/wpn_fps_smg_mp7_beakimbo" force="true"/> 
-		<unit path="units/pd2_dlc_turtles/weapons/wpn_fps_snp_wa2000/wpn_fps_snp_wa2000_beakimbo" force="true"/> 
+		<unit path="units/pd2_dlc_pim/weapons/wpn_fps_smg_schakal/wpn_fps_smg_schakal_beakimbo" force="true"/> 
 		<unit path="units/pd2_dlc_casino/weapons/wpn_fps_ass_sub2000/wpn_fps_ass_sub2000_beakimbo" force="true"/> 
 		<unit path="units/pd2_dlc_grv/weapons/wpn_fps_snp_siltstone/wpn_fps_snp_siltstone_beakimbo" force="true"/> 
 		<unit path="units/pd2_dlc_grv/weapons/wpn_fps_smg_coal/wpn_fps_smg_coal_beakimbo" force="true"/> 
@@ -6770,7 +6770,7 @@
 		<unit path="units/pd2_dlc_gage_historical/weapons/wpn_fps_snp_mosin/wpn_fps_snp_mosin_beakimbo" force="true"/> 
 		<unit path="units/payday2/weapons/wpn_fps_pis_g17/wpn_fps_pis_g17_beakimbo" force="true"/> 
 		<unit path="units/pd2_dlc_grv/weapons/wpn_fps_ass_flint/wpn_fps_ass_flint_beakimbo" force="true"/> 
-		<unit path="units/pd2_dlc_gage_lmg/weapons/wpn_fps_lmg_hk21/wpn_fps_lmg_hk21_beakimbo" force="true"/> 
+		<unit path="units/payday2/weapons/wpn_fps_ass_g36/wpn_fps_ass_g36_beakimbo" force="true"/> 
 		<unit path="units/pd2_dlc_the_bomb/weapons/wpn_fps_pis_hs2000/wpn_fps_pis_hs2000_beakimbo" force="true"/> 
 		<unit path="units/pd2_dlc_old/weapons/wpn_fps_ass_ching/wpn_fps_ass_ching_beakimbo" force="true"/> 
 		<unit path="units/pd2_dlc_rip/weapons/wpn_fps_pis_sparrow/wpn_fps_pis_sparrow_beakimbo" force="true"/> 

@@ -13,7 +13,7 @@ end)
 
 Hooks:Add("MenuManagerPopulateCustomMenus", "BeAkimboOptions", function( menu_manager, nodes )
 	MenuCallbackHandler.BeAkimbo_menu_forced_update_callback = function(self, item)
-		local Version = 2
+		local Version = 3
 		local mysplit = function(inputstr, sep)
 			if sep == nil then
 				sep = "%s"
@@ -72,9 +72,9 @@ Hooks:Add("MenuManagerPopulateCustomMenus", "BeAkimboOptions", function( menu_ma
 							_new_named_ids['bm_'.._new_weapon_id..'_desc_long'] = _description_id
 							--Base
 							_base_states = string.format('%s %s %s %s', (_wd.DAMAGE and 'DAMAGE="'.. _wd.DAMAGE ..'"' or ''), 
-								(_wd.CLIP_AMMO_MAX and 'CLIP_AMMO_MAX="'.. _wd.CLIP_AMMO_MAX ..'"' or ''), 
-								(_wd.NR_CLIPS_MAX and 'NR_CLIPS_MAX="'.. _wd.NR_CLIPS_MAX ..'"' or ''), 
-								(_wd.AMMO_MAX and 'AMMO_MAX="'.. _wd.AMMO_MAX ..'"' or ''))
+								(_wd.CLIP_AMMO_MAX and 'CLIP_AMMO_MAX="'.. (_wd.CLIP_AMMO_MAX*2) ..'"' or ''), 
+								(_wd.NR_CLIPS_MAX and 'NR_CLIPS_MAX="'.. (_wd.NR_CLIPS_MAX*2) ..'"' or ''), 
+								(_wd.AMMO_MAX and 'AMMO_MAX="'.. (_wd.AMMO_MAX*2) ..'"' or ''))
 							_locked = string.format('%s %s', (_wd.global_value and 'global_value="'.. _wd.global_value ..'"' or ''), (_wd.texture_bundle_folder and 'texture_bundle_folder="'.. _wd.texture_bundle_folder ..'"' or ''))
 							_file:write('	<WeaponNew> \n')
 							_file:write('		<weapon id="'.. _new_weapon_id ..'" based_on="'.. _weapon_id ..'" weapon_hold="jowi_pistol" name_id="bm_'.. _new_weapon_id..'_name" desc_id ="bm_'.. _new_weapon_id ..'_desc" description_id="bm_'.. _new_weapon_id ..'_desc_long" '.. _base_states..' '.. _locked..'> \n')
