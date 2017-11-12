@@ -13,7 +13,7 @@ end)
 
 Hooks:Add("MenuManagerPopulateCustomMenus", "BeAkimboOptions", function( menu_manager, nodes )
 	MenuCallbackHandler.BeAkimbo_menu_forced_update_callback = function(self, item)
-		local Version = 5
+		local Version = 6
 		local mysplit = function(inputstr, sep)
 			if sep == nil then
 				sep = "%s"
@@ -60,6 +60,12 @@ Hooks:Add("MenuManagerPopulateCustomMenus", "BeAkimboOptions", function( menu_ma
 						local _wfd = tweak_data.weapon.factory[_factory_id] or nil
 						if _wd and not _wd.custom and not table.contains(_wd.categories, 'akimbo') and table.contains_any(_wd.categories, {'assault_rifle', 'smg', 'pistol', 'shotgun', 'lmg', 'snp'}) and _wfd and _wfd.unit then
 							_new_units[_weapon_id] = _wfd.unit .. '_beakimbo'
+							local _hold_base_on = ''
+							if table.contains(_wd.categories, 'pistol') then
+								_hold_base_on = 'jowi_pistol'
+							else
+								_hold_base_on = 'x_akmsu'
+							end
 							local _locked = ''
 							--Loc
 							local _new_weapon_id = _weapon_id ..'_beakimbo'
@@ -79,7 +85,7 @@ Hooks:Add("MenuManagerPopulateCustomMenus", "BeAkimboOptions", function( menu_ma
 								)
 							_locked = string.format('%s %s', (_wd.global_value and 'global_value="'.. _wd.global_value ..'"' or ''), (_wd.texture_bundle_folder and 'texture_bundle_folder="'.. _wd.texture_bundle_folder ..'"' or ''))
 							_file:write('	<WeaponNew> \n')
-							_file:write('		<weapon id="'.. _new_weapon_id ..'" based_on="'.. _weapon_id ..'" weapon_hold="jowi_pistol" name_id="bm_'.. _new_weapon_id..'_name" desc_id ="bm_'.. _new_weapon_id ..'_desc" description_id="bm_'.. _new_weapon_id ..'_desc_long" '.. _base_states..' '.. _locked..'> \n')
+							_file:write('		<weapon id="'.. _new_weapon_id ..'" based_on="'.. _weapon_id ..'" weapon_hold="'.. _hold_base_on ..'" name_id="bm_'.. _new_weapon_id..'_name" desc_id ="bm_'.. _new_weapon_id ..'_desc" description_id="bm_'.. _new_weapon_id ..'_desc_long" '.. _base_states..' '.. _locked..'> \n')
 							--selection_index
 							_file:write('			<use_data selection_index="2"/> \n')
 							--categories
