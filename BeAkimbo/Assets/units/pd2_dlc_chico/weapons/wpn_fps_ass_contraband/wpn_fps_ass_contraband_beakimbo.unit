@@ -1,0 +1,11 @@
+<unit type="wpn" slot="1" > 
+	<object file="units/pd2_dlc_chico/weapons/wpn_fps_ass_contraband/wpn_fps_ass_contraband" /> 
+	<dependencies> 
+	</dependencies> 
+	<extensions> 
+		<extension name="unit_data" class="ScriptUnitData" /> 
+			<extension name="base" class="AkimboWeaponBase" > 
+			<var name="name_id" value="contraband_beakimbo" /> 
+		</extension> 
+	</extensions> 
+</unit> 

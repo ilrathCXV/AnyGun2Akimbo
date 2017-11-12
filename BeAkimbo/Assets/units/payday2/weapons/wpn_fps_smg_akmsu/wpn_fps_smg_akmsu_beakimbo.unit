@@ -1,0 +1,11 @@
+<unit type="wpn" slot="1" > 
+	<object file="units/payday2/weapons/wpn_fps_smg_akmsu/wpn_fps_smg_akmsu" /> 
+	<dependencies> 
+	</dependencies> 
+	<extensions> 
+		<extension name="unit_data" class="ScriptUnitData" /> 
+			<extension name="base" class="AkimboWeaponBase" > 
+			<var name="name_id" value="akmsu_beakimbo" /> 
+		</extension> 
+	</extensions> 
+</unit> 

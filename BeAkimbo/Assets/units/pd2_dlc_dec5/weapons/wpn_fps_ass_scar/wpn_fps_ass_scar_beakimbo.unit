@@ -1,0 +1,11 @@
+<unit type="wpn" slot="1" > 
+	<object file="units/pd2_dlc_dec5/weapons/wpn_fps_ass_scar/wpn_fps_ass_scar" /> 
+	<dependencies> 
+	</dependencies> 
+	<extensions> 
+		<extension name="unit_data" class="ScriptUnitData" /> 
+			<extension name="base" class="AkimboWeaponBase" > 
+			<var name="name_id" value="scar_beakimbo" /> 
+		</extension> 
+	</extensions> 
+</unit> 

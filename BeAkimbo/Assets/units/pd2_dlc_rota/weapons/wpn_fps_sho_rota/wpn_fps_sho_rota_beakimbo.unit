@@ -1,0 +1,11 @@
+<unit type="wpn" slot="1" > 
+	<object file="units/pd2_dlc_rota/weapons/wpn_fps_sho_rota/wpn_fps_sho_rota" /> 
+	<dependencies> 
+	</dependencies> 
+	<extensions> 
+		<extension name="unit_data" class="ScriptUnitData" /> 
+			<extension name="base" class="AkimboWeaponBase" > 
+			<var name="name_id" value="rota_beakimbo" /> 
+		</extension> 
+	</extensions> 
+</unit> 

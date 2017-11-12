@@ -1,0 +1,11 @@
+<unit type="wpn" slot="1" > 
+	<object file="units/pd2_dlc_opera/weapons/wpn_fps_ass_tecci/wpn_fps_ass_tecci" /> 
+	<dependencies> 
+	</dependencies> 
+	<extensions> 
+		<extension name="unit_data" class="ScriptUnitData" /> 
+			<extension name="base" class="AkimboWeaponBase" > 
+			<var name="name_id" value="tecci_beakimbo" /> 
+		</extension> 
+	</extensions> 
+</unit> 

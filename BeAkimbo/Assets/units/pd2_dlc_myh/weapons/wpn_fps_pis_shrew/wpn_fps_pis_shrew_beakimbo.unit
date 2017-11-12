@@ -1,0 +1,11 @@
+<unit type="wpn" slot="1" > 
+	<object file="units/pd2_dlc_myh/weapons/wpn_fps_pis_shrew/wpn_fps_pis_shrew" /> 
+	<dependencies> 
+	</dependencies> 
+	<extensions> 
+		<extension name="unit_data" class="ScriptUnitData" /> 
+			<extension name="base" class="AkimboWeaponBase" > 
+			<var name="name_id" value="shrew_beakimbo" /> 
+		</extension> 
+	</extensions> 
+</unit> 
