@@ -1,6 +1,6 @@
 <table name="BeAkimbo"> 
 	<Localization directory="Loc" default="english.txt"/> 
-	<AssetUpdates id="21295" name="asset_updates" folder_name="BeAkimbo" version="3" provider="modworkshop"/> 
+	<AssetUpdates id="21295" name="asset_updates" folder_name="BeAkimbo" version="4" provider="modworkshop"/> 
 	<Hooks directory="Hooks"> 
 		<hook file="Menu_Function.lua" source_file="lib/managers/menumanager"/> 
 		<hook file="blackmarketmanager.lua" source_file="lib/managers/blackmarketmanager"/> 
@@ -373,77 +373,6 @@
 				<value_node value="wpn_fps_upg_o_xpsg33_magnifier"/> 
 				<value_node value="wpn_fps_upg_o_coyote"/> 
 				<value_node value="wpn_fps_upg_bonus_concealment_p1"/> 
-				<value_node value="wpn_fps_upg_bonus_spread_p1"/> 
-				<value_node value="wpn_fps_upg_bonus_team_exp_money_p3"/> 
-				<value_node value="wpn_fps_upg_bonus_recoil_p1"/> 
-			</uses_parts> 
-		</factory> 
-		<stance/> 
-	</WeaponNew> 
-	<WeaponNew> 
-		<weapon id="siltstone_beakimbo" based_on="siltstone" weapon_hold="jowi_pistol" name_id="bm_siltstone_beakimbo_name" desc_id ="bm_siltstone_beakimbo_desc" description_id="bm_siltstone_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="20" NR_CLIPS_MAX="6" AMMO_MAX="60" global_value="grv" texture_bundle_folder="grv"> 
-			<use_data selection_index="2"/> 
-			<categories> 
-				<value_node value="akimbo"/> 
-				<value_node value="snp"/> 
-			</categories> 
-			<stats/> 
-			<stats_modifiers/> 
-		</weapon> 
-		<factory id="wpn_fps_snp_siltstone_beakimbo" based_on="wpn_fps_snp_siltstone" unit="units/pd2_dlc_grv/weapons/wpn_fps_snp_siltstone/wpn_fps_snp_siltstone_beakimbo"> 
-			<default_blueprint> 
-				<value_node value="wpn_fps_snp_siltstone_b_standard"/> 
-				<value_node value="wpn_fps_snp_siltstone_body_receiver"/> 
-				<value_node value="wpn_fps_snp_siltstone_dh_standard"/> 
-				<value_node value="wpn_fps_snp_siltstone_ejector"/> 
-				<value_node value="wpn_fps_snp_siltstone_fg_wood"/> 
-				<value_node value="wpn_fps_snp_siltstone_m_standard"/> 
-				<value_node value="wpn_fps_snp_siltstone_s_wood"/> 
-				<value_node value="wpn_fps_upg_o_shortdot"/> 
-			</default_blueprint> 
-			<uses_parts> 
-				<value_node value="wpn_fps_snp_siltstone_b_standard"/> 
-				<value_node value="wpn_fps_snp_siltstone_b_silenced"/> 
-				<value_node value="wpn_fps_snp_siltstone_body_receiver"/> 
-				<value_node value="wpn_fps_snp_siltstone_dh_standard"/> 
-				<value_node value="wpn_fps_snp_siltstone_ejector"/> 
-				<value_node value="wpn_fps_snp_siltstone_fg_polymer"/> 
-				<value_node value="wpn_fps_snp_siltstone_fg_wood"/> 
-				<value_node value="wpn_fps_snp_siltstone_m_standard"/> 
-				<value_node value="wpn_fps_snp_siltstone_ns_variation_b"/> 
-				<value_node value="wpn_fps_snp_siltstone_o_scopemount"/> 
-				<value_node value="wpn_fps_snp_siltstone_s_polymer"/> 
-				<value_node value="wpn_fps_snp_siltstone_s_wood"/> 
-				<value_node value="wpn_fps_snp_siltstone_iron_sight"/> 
-				<value_node value="wpn_fps_upg_o_specter"/> 
-				<value_node value="wpn_fps_upg_o_aimpoint"/> 
-				<value_node value="wpn_fps_upg_o_docter"/> 
-				<value_node value="wpn_fps_upg_o_eotech"/> 
-				<value_node value="wpn_fps_upg_o_t1micro"/> 
-				<value_node value="wpn_fps_upg_o_cmore"/> 
-				<value_node value="wpn_fps_upg_o_aimpoint_2"/> 
-				<value_node value="wpn_fps_upg_o_acog"/> 
-				<value_node value="wpn_fps_upg_o_shortdot"/> 
-				<value_node value="wpn_fps_upg_o_leupold"/> 
-				<value_node value="wpn_fps_upg_o_45iron"/> 
-				<value_node value="wpn_fps_upg_fl_ass_smg_sho_peqbox"/> 
-				<value_node value="wpn_fps_upg_fl_ass_smg_sho_surefire"/> 
-				<value_node value="wpn_fps_upg_o_eotech_xps"/> 
-				<value_node value="wpn_fps_upg_o_reflex"/> 
-				<value_node value="wpn_fps_upg_o_rx01"/> 
-				<value_node value="wpn_fps_upg_o_rx30"/> 
-				<value_node value="wpn_fps_upg_o_cs"/> 
-				<value_node value="wpn_fps_upg_fl_ass_peq15"/> 
-				<value_node value="wpn_fps_upg_fl_ass_laser"/> 
-				<value_node value="wpn_fps_upg_fl_ass_utg"/> 
-				<value_node value="wpn_fps_upg_o_spot"/> 
-				<value_node value="wpn_fps_upg_o_box"/> 
-				<value_node value="wpn_fps_upg_o_45rds"/> 
-				<value_node value="wpn_fps_upg_o_xpsg33_magnifier"/> 
-				<value_node value="wpn_fps_upg_o_45rds_v2"/> 
-				<value_node value="wpn_fps_upg_o_coyote"/> 
-				<value_node value="wpn_fps_upg_bonus_concealment_p1"/> 
-				<value_node value="wpn_fps_upg_bonus_total_ammo_p1"/> 
 				<value_node value="wpn_fps_upg_bonus_spread_p1"/> 
 				<value_node value="wpn_fps_upg_bonus_team_exp_money_p3"/> 
 				<value_node value="wpn_fps_upg_bonus_recoil_p1"/> 
@@ -1108,6 +1037,89 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
+		<weapon id="schakal_beakimbo" based_on="schakal" weapon_hold="jowi_pistol" name_id="bm_schakal_beakimbo_name" desc_id ="bm_schakal_beakimbo_desc" description_id="bm_schakal_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="60" NR_CLIPS_MAX="6" AMMO_MAX="180" global_value="pim" texture_bundle_folder="pim"> 
+			<use_data selection_index="2"/> 
+			<categories> 
+				<value_node value="akimbo"/> 
+				<value_node value="smg"/> 
+			</categories> 
+			<stats/> 
+			<stats_modifiers/> 
+		</weapon> 
+		<factory id="wpn_fps_smg_schakal_beakimbo" based_on="wpn_fps_smg_schakal" unit="units/pd2_dlc_pim/weapons/wpn_fps_smg_schakal/wpn_fps_smg_schakal_beakimbo"> 
+			<default_blueprint> 
+				<value_node value="wpn_fps_smg_schakal_b_standard"/> 
+				<value_node value="wpn_fps_smg_schakal_body_lower"/> 
+				<value_node value="wpn_fps_smg_schakal_body_upper"/> 
+				<value_node value="wpn_fps_smg_schakal_m_standard"/> 
+				<value_node value="wpn_fps_smg_schakal_s_standard"/> 
+				<value_node value="wpn_fps_smg_schakal_dh_standard"/> 
+				<value_node value="wpn_fps_smg_schakal_bolt_standard"/> 
+				<value_node value="wpn_fps_upg_vg_ass_smg_verticalgrip"/> 
+				<value_node value="wpn_fps_smg_schakal_extra_magrelease"/> 
+			</default_blueprint> 
+			<uses_parts> 
+				<value_node value="wpn_fps_smg_schakal_b_civil"/> 
+				<value_node value="wpn_fps_smg_schakal_b_standard"/> 
+				<value_node value="wpn_fps_smg_schakal_body_lower"/> 
+				<value_node value="wpn_fps_smg_schakal_body_upper"/> 
+				<value_node value="wpn_fps_smg_schakal_m_long"/> 
+				<value_node value="wpn_fps_smg_schakal_m_short"/> 
+				<value_node value="wpn_fps_smg_schakal_m_standard"/> 
+				<value_node value="wpn_fps_smg_schakal_ns_silencer"/> 
+				<value_node value="wpn_fps_smg_schakal_s_civil"/> 
+				<value_node value="wpn_fps_smg_schakal_s_folded"/> 
+				<value_node value="wpn_fps_smg_schakal_s_standard"/> 
+				<value_node value="wpn_fps_smg_schakal_dh_standard"/> 
+				<value_node value="wpn_fps_smg_schakal_bolt_standard"/> 
+				<value_node value="wpn_fps_smg_schakal_vg_extra"/> 
+				<value_node value="wpn_fps_smg_schakal_vg_surefire"/> 
+				<value_node value="wpn_fps_smg_schakal_extra_magrelease"/> 
+				<value_node value="wpn_fps_upg_ns_ass_smg_large"/> 
+				<value_node value="wpn_fps_upg_ns_ass_smg_medium"/> 
+				<value_node value="wpn_fps_upg_ns_ass_smg_small"/> 
+				<value_node value="wpn_fps_upg_ns_ass_smg_firepig"/> 
+				<value_node value="wpn_fps_upg_ns_ass_smg_stubby"/> 
+				<value_node value="wpn_fps_upg_ns_ass_smg_tank"/> 
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_peqbox"/> 
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_surefire"/> 
+				<value_node value="wpn_fps_upg_vg_ass_smg_verticalgrip"/> 
+				<value_node value="wpn_fps_upg_vg_ass_smg_stubby"/> 
+				<value_node value="wpn_fps_upg_vg_ass_smg_afg"/> 
+				<value_node value="wpn_fps_upg_i_singlefire"/> 
+				<value_node value="wpn_fps_upg_i_autofire"/> 
+				<value_node value="wpn_fps_upg_ass_ns_jprifles"/> 
+				<value_node value="wpn_fps_upg_ass_ns_linear"/> 
+				<value_node value="wpn_fps_upg_ass_ns_surefire"/> 
+				<value_node value="wpn_fps_upg_fl_ass_peq15"/> 
+				<value_node value="wpn_fps_upg_fl_ass_laser"/> 
+				<value_node value="wpn_fps_upg_o_specter"/> 
+				<value_node value="wpn_fps_upg_o_aimpoint"/> 
+				<value_node value="wpn_fps_upg_o_docter"/> 
+				<value_node value="wpn_fps_upg_o_eotech"/> 
+				<value_node value="wpn_fps_upg_o_t1micro"/> 
+				<value_node value="wpn_fps_upg_o_cmore"/> 
+				<value_node value="wpn_fps_upg_o_aimpoint_2"/> 
+				<value_node value="wpn_fps_upg_o_acog"/> 
+				<value_node value="wpn_fps_upg_o_eotech_xps"/> 
+				<value_node value="wpn_fps_upg_o_reflex"/> 
+				<value_node value="wpn_fps_upg_o_rx01"/> 
+				<value_node value="wpn_fps_upg_o_rx30"/> 
+				<value_node value="wpn_fps_upg_o_cs"/> 
+				<value_node value="wpn_fps_upg_ass_ns_battle"/> 
+				<value_node value="wpn_fps_upg_fl_ass_utg"/> 
+				<value_node value="wpn_fps_upg_o_spot"/> 
+				<value_node value="wpn_fps_upg_o_xpsg33_magnifier"/> 
+				<value_node value="wpn_fps_upg_o_coyote"/> 
+				<value_node value="wpn_fps_upg_bonus_concealment_p1"/> 
+				<value_node value="wpn_fps_upg_bonus_spread_p1"/> 
+				<value_node value="wpn_fps_upg_bonus_team_exp_money_p3"/> 
+				<value_node value="wpn_fps_upg_bonus_recoil_p1"/> 
+			</uses_parts> 
+		</factory> 
+		<stance/> 
+	</WeaponNew> 
+	<WeaponNew> 
 		<weapon id="ksg_beakimbo" based_on="ksg" weapon_hold="jowi_pistol" name_id="bm_ksg_beakimbo_name" desc_id ="bm_ksg_beakimbo_desc" description_id="bm_ksg_beakimbo_desc_long" DAMAGE="6" CLIP_AMMO_MAX="28" NR_CLIPS_MAX="6" AMMO_MAX="84" global_value="gage_pack_shotgun" texture_bundle_folder="gage_pack_shotgun"> 
 			<use_data selection_index="2"/> 
 			<categories> 
@@ -1762,6 +1774,89 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
+		<weapon id="ak5_beakimbo" based_on="ak5" weapon_hold="jowi_pistol" name_id="bm_ak5_beakimbo_name" desc_id ="bm_ak5_beakimbo_desc" description_id="bm_ak5_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="60" NR_CLIPS_MAX="10" AMMO_MAX="300"  > 
+			<use_data selection_index="2"/> 
+			<categories> 
+				<value_node value="akimbo"/> 
+				<value_node value="assault_rifle"/> 
+			</categories> 
+			<stats/> 
+			<stats_modifiers/> 
+		</weapon> 
+		<factory id="wpn_fps_ass_ak5_beakimbo" based_on="wpn_fps_ass_ak5" unit="units/payday2/weapons/wpn_fps_ass_ak5/wpn_fps_ass_ak5_beakimbo"> 
+			<default_blueprint> 
+				<value_node value="wpn_fps_ass_ak5_b_std"/> 
+				<value_node value="wpn_fps_ass_ak5_body_ak5"/> 
+				<value_node value="wpn_fps_ass_ak5_fg_ak5a"/> 
+				<value_node value="wpn_fps_ass_ak5_s_ak5a"/> 
+				<value_node value="wpn_fps_m4_uupg_m_std_vanilla"/> 
+			</default_blueprint> 
+			<uses_parts> 
+				<value_node value="wpn_fps_ass_ak5_b_std"/> 
+				<value_node value="wpn_fps_ass_ak5_body_ak5"/> 
+				<value_node value="wpn_fps_ass_ak5_body_rail"/> 
+				<value_node value="wpn_fps_ass_ak5_fg_ak5a"/> 
+				<value_node value="wpn_fps_ass_ak5_fg_ak5c"/> 
+				<value_node value="wpn_fps_ass_ak5_fg_fnc"/> 
+				<value_node value="wpn_fps_ass_ak5_s_ak5a"/> 
+				<value_node value="wpn_fps_ass_ak5_s_ak5b"/> 
+				<value_node value="wpn_fps_ass_ak5_s_ak5c"/> 
+				<value_node value="wpn_fps_m4_uupg_m_std_vanilla"/> 
+				<value_node value="wpn_fps_upg_m4_m_drum"/> 
+				<value_node value="wpn_fps_upg_m4_m_pmag"/> 
+				<value_node value="wpn_fps_upg_m4_m_straight"/> 
+				<value_node value="wpn_fps_upg_o_specter"/> 
+				<value_node value="wpn_fps_upg_o_aimpoint"/> 
+				<value_node value="wpn_fps_upg_o_docter"/> 
+				<value_node value="wpn_fps_upg_o_eotech"/> 
+				<value_node value="wpn_fps_upg_o_t1micro"/> 
+				<value_node value="wpn_fps_upg_o_cmore"/> 
+				<value_node value="wpn_fps_upg_o_aimpoint_2"/> 
+				<value_node value="wpn_fps_upg_o_acog"/> 
+				<value_node value="wpn_fps_upg_vg_ass_smg_verticalgrip"/> 
+				<value_node value="wpn_fps_upg_vg_ass_smg_stubby"/> 
+				<value_node value="wpn_fps_upg_vg_ass_smg_afg"/> 
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_peqbox"/> 
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_surefire"/> 
+				<value_node value="wpn_fps_upg_ns_ass_smg_large"/> 
+				<value_node value="wpn_fps_upg_ns_ass_smg_medium"/> 
+				<value_node value="wpn_fps_upg_ns_ass_smg_small"/> 
+				<value_node value="wpn_fps_upg_ns_ass_smg_firepig"/> 
+				<value_node value="wpn_fps_upg_ns_ass_smg_stubby"/> 
+				<value_node value="wpn_fps_upg_ns_ass_smg_tank"/> 
+				<value_node value="wpn_fps_upg_i_singlefire"/> 
+				<value_node value="wpn_fps_upg_i_autofire"/> 
+				<value_node value="wpn_fps_upg_m4_m_quad"/> 
+				<value_node value="wpn_fps_ass_l85a2_m_emag"/> 
+				<value_node value="wpn_fps_upg_ass_ns_jprifles"/> 
+				<value_node value="wpn_fps_upg_ass_ns_linear"/> 
+				<value_node value="wpn_fps_upg_ass_ns_surefire"/> 
+				<value_node value="wpn_fps_upg_o_eotech_xps"/> 
+				<value_node value="wpn_fps_upg_o_reflex"/> 
+				<value_node value="wpn_fps_upg_o_rx01"/> 
+				<value_node value="wpn_fps_upg_o_rx30"/> 
+				<value_node value="wpn_fps_upg_o_cs"/> 
+				<value_node value="wpn_fps_upg_fl_ass_peq15"/> 
+				<value_node value="wpn_fps_upg_fl_ass_laser"/> 
+				<value_node value="wpn_fps_upg_m4_m_l5"/> 
+				<value_node value="wpn_fps_ass_ak5_b_short"/> 
+				<value_node value="wpn_fps_upg_ass_ns_battle"/> 
+				<value_node value="wpn_fps_upg_fl_ass_utg"/> 
+				<value_node value="wpn_fps_upg_o_45rds"/> 
+				<value_node value="wpn_fps_upg_o_spot"/> 
+				<value_node value="wpn_fps_m4_upg_m_quick"/> 
+				<value_node value="wpn_fps_upg_o_xpsg33_magnifier"/> 
+				<value_node value="wpn_fps_upg_o_45rds_v2"/> 
+				<value_node value="wpn_fps_upg_o_coyote"/> 
+				<value_node value="wpn_fps_upg_bonus_concealment_p1"/> 
+				<value_node value="wpn_fps_upg_bonus_spread_p1"/> 
+				<value_node value="wpn_fps_upg_bonus_team_exp_money_p3"/> 
+				<value_node value="wpn_fps_upg_bonus_recoil_p1"/> 
+			</uses_parts> 
+		</factory> 
+		<stance/> 
+	</WeaponNew> 
+	<WeaponNew> 
 		<weapon id="scar_beakimbo" based_on="scar" weapon_hold="jowi_pistol" name_id="bm_scar_beakimbo_name" desc_id ="bm_scar_beakimbo_desc" description_id="bm_scar_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="40" NR_CLIPS_MAX="10" AMMO_MAX="200" global_value="gage_pack" texture_bundle_folder="gage_pack"> 
 			<use_data selection_index="2"/> 
 			<categories> 
@@ -2055,110 +2150,6 @@
 				<value_node value="wpn_fps_upg_fl_pis_m3x"/> 
 				<value_node value="wpn_fps_upg_ns_ass_filter"/> 
 				<value_node value="wpn_fps_upg_ns_pis_jungle"/> 
-				<value_node value="wpn_fps_upg_bonus_concealment_p1"/> 
-				<value_node value="wpn_fps_upg_bonus_spread_p1"/> 
-				<value_node value="wpn_fps_upg_bonus_team_exp_money_p3"/> 
-				<value_node value="wpn_fps_upg_bonus_recoil_p1"/> 
-			</uses_parts> 
-		</factory> 
-		<stance/> 
-	</WeaponNew> 
-	<WeaponNew> 
-		<weapon id="olympic_beakimbo" based_on="olympic" weapon_hold="jowi_pistol" name_id="bm_olympic_beakimbo_name" desc_id ="bm_olympic_beakimbo_desc" description_id="bm_olympic_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="50" NR_CLIPS_MAX="12" AMMO_MAX="300"  > 
-			<use_data selection_index="2"/> 
-			<categories> 
-				<value_node value="akimbo"/> 
-				<value_node value="smg"/> 
-			</categories> 
-			<stats/> 
-			<stats_modifiers/> 
-		</weapon> 
-		<factory id="wpn_fps_smg_olympic_beakimbo" based_on="wpn_fps_smg_olympic" unit="units/payday2/weapons/wpn_fps_smg_olympic/wpn_fps_smg_olympic_beakimbo"> 
-			<default_blueprint> 
-				<value_node value="wpn_fps_smg_olympic_s_adjust"/> 
-				<value_node value="wpn_fps_m4_uupg_draghandle"/> 
-				<value_node value="wpn_fps_upg_m4_m_straight_vanilla"/> 
-				<value_node value="wpn_fps_upg_m4_g_standard_vanilla"/> 
-				<value_node value="wpn_fps_m4_uupg_b_short_vanilla"/> 
-				<value_node value="wpn_fps_m4_upper_reciever_round"/> 
-				<value_node value="wpn_fps_m4_lower_reciever"/> 
-				<value_node value="wpn_fps_smg_olympic_fg_olympic"/> 
-				<value_node value="wpn_fps_ass_m16_o_handle_sight"/> 
-			</default_blueprint> 
-			<uses_parts> 
-				<value_node value="wpn_fps_m4_lower_reciever"/> 
-				<value_node value="wpn_fps_m4_upper_reciever_edge"/> 
-				<value_node value="wpn_fps_m4_upper_reciever_round"/> 
-				<value_node value="wpn_fps_m4_uupg_draghandle"/> 
-				<value_node value="wpn_fps_smg_olympic_fg_olympic"/> 
-				<value_node value="wpn_fps_smg_olympic_fg_railed"/> 
-				<value_node value="wpn_fps_smg_olympic_s_short"/> 
-				<value_node value="wpn_fps_smg_olympic_s_adjust"/> 
-				<value_node value="wpn_fps_upg_m4_s_standard"/> 
-				<value_node value="wpn_fps_upg_m4_s_pts"/> 
-				<value_node value="wpn_fps_m4_uupg_b_short_vanilla"/> 
-				<value_node value="wpn_fps_m4_uupg_b_medium"/> 
-				<value_node value="wpn_fps_m4_uupg_m_std"/> 
-				<value_node value="wpn_fps_upg_m4_m_drum"/> 
-				<value_node value="wpn_fps_upg_m4_m_pmag"/> 
-				<value_node value="wpn_fps_upg_m4_m_straight_vanilla"/> 
-				<value_node value="wpn_fps_ass_m16_o_handle_sight"/> 
-				<value_node value="wpn_fps_upg_o_specter"/> 
-				<value_node value="wpn_fps_upg_o_aimpoint"/> 
-				<value_node value="wpn_fps_upg_o_docter"/> 
-				<value_node value="wpn_fps_upg_o_eotech"/> 
-				<value_node value="wpn_fps_upg_o_t1micro"/> 
-				<value_node value="wpn_fps_upg_o_cmore"/> 
-				<value_node value="wpn_fps_upg_o_aimpoint_2"/> 
-				<value_node value="wpn_fps_upg_o_acog"/> 
-				<value_node value="wpn_fps_upg_vg_ass_smg_verticalgrip"/> 
-				<value_node value="wpn_fps_upg_vg_ass_smg_stubby"/> 
-				<value_node value="wpn_fps_upg_vg_ass_smg_afg"/> 
-				<value_node value="wpn_fps_upg_fl_ass_smg_sho_peqbox"/> 
-				<value_node value="wpn_fps_upg_fl_ass_smg_sho_surefire"/> 
-				<value_node value="wpn_fps_upg_m4_g_standard_vanilla"/> 
-				<value_node value="wpn_fps_upg_m4_g_ergo"/> 
-				<value_node value="wpn_fps_upg_m4_g_sniper"/> 
-				<value_node value="wpn_fps_upg_ns_ass_smg_large"/> 
-				<value_node value="wpn_fps_upg_ns_ass_smg_medium"/> 
-				<value_node value="wpn_fps_upg_ns_ass_smg_small"/> 
-				<value_node value="wpn_fps_upg_ns_ass_smg_firepig"/> 
-				<value_node value="wpn_fps_upg_ns_ass_smg_stubby"/> 
-				<value_node value="wpn_fps_upg_ns_ass_smg_tank"/> 
-				<value_node value="wpn_fps_upg_m4_g_hgrip"/> 
-				<value_node value="wpn_fps_upg_m4_g_mgrip"/> 
-				<value_node value="wpn_fps_upg_i_singlefire"/> 
-				<value_node value="wpn_fps_upg_i_autofire"/> 
-				<value_node value="wpn_fps_upg_m4_m_quad"/> 
-				<value_node value="wpn_fps_ass_l85a2_m_emag"/> 
-				<value_node value="wpn_fps_upg_m4_s_crane"/> 
-				<value_node value="wpn_fps_upg_m4_s_mk46"/> 
-				<value_node value="wpn_fps_upg_fl_ass_peq15"/> 
-				<value_node value="wpn_fps_upg_fl_ass_laser"/> 
-				<value_node value="wpn_fps_upg_ass_ns_jprifles"/> 
-				<value_node value="wpn_fps_upg_ass_ns_linear"/> 
-				<value_node value="wpn_fps_upg_ass_ns_surefire"/> 
-				<value_node value="wpn_fps_upg_o_cs"/> 
-				<value_node value="wpn_fps_upg_o_rx30"/> 
-				<value_node value="wpn_fps_upg_o_rx01"/> 
-				<value_node value="wpn_fps_upg_o_reflex"/> 
-				<value_node value="wpn_fps_upg_o_eotech_xps"/> 
-				<value_node value="wpn_fps_upg_m4_s_ubr"/> 
-				<value_node value="wpn_fps_upg_m4_m_l5"/> 
-				<value_node value="wpn_fps_upg_ass_m4_upper_reciever_ballos"/> 
-				<value_node value="wpn_fps_upg_ass_m4_upper_reciever_core"/> 
-				<value_node value="wpn_fps_upg_ass_m4_lower_reciever_core"/> 
-				<value_node value="wpn_fps_m4_uupg_draghandle_ballos"/> 
-				<value_node value="wpn_fps_m4_uupg_draghandle_core"/> 
-				<value_node value="wpn_fps_upg_smg_olympic_fg_lr300"/> 
-				<value_node value="wpn_fps_upg_ass_ns_battle"/> 
-				<value_node value="wpn_fps_upg_fl_ass_utg"/> 
-				<value_node value="wpn_fps_upg_o_spot"/> 
-				<value_node value="wpn_fps_m4_upg_m_quick"/> 
-				<value_node value="wpn_fps_snp_tti_s_vltor"/> 
-				<value_node value="wpn_fps_snp_tti_g_grippy"/> 
-				<value_node value="wpn_fps_upg_o_xpsg33_magnifier"/> 
-				<value_node value="wpn_fps_upg_o_coyote"/> 
 				<value_node value="wpn_fps_upg_bonus_concealment_p1"/> 
 				<value_node value="wpn_fps_upg_bonus_spread_p1"/> 
 				<value_node value="wpn_fps_upg_bonus_team_exp_money_p3"/> 
@@ -3413,31 +3404,42 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="mp7_beakimbo" based_on="mp7" weapon_hold="jowi_pistol" name_id="bm_mp7_beakimbo_name" desc_id ="bm_mp7_beakimbo_desc" description_id="bm_mp7_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="40" NR_CLIPS_MAX="16" AMMO_MAX="320" global_value="gage_pack" texture_bundle_folder="gage_pack"> 
+		<weapon id="s552_beakimbo" based_on="s552" weapon_hold="jowi_pistol" name_id="bm_s552_beakimbo_name" desc_id ="bm_s552_beakimbo_desc" description_id="bm_s552_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="60" NR_CLIPS_MAX="16" AMMO_MAX="480" global_value="armored_transport" texture_bundle_folder="dlc1"> 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
-				<value_node value="smg"/> 
+				<value_node value="assault_rifle"/> 
 			</categories> 
 			<stats/> 
 			<stats_modifiers/> 
 		</weapon> 
-		<factory id="wpn_fps_smg_mp7_beakimbo" based_on="wpn_fps_smg_mp7" unit="units/pd2_dlc_dec5/weapons/wpn_fps_smg_mp7/wpn_fps_smg_mp7_beakimbo"> 
+		<factory id="wpn_fps_ass_s552_beakimbo" based_on="wpn_fps_ass_s552" unit="units/pd2_dlc1/weapons/wpn_fps_ass_s552/wpn_fps_ass_s552_beakimbo"> 
 			<default_blueprint> 
-				<value_node value="wpn_fps_smg_mp7_m_short"/> 
-				<value_node value="wpn_fps_smg_mp7_b_standard"/> 
-				<value_node value="wpn_fps_smg_mp7_body_standard"/> 
-				<value_node value="wpn_fps_smg_mp7_s_standard"/> 
+				<value_node value="wpn_fps_ass_s552_o_flipup"/> 
+				<value_node value="wpn_fps_ass_s552_m_standard"/> 
+				<value_node value="wpn_fps_ass_s552_b_standard"/> 
+				<value_node value="wpn_fps_ass_s552_body_standard"/> 
+				<value_node value="wpn_fps_ass_s552_fg_standard"/> 
+				<value_node value="wpn_fps_ass_s552_s_standard"/> 
+				<value_node value="wpn_fps_ass_s552_g_standard"/> 
 			</default_blueprint> 
 			<uses_parts> 
-				<value_node value="wpn_fps_smg_mp7_m_short"/> 
-				<value_node value="wpn_fps_smg_mp7_b_standard"/> 
-				<value_node value="wpn_fps_smg_mp7_body_standard"/> 
-				<value_node value="wpn_fps_smg_mp7_s_standard"/> 
-				<value_node value="wpn_fps_smg_mp7_m_extended"/> 
-				<value_node value="wpn_fps_smg_mp7_b_suppressed"/> 
-				<value_node value="wpn_fps_smg_mp7_s_long"/> 
-				<value_node value="wpn_fps_upg_vg_ass_smg_stubby"/> 
+				<value_node value="wpn_fps_ass_s552_o_flipup"/> 
+				<value_node value="wpn_fps_ass_s552_m_standard"/> 
+				<value_node value="wpn_fps_ass_s552_b_standard"/> 
+				<value_node value="wpn_fps_ass_s552_b_long"/> 
+				<value_node value="wpn_fps_ass_s552_body_standard"/> 
+				<value_node value="wpn_fps_ass_s552_body_standard_black"/> 
+				<value_node value="wpn_fps_ass_s552_fg_standard"/> 
+				<value_node value="wpn_fps_ass_s552_fg_railed"/> 
+				<value_node value="wpn_fps_ass_s552_fg_standard_green"/> 
+				<value_node value="wpn_fps_ass_s552_s_standard"/> 
+				<value_node value="wpn_fps_ass_s552_s_m4"/> 
+				<value_node value="wpn_fps_ass_s552_s_standard_green"/> 
+				<value_node value="wpn_fps_ass_s552_g_standard"/> 
+				<value_node value="wpn_fps_ass_s552_g_standard_green"/> 
+				<value_node value="wpn_fps_upg_m4_s_standard_vanilla"/> 
+				<value_node value="wpn_fps_upg_m4_s_pts"/> 
 				<value_node value="wpn_fps_upg_o_specter"/> 
 				<value_node value="wpn_fps_upg_o_aimpoint"/> 
 				<value_node value="wpn_fps_upg_o_docter"/> 
@@ -3466,10 +3468,16 @@
 				<value_node value="wpn_fps_upg_ass_ns_surefire"/> 
 				<value_node value="wpn_fps_upg_fl_ass_peq15"/> 
 				<value_node value="wpn_fps_upg_fl_ass_laser"/> 
+				<value_node value="wpn_fps_upg_m4_s_crane"/> 
+				<value_node value="wpn_fps_upg_m4_s_mk46"/> 
+				<value_node value="wpn_fps_upg_m4_s_ubr"/> 
 				<value_node value="wpn_fps_upg_ass_ns_battle"/> 
 				<value_node value="wpn_fps_upg_fl_ass_utg"/> 
+				<value_node value="wpn_fps_upg_o_45rds"/> 
 				<value_node value="wpn_fps_upg_o_spot"/> 
+				<value_node value="wpn_fps_snp_tti_s_vltor"/> 
 				<value_node value="wpn_fps_upg_o_xpsg33_magnifier"/> 
+				<value_node value="wpn_fps_upg_o_45rds_v2"/> 
 				<value_node value="wpn_fps_upg_o_coyote"/> 
 				<value_node value="wpn_fps_upg_bonus_concealment_p1"/> 
 				<value_node value="wpn_fps_upg_bonus_spread_p1"/> 
@@ -3938,6 +3946,40 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
+		<weapon id="winchester1874_beakimbo" based_on="winchester1874" weapon_hold="jowi_pistol" name_id="bm_winchester1874_beakimbo_name" desc_id ="bm_winchester1874_beakimbo_desc" description_id="bm_winchester1874_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="30" NR_CLIPS_MAX="6" AMMO_MAX="90" global_value="west" texture_bundle_folder="west"> 
+			<use_data selection_index="2"/> 
+			<categories> 
+				<value_node value="akimbo"/> 
+				<value_node value="snp"/> 
+			</categories> 
+			<stats/> 
+			<stats_modifiers/> 
+		</weapon> 
+		<factory id="wpn_fps_snp_winchester_beakimbo" based_on="wpn_fps_snp_winchester" unit="units/pd2_dlc_west/weapons/wpn_fps_snp_winchester/wpn_fps_snp_winchester_beakimbo"> 
+			<default_blueprint> 
+				<value_node value="wpn_fps_snp_winchester_b_standard"/> 
+				<value_node value="wpn_fps_snp_winchester_body_standard"/> 
+				<value_node value="wpn_fps_snp_winchester_m_standard"/> 
+				<value_node value="wpn_fps_snp_winchester_s_standard"/> 
+			</default_blueprint> 
+			<uses_parts> 
+				<value_node value="wpn_fps_snp_winchester_b_standard"/> 
+				<value_node value="wpn_fps_snp_winchester_b_long"/> 
+				<value_node value="wpn_fps_snp_winchester_b_suppressed"/> 
+				<value_node value="wpn_fps_snp_winchester_body_standard"/> 
+				<value_node value="wpn_fps_snp_winchester_m_standard"/> 
+				<value_node value="wpn_fps_snp_winchester_s_standard"/> 
+				<value_node value="wpn_fps_upg_winchester_o_classic"/> 
+				<value_node value="wpn_fps_upg_bonus_concealment_p1"/> 
+				<value_node value="wpn_fps_upg_bonus_total_ammo_p1"/> 
+				<value_node value="wpn_fps_upg_bonus_spread_p1"/> 
+				<value_node value="wpn_fps_upg_bonus_team_exp_money_p3"/> 
+				<value_node value="wpn_fps_upg_bonus_recoil_p1"/> 
+			</uses_parts> 
+		</factory> 
+		<stance/> 
+	</WeaponNew> 
+	<WeaponNew> 
 		<weapon id="m37_beakimbo" based_on="m37" weapon_hold="jowi_pistol" name_id="bm_m37_beakimbo_name" desc_id ="bm_m37_beakimbo_desc" description_id="bm_m37_beakimbo_desc_long" DAMAGE="6" CLIP_AMMO_MAX="14" NR_CLIPS_MAX="8" AMMO_MAX="56" global_value="peta" texture_bundle_folder="peta"> 
 			<use_data selection_index="2"/> 
 			<categories> 
@@ -4104,62 +4146,6 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="shrew_beakimbo" based_on="shrew" weapon_hold="jowi_pistol" name_id="bm_shrew_beakimbo_name" desc_id ="bm_shrew_beakimbo_desc" description_id="bm_shrew_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="34" NR_CLIPS_MAX="18" AMMO_MAX="306"  texture_bundle_folder="myh"> 
-			<use_data selection_index="2"/> 
-			<categories> 
-				<value_node value="akimbo"/> 
-				<value_node value="pistol"/> 
-			</categories> 
-			<stats/> 
-			<stats_modifiers/> 
-		</weapon> 
-		<factory id="wpn_fps_pis_shrew_beakimbo" based_on="wpn_fps_pis_shrew" unit="units/pd2_dlc_myh/weapons/wpn_fps_pis_shrew/wpn_fps_pis_shrew_beakimbo"> 
-			<default_blueprint> 
-				<value_node value="wpn_fps_pis_shrew_b_barrel"/> 
-				<value_node value="wpn_fps_pis_shrew_body_frame"/> 
-				<value_node value="wpn_fps_pis_shrew_g_standard"/> 
-				<value_node value="wpn_fps_pis_shrew_h_hammer"/> 
-				<value_node value="wpn_fps_pis_shrew_m_standard"/> 
-				<value_node value="wpn_fps_pis_shrew_sl_standard"/> 
-			</default_blueprint> 
-			<uses_parts> 
-				<value_node value="wpn_fps_pis_shrew_b_barrel"/> 
-				<value_node value="wpn_fps_pis_shrew_body_frame"/> 
-				<value_node value="wpn_fps_pis_shrew_g_standard"/> 
-				<value_node value="wpn_fps_pis_shrew_h_hammer"/> 
-				<value_node value="wpn_fps_pis_shrew_m_standard"/> 
-				<value_node value="wpn_fps_pis_shrew_sl_standard"/> 
-				<value_node value="wpn_fps_pis_shrew_g_bling"/> 
-				<value_node value="wpn_fps_pis_shrew_g_ergo"/> 
-				<value_node value="wpn_fps_pis_shrew_m_extended"/> 
-				<value_node value="wpn_fps_pis_shrew_sl_milled"/> 
-				<value_node value="wpn_fps_pis_shrew_fl_adapter"/> 
-				<value_node value="wpn_fps_upg_o_rmr"/> 
-				<value_node value="wpn_fps_upg_fl_pis_laser"/> 
-				<value_node value="wpn_fps_upg_fl_pis_tlr1"/> 
-				<value_node value="wpn_fps_upg_fl_pis_x400v"/> 
-				<value_node value="wpn_fps_upg_fl_pis_m3x"/> 
-				<value_node value="wpn_fps_upg_fl_pis_crimson"/> 
-				<value_node value="wpn_fps_upg_ns_ass_filter"/> 
-				<value_node value="wpn_fps_upg_ns_pis_jungle"/> 
-				<value_node value="wpn_fps_upg_ns_pis_ipsccomp"/> 
-				<value_node value="wpn_fps_upg_ns_pis_meatgrinder"/> 
-				<value_node value="wpn_fps_upg_ns_pis_medium_slim"/> 
-				<value_node value="wpn_fps_upg_pis_ns_flash"/> 
-				<value_node value="wpn_fps_upg_ns_pis_large"/> 
-				<value_node value="wpn_fps_upg_ns_pis_medium"/> 
-				<value_node value="wpn_fps_upg_ns_pis_small"/> 
-				<value_node value="wpn_fps_upg_ns_pis_large_kac"/> 
-				<value_node value="wpn_fps_upg_ns_pis_medium_gem"/> 
-				<value_node value="wpn_fps_upg_bonus_concealment_p1"/> 
-				<value_node value="wpn_fps_upg_bonus_spread_p1"/> 
-				<value_node value="wpn_fps_upg_bonus_team_exp_money_p3"/> 
-				<value_node value="wpn_fps_upg_bonus_recoil_p1"/> 
-			</uses_parts> 
-		</factory> 
-		<stance/> 
-	</WeaponNew> 
-	<WeaponNew> 
 		<weapon id="g22c_beakimbo" based_on="g22c" weapon_hold="jowi_pistol" name_id="bm_g22c_beakimbo_name" desc_id ="bm_g22c_beakimbo_desc" description_id="bm_g22c_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="32" NR_CLIPS_MAX="12" AMMO_MAX="192" global_value="pd2_clan" > 
 			<use_data selection_index="2"/> 
 			<categories> 
@@ -4203,75 +4189,6 @@
 				<value_node value="wpn_fps_upg_fl_pis_m3x"/> 
 				<value_node value="wpn_fps_upg_ns_ass_filter"/> 
 				<value_node value="wpn_fps_upg_ns_pis_jungle"/> 
-				<value_node value="wpn_fps_upg_bonus_concealment_p1"/> 
-				<value_node value="wpn_fps_upg_bonus_spread_p1"/> 
-				<value_node value="wpn_fps_upg_bonus_team_exp_money_p3"/> 
-				<value_node value="wpn_fps_upg_bonus_recoil_p1"/> 
-			</uses_parts> 
-		</factory> 
-		<stance/> 
-	</WeaponNew> 
-	<WeaponNew> 
-		<weapon id="m45_beakimbo" based_on="m45" weapon_hold="jowi_pistol" name_id="bm_m45_beakimbo_name" desc_id ="bm_m45_beakimbo_desc" description_id="bm_m45_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="80" NR_CLIPS_MAX="4" AMMO_MAX="160" global_value="armored_transport" texture_bundle_folder="dlc1"> 
-			<use_data selection_index="2"/> 
-			<categories> 
-				<value_node value="akimbo"/> 
-				<value_node value="smg"/> 
-			</categories> 
-			<stats/> 
-			<stats_modifiers/> 
-		</weapon> 
-		<factory id="wpn_fps_smg_m45_beakimbo" based_on="wpn_fps_smg_m45" unit="units/pd2_dlc1/weapons/wpn_fps_smg_m45/wpn_fps_smg_m45_beakimbo"> 
-			<default_blueprint> 
-				<value_node value="wpn_fps_smg_m45_m_mag"/> 
-				<value_node value="wpn_fps_smg_m45_b_standard"/> 
-				<value_node value="wpn_fps_smg_m45_body_standard"/> 
-				<value_node value="wpn_fps_smg_m45_s_standard"/> 
-				<value_node value="wpn_fps_smg_m45_g_standard"/> 
-			</default_blueprint> 
-			<uses_parts> 
-				<value_node value="wpn_fps_smg_m45_m_mag"/> 
-				<value_node value="wpn_fps_smg_m45_b_standard"/> 
-				<value_node value="wpn_fps_smg_m45_body_standard"/> 
-				<value_node value="wpn_fps_smg_m45_s_standard"/> 
-				<value_node value="wpn_fps_smg_m45_g_standard"/> 
-				<value_node value="wpn_fps_smg_m45_m_extended"/> 
-				<value_node value="wpn_fps_smg_m45_b_small"/> 
-				<value_node value="wpn_fps_smg_m45_b_green"/> 
-				<value_node value="wpn_fps_smg_m45_body_green"/> 
-				<value_node value="wpn_fps_smg_m45_s_folded"/> 
-				<value_node value="wpn_fps_smg_m45_g_bling"/> 
-				<value_node value="wpn_fps_smg_m45_g_ergo"/> 
-				<value_node value="wpn_fps_upg_o_specter"/> 
-				<value_node value="wpn_fps_upg_o_aimpoint"/> 
-				<value_node value="wpn_fps_upg_o_docter"/> 
-				<value_node value="wpn_fps_upg_o_eotech"/> 
-				<value_node value="wpn_fps_upg_o_t1micro"/> 
-				<value_node value="wpn_fps_upg_o_cmore"/> 
-				<value_node value="wpn_fps_upg_o_aimpoint_2"/> 
-				<value_node value="wpn_fps_upg_o_acog"/> 
-				<value_node value="wpn_fps_upg_fl_ass_smg_sho_peqbox"/> 
-				<value_node value="wpn_fps_upg_fl_ass_smg_sho_surefire"/> 
-				<value_node value="wpn_fps_upg_ns_ass_smg_large"/> 
-				<value_node value="wpn_fps_upg_ns_ass_smg_medium"/> 
-				<value_node value="wpn_fps_upg_ns_ass_smg_small"/> 
-				<value_node value="wpn_fps_upg_ns_ass_smg_firepig"/> 
-				<value_node value="wpn_fps_upg_ns_ass_smg_stubby"/> 
-				<value_node value="wpn_fps_upg_ns_ass_smg_tank"/> 
-				<value_node value="wpn_fps_upg_o_eotech_xps"/> 
-				<value_node value="wpn_fps_upg_o_reflex"/> 
-				<value_node value="wpn_fps_upg_o_rx01"/> 
-				<value_node value="wpn_fps_upg_o_rx30"/> 
-				<value_node value="wpn_fps_upg_o_cs"/> 
-				<value_node value="wpn_fps_upg_ass_ns_jprifles"/> 
-				<value_node value="wpn_fps_upg_ass_ns_linear"/> 
-				<value_node value="wpn_fps_upg_ass_ns_surefire"/> 
-				<value_node value="wpn_fps_upg_fl_ass_peq15"/> 
-				<value_node value="wpn_fps_upg_fl_ass_laser"/> 
-				<value_node value="wpn_fps_upg_ass_ns_battle"/> 
-				<value_node value="wpn_fps_upg_fl_ass_utg"/> 
-				<value_node value="wpn_fps_upg_o_spot"/> 
-				<value_node value="wpn_fps_upg_o_coyote"/> 
 				<value_node value="wpn_fps_upg_bonus_concealment_p1"/> 
 				<value_node value="wpn_fps_upg_bonus_spread_p1"/> 
 				<value_node value="wpn_fps_upg_bonus_team_exp_money_p3"/> 
@@ -4362,6 +4279,75 @@
 				<value_node value="wpn_fps_upg_o_spot"/> 
 				<value_node value="wpn_fps_upg_ak_m_quick"/> 
 				<value_node value="wpn_fps_snp_tti_s_vltor"/> 
+				<value_node value="wpn_fps_upg_o_coyote"/> 
+				<value_node value="wpn_fps_upg_bonus_concealment_p1"/> 
+				<value_node value="wpn_fps_upg_bonus_spread_p1"/> 
+				<value_node value="wpn_fps_upg_bonus_team_exp_money_p3"/> 
+				<value_node value="wpn_fps_upg_bonus_recoil_p1"/> 
+			</uses_parts> 
+		</factory> 
+		<stance/> 
+	</WeaponNew> 
+	<WeaponNew> 
+		<weapon id="m45_beakimbo" based_on="m45" weapon_hold="jowi_pistol" name_id="bm_m45_beakimbo_name" desc_id ="bm_m45_beakimbo_desc" description_id="bm_m45_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="80" NR_CLIPS_MAX="4" AMMO_MAX="160" global_value="armored_transport" texture_bundle_folder="dlc1"> 
+			<use_data selection_index="2"/> 
+			<categories> 
+				<value_node value="akimbo"/> 
+				<value_node value="smg"/> 
+			</categories> 
+			<stats/> 
+			<stats_modifiers/> 
+		</weapon> 
+		<factory id="wpn_fps_smg_m45_beakimbo" based_on="wpn_fps_smg_m45" unit="units/pd2_dlc1/weapons/wpn_fps_smg_m45/wpn_fps_smg_m45_beakimbo"> 
+			<default_blueprint> 
+				<value_node value="wpn_fps_smg_m45_m_mag"/> 
+				<value_node value="wpn_fps_smg_m45_b_standard"/> 
+				<value_node value="wpn_fps_smg_m45_body_standard"/> 
+				<value_node value="wpn_fps_smg_m45_s_standard"/> 
+				<value_node value="wpn_fps_smg_m45_g_standard"/> 
+			</default_blueprint> 
+			<uses_parts> 
+				<value_node value="wpn_fps_smg_m45_m_mag"/> 
+				<value_node value="wpn_fps_smg_m45_b_standard"/> 
+				<value_node value="wpn_fps_smg_m45_body_standard"/> 
+				<value_node value="wpn_fps_smg_m45_s_standard"/> 
+				<value_node value="wpn_fps_smg_m45_g_standard"/> 
+				<value_node value="wpn_fps_smg_m45_m_extended"/> 
+				<value_node value="wpn_fps_smg_m45_b_small"/> 
+				<value_node value="wpn_fps_smg_m45_b_green"/> 
+				<value_node value="wpn_fps_smg_m45_body_green"/> 
+				<value_node value="wpn_fps_smg_m45_s_folded"/> 
+				<value_node value="wpn_fps_smg_m45_g_bling"/> 
+				<value_node value="wpn_fps_smg_m45_g_ergo"/> 
+				<value_node value="wpn_fps_upg_o_specter"/> 
+				<value_node value="wpn_fps_upg_o_aimpoint"/> 
+				<value_node value="wpn_fps_upg_o_docter"/> 
+				<value_node value="wpn_fps_upg_o_eotech"/> 
+				<value_node value="wpn_fps_upg_o_t1micro"/> 
+				<value_node value="wpn_fps_upg_o_cmore"/> 
+				<value_node value="wpn_fps_upg_o_aimpoint_2"/> 
+				<value_node value="wpn_fps_upg_o_acog"/> 
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_peqbox"/> 
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_surefire"/> 
+				<value_node value="wpn_fps_upg_ns_ass_smg_large"/> 
+				<value_node value="wpn_fps_upg_ns_ass_smg_medium"/> 
+				<value_node value="wpn_fps_upg_ns_ass_smg_small"/> 
+				<value_node value="wpn_fps_upg_ns_ass_smg_firepig"/> 
+				<value_node value="wpn_fps_upg_ns_ass_smg_stubby"/> 
+				<value_node value="wpn_fps_upg_ns_ass_smg_tank"/> 
+				<value_node value="wpn_fps_upg_o_eotech_xps"/> 
+				<value_node value="wpn_fps_upg_o_reflex"/> 
+				<value_node value="wpn_fps_upg_o_rx01"/> 
+				<value_node value="wpn_fps_upg_o_rx30"/> 
+				<value_node value="wpn_fps_upg_o_cs"/> 
+				<value_node value="wpn_fps_upg_ass_ns_jprifles"/> 
+				<value_node value="wpn_fps_upg_ass_ns_linear"/> 
+				<value_node value="wpn_fps_upg_ass_ns_surefire"/> 
+				<value_node value="wpn_fps_upg_fl_ass_peq15"/> 
+				<value_node value="wpn_fps_upg_fl_ass_laser"/> 
+				<value_node value="wpn_fps_upg_ass_ns_battle"/> 
+				<value_node value="wpn_fps_upg_fl_ass_utg"/> 
+				<value_node value="wpn_fps_upg_o_spot"/> 
 				<value_node value="wpn_fps_upg_o_coyote"/> 
 				<value_node value="wpn_fps_upg_bonus_concealment_p1"/> 
 				<value_node value="wpn_fps_upg_bonus_spread_p1"/> 
@@ -4475,57 +4461,40 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="asval_beakimbo" based_on="asval" weapon_hold="jowi_pistol" name_id="bm_asval_beakimbo_name" desc_id ="bm_asval_beakimbo_desc" description_id="bm_asval_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="40" NR_CLIPS_MAX="22" AMMO_MAX="440" global_value="character_pack_sokol" texture_bundle_folder="character_pack_sokol"> 
+		<weapon id="chinchilla_beakimbo" based_on="chinchilla" weapon_hold="jowi_pistol" name_id="bm_chinchilla_beakimbo_name" desc_id ="bm_chinchilla_beakimbo_desc" description_id="bm_chinchilla_beakimbo_desc_long" DAMAGE="2" CLIP_AMMO_MAX="12" NR_CLIPS_MAX="18" AMMO_MAX="108"  texture_bundle_folder="max"> 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
-				<value_node value="assault_rifle"/> 
+				<value_node value="pistol"/> 
 			</categories> 
 			<stats/> 
 			<stats_modifiers/> 
 		</weapon> 
-		<factory id="wpn_fps_ass_asval_beakimbo" based_on="wpn_fps_ass_asval" unit="units/pd2_dlc_character_sokol/weapons/wpn_fps_ass_asval/wpn_fps_ass_asval_beakimbo"> 
+		<factory id="wpn_fps_pis_chinchilla_beakimbo" based_on="wpn_fps_pis_chinchilla" unit="units/pd2_dlc_max/weapons/wpn_fps_pis_chinchilla/wpn_fps_pis_chinchilla_beakimbo"> 
 			<default_blueprint> 
-				<value_node value="wpn_fps_ass_asval_b_standard"/> 
-				<value_node value="wpn_fps_ass_asval_body_standard"/> 
-				<value_node value="wpn_fps_ass_asval_fg_standard"/> 
-				<value_node value="wpn_fps_ass_asval_m_standard"/> 
-				<value_node value="wpn_fps_ass_asval_s_standard"/> 
+				<value_node value="wpn_fps_pis_chinchilla_b_standard"/> 
+				<value_node value="wpn_fps_pis_chinchilla_body"/> 
+				<value_node value="wpn_fps_pis_chinchilla_cylinder"/> 
+				<value_node value="wpn_fps_pis_chinchilla_dh_hammer"/> 
+				<value_node value="wpn_fps_pis_chinchilla_ejector"/> 
+				<value_node value="wpn_fps_pis_chinchilla_ejectorpin"/> 
+				<value_node value="wpn_fps_pis_chinchilla_g_standard"/> 
+				<value_node value="wpn_fps_pis_chinchilla_lock_arm"/> 
+				<value_node value="wpn_fps_pis_chinchilla_m_bullets"/> 
 			</default_blueprint> 
 			<uses_parts> 
-				<value_node value="wpn_fps_ass_asval_b_standard"/> 
-				<value_node value="wpn_fps_ass_asval_b_proto"/> 
-				<value_node value="wpn_fps_ass_asval_body_standard"/> 
-				<value_node value="wpn_fps_ass_asval_fg_standard"/> 
-				<value_node value="wpn_fps_ass_asval_g_standard"/> 
-				<value_node value="wpn_fps_ass_asval_m_standard"/> 
-				<value_node value="wpn_fps_ass_asval_s_standard"/> 
-				<value_node value="wpn_fps_ass_asval_s_solid"/> 
-				<value_node value="wpn_fps_ass_asval_scopemount"/> 
-				<value_node value="wpn_fps_upg_o_specter"/> 
-				<value_node value="wpn_fps_upg_o_aimpoint"/> 
-				<value_node value="wpn_fps_upg_o_docter"/> 
-				<value_node value="wpn_fps_upg_o_eotech"/> 
-				<value_node value="wpn_fps_upg_o_t1micro"/> 
-				<value_node value="wpn_fps_upg_o_rx30"/> 
-				<value_node value="wpn_fps_upg_o_rx01"/> 
-				<value_node value="wpn_fps_upg_o_reflex"/> 
-				<value_node value="wpn_fps_upg_o_eotech_xps"/> 
-				<value_node value="wpn_fps_upg_o_cmore"/> 
-				<value_node value="wpn_fps_upg_o_aimpoint_2"/> 
-				<value_node value="wpn_fps_upg_o_acog"/> 
-				<value_node value="wpn_fps_upg_o_cs"/> 
-				<value_node value="wpn_fps_upg_fl_ass_smg_sho_peqbox"/> 
-				<value_node value="wpn_fps_upg_fl_ass_smg_sho_surefire"/> 
-				<value_node value="wpn_fps_upg_i_singlefire"/> 
-				<value_node value="wpn_fps_upg_i_autofire"/> 
-				<value_node value="wpn_fps_upg_fl_ass_peq15"/> 
-				<value_node value="wpn_fps_upg_fl_ass_laser"/> 
-				<value_node value="wpn_fps_upg_fl_ass_utg"/> 
-				<value_node value="wpn_fps_upg_o_45rds"/> 
-				<value_node value="wpn_fps_upg_o_spot"/> 
-				<value_node value="wpn_fps_upg_o_45rds_v2"/> 
-				<value_node value="wpn_fps_upg_o_coyote"/> 
+				<value_node value="wpn_fps_pis_chinchilla_b_standard"/> 
+				<value_node value="wpn_fps_pis_chinchilla_b_satan"/> 
+				<value_node value="wpn_fps_pis_chinchilla_body"/> 
+				<value_node value="wpn_fps_pis_chinchilla_cylinder"/> 
+				<value_node value="wpn_fps_pis_chinchilla_dh_hammer"/> 
+				<value_node value="wpn_fps_pis_chinchilla_ejector"/> 
+				<value_node value="wpn_fps_pis_chinchilla_ejectorpin"/> 
+				<value_node value="wpn_fps_pis_chinchilla_g_black"/> 
+				<value_node value="wpn_fps_pis_chinchilla_g_death"/> 
+				<value_node value="wpn_fps_pis_chinchilla_g_standard"/> 
+				<value_node value="wpn_fps_pis_chinchilla_lock_arm"/> 
+				<value_node value="wpn_fps_pis_chinchilla_m_bullets"/> 
 				<value_node value="wpn_fps_upg_bonus_concealment_p1"/> 
 				<value_node value="wpn_fps_upg_bonus_spread_p1"/> 
 				<value_node value="wpn_fps_upg_bonus_team_exp_money_p3"/> 
@@ -5001,78 +4970,6 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="sr2_beakimbo" based_on="sr2" weapon_hold="jowi_pistol" name_id="bm_sr2_beakimbo_name" desc_id ="bm_sr2_beakimbo_desc" description_id="bm_sr2_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="64" NR_CLIPS_MAX="10" AMMO_MAX="320"  texture_bundle_folder="coco"> 
-			<use_data selection_index="2"/> 
-			<categories> 
-				<value_node value="akimbo"/> 
-				<value_node value="smg"/> 
-			</categories> 
-			<stats/> 
-			<stats_modifiers/> 
-		</weapon> 
-		<factory id="wpn_fps_smg_sr2_beakimbo" based_on="wpn_fps_smg_sr2" unit="units/pd2_dlc_coco/weapons/wpn_fps_smg_sr2/wpn_fps_smg_sr2_beakimbo"> 
-			<default_blueprint> 
-				<value_node value="wpn_fps_smg_sr2_body_lower"/> 
-				<value_node value="wpn_fps_smg_sr2_b_standard"/> 
-				<value_node value="wpn_fps_smg_sr2_fg_standard"/> 
-				<value_node value="wpn_fps_smg_sr2_m_mag"/> 
-				<value_node value="wpn_fps_smg_sr2_s_folded"/> 
-				<value_node value="wpn_fps_smg_sr2_vg_standard"/> 
-			</default_blueprint> 
-			<uses_parts> 
-				<value_node value="wpn_fps_smg_sr2_body_lower"/> 
-				<value_node value="wpn_fps_smg_sr2_b_standard"/> 
-				<value_node value="wpn_fps_smg_sr2_fg_standard"/> 
-				<value_node value="wpn_fps_smg_sr2_m_mag"/> 
-				<value_node value="wpn_fps_smg_sr2_s_folded"/> 
-				<value_node value="wpn_fps_smg_sr2_s_unfolded"/> 
-				<value_node value="wpn_fps_smg_sr2_vg_standard"/> 
-				<value_node value="wpn_fps_smg_sr2_ns_silencer"/> 
-				<value_node value="wpn_fps_upg_ns_ass_smg_large"/> 
-				<value_node value="wpn_fps_upg_ns_ass_smg_medium"/> 
-				<value_node value="wpn_fps_upg_ns_ass_smg_small"/> 
-				<value_node value="wpn_fps_upg_ns_ass_smg_firepig"/> 
-				<value_node value="wpn_fps_upg_ns_ass_smg_stubby"/> 
-				<value_node value="wpn_fps_upg_ns_ass_smg_tank"/> 
-				<value_node value="wpn_fps_upg_fl_ass_smg_sho_peqbox"/> 
-				<value_node value="wpn_fps_upg_fl_ass_smg_sho_surefire"/> 
-				<value_node value="wpn_fps_upg_vg_ass_smg_verticalgrip"/> 
-				<value_node value="wpn_fps_upg_vg_ass_smg_stubby"/> 
-				<value_node value="wpn_fps_upg_vg_ass_smg_afg"/> 
-				<value_node value="wpn_fps_upg_i_singlefire"/> 
-				<value_node value="wpn_fps_upg_i_autofire"/> 
-				<value_node value="wpn_fps_upg_ass_ns_jprifles"/> 
-				<value_node value="wpn_fps_upg_ass_ns_linear"/> 
-				<value_node value="wpn_fps_upg_ass_ns_surefire"/> 
-				<value_node value="wpn_fps_upg_fl_ass_peq15"/> 
-				<value_node value="wpn_fps_upg_fl_ass_laser"/> 
-				<value_node value="wpn_fps_upg_o_aimpoint"/> 
-				<value_node value="wpn_fps_upg_o_docter"/> 
-				<value_node value="wpn_fps_upg_o_eotech"/> 
-				<value_node value="wpn_fps_upg_o_t1micro"/> 
-				<value_node value="wpn_fps_upg_o_cmore"/> 
-				<value_node value="wpn_fps_upg_o_aimpoint_2"/> 
-				<value_node value="wpn_fps_upg_o_acog"/> 
-				<value_node value="wpn_fps_upg_o_specter"/> 
-				<value_node value="wpn_fps_upg_o_eotech_xps"/> 
-				<value_node value="wpn_fps_upg_o_reflex"/> 
-				<value_node value="wpn_fps_upg_o_rx01"/> 
-				<value_node value="wpn_fps_upg_o_rx30"/> 
-				<value_node value="wpn_fps_upg_o_cs"/> 
-				<value_node value="wpn_fps_upg_ass_ns_battle"/> 
-				<value_node value="wpn_fps_upg_fl_ass_utg"/> 
-				<value_node value="wpn_fps_upg_o_spot"/> 
-				<value_node value="wpn_fps_smg_sr2_m_quick"/> 
-				<value_node value="wpn_fps_upg_o_coyote"/> 
-				<value_node value="wpn_fps_upg_bonus_concealment_p1"/> 
-				<value_node value="wpn_fps_upg_bonus_spread_p1"/> 
-				<value_node value="wpn_fps_upg_bonus_team_exp_money_p3"/> 
-				<value_node value="wpn_fps_upg_bonus_recoil_p1"/> 
-			</uses_parts> 
-		</factory> 
-		<stance/> 
-	</WeaponNew> 
-	<WeaponNew> 
 		<weapon id="galil_beakimbo" based_on="galil" weapon_hold="jowi_pistol" name_id="bm_galil_beakimbo_name" desc_id ="bm_galil_beakimbo_desc" description_id="bm_galil_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="60" NR_CLIPS_MAX="10" AMMO_MAX="300" global_value="gage_pack_assault" texture_bundle_folder="gage_pack_assault"> 
 			<use_data selection_index="2"/> 
 			<categories> 
@@ -5225,81 +5122,73 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="ak5_beakimbo" based_on="ak5" weapon_hold="jowi_pistol" name_id="bm_ak5_beakimbo_name" desc_id ="bm_ak5_beakimbo_desc" description_id="bm_ak5_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="60" NR_CLIPS_MAX="10" AMMO_MAX="300"  > 
+		<weapon id="rota_beakimbo" based_on="rota" weapon_hold="jowi_pistol" name_id="bm_rota_beakimbo_name" desc_id ="bm_rota_beakimbo_desc" description_id="bm_rota_beakimbo_desc_long" DAMAGE="6" CLIP_AMMO_MAX="12" NR_CLIPS_MAX="18" AMMO_MAX="108" global_value="rota" texture_bundle_folder="rota"> 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
-				<value_node value="assault_rifle"/> 
+				<value_node value="shotgun"/> 
 			</categories> 
 			<stats/> 
 			<stats_modifiers/> 
 		</weapon> 
-		<factory id="wpn_fps_ass_ak5_beakimbo" based_on="wpn_fps_ass_ak5" unit="units/payday2/weapons/wpn_fps_ass_ak5/wpn_fps_ass_ak5_beakimbo"> 
+		<factory id="wpn_fps_sho_rota_beakimbo" based_on="wpn_fps_sho_rota" unit="units/pd2_dlc_rota/weapons/wpn_fps_sho_rota/wpn_fps_sho_rota_beakimbo"> 
 			<default_blueprint> 
-				<value_node value="wpn_fps_ass_ak5_b_std"/> 
-				<value_node value="wpn_fps_ass_ak5_body_ak5"/> 
-				<value_node value="wpn_fps_ass_ak5_fg_ak5a"/> 
-				<value_node value="wpn_fps_ass_ak5_s_ak5a"/> 
-				<value_node value="wpn_fps_m4_uupg_m_std_vanilla"/> 
+				<value_node value="wpn_fps_sho_rota_b_long"/> 
+				<value_node value="wpn_fps_sho_rota_body_lower"/> 
+				<value_node value="wpn_fps_sho_rota_body_upper"/> 
+				<value_node value="wpn_fps_sho_rota_fg_standard"/> 
+				<value_node value="wpn_fps_sho_rota_g_standard"/> 
+				<value_node value="wpn_fps_sho_rota_m_standard"/> 
+				<value_node value="wpn_fps_sho_rota_mag_realese"/> 
+				<value_node value="wpn_fps_sho_rota_o_standard"/> 
+				<value_node value="wpn_fps_smg_hajk_vg_moe"/> 
 			</default_blueprint> 
 			<uses_parts> 
-				<value_node value="wpn_fps_ass_ak5_b_std"/> 
-				<value_node value="wpn_fps_ass_ak5_body_ak5"/> 
-				<value_node value="wpn_fps_ass_ak5_body_rail"/> 
-				<value_node value="wpn_fps_ass_ak5_fg_ak5a"/> 
-				<value_node value="wpn_fps_ass_ak5_fg_ak5c"/> 
-				<value_node value="wpn_fps_ass_ak5_fg_fnc"/> 
-				<value_node value="wpn_fps_ass_ak5_s_ak5a"/> 
-				<value_node value="wpn_fps_ass_ak5_s_ak5b"/> 
-				<value_node value="wpn_fps_ass_ak5_s_ak5c"/> 
-				<value_node value="wpn_fps_m4_uupg_m_std_vanilla"/> 
-				<value_node value="wpn_fps_upg_m4_m_drum"/> 
-				<value_node value="wpn_fps_upg_m4_m_pmag"/> 
-				<value_node value="wpn_fps_upg_m4_m_straight"/> 
+				<value_node value="wpn_fps_sho_rota_b_long"/> 
+				<value_node value="wpn_fps_sho_rota_b_short"/> 
+				<value_node value="wpn_fps_sho_rota_b_silencer"/> 
+				<value_node value="wpn_fps_sho_rota_body_lower"/> 
+				<value_node value="wpn_fps_sho_rota_body_upper"/> 
+				<value_node value="wpn_fps_sho_rota_fg_standard"/> 
+				<value_node value="wpn_fps_sho_rota_g_standard"/> 
+				<value_node value="wpn_fps_sho_rota_m_standard"/> 
+				<value_node value="wpn_fps_sho_rota_mag_realese"/> 
+				<value_node value="wpn_fps_sho_rota_o_standard"/> 
+				<value_node value="wpn_fps_smg_hajk_vg_moe"/> 
 				<value_node value="wpn_fps_upg_o_specter"/> 
 				<value_node value="wpn_fps_upg_o_aimpoint"/> 
 				<value_node value="wpn_fps_upg_o_docter"/> 
 				<value_node value="wpn_fps_upg_o_eotech"/> 
 				<value_node value="wpn_fps_upg_o_t1micro"/> 
 				<value_node value="wpn_fps_upg_o_cmore"/> 
-				<value_node value="wpn_fps_upg_o_aimpoint_2"/> 
-				<value_node value="wpn_fps_upg_o_acog"/> 
-				<value_node value="wpn_fps_upg_vg_ass_smg_verticalgrip"/> 
-				<value_node value="wpn_fps_upg_vg_ass_smg_stubby"/> 
-				<value_node value="wpn_fps_upg_vg_ass_smg_afg"/> 
 				<value_node value="wpn_fps_upg_fl_ass_smg_sho_peqbox"/> 
 				<value_node value="wpn_fps_upg_fl_ass_smg_sho_surefire"/> 
-				<value_node value="wpn_fps_upg_ns_ass_smg_large"/> 
-				<value_node value="wpn_fps_upg_ns_ass_smg_medium"/> 
-				<value_node value="wpn_fps_upg_ns_ass_smg_small"/> 
-				<value_node value="wpn_fps_upg_ns_ass_smg_firepig"/> 
-				<value_node value="wpn_fps_upg_ns_ass_smg_stubby"/> 
-				<value_node value="wpn_fps_upg_ns_ass_smg_tank"/> 
-				<value_node value="wpn_fps_upg_i_singlefire"/> 
-				<value_node value="wpn_fps_upg_i_autofire"/> 
-				<value_node value="wpn_fps_upg_m4_m_quad"/> 
-				<value_node value="wpn_fps_ass_l85a2_m_emag"/> 
-				<value_node value="wpn_fps_upg_ass_ns_jprifles"/> 
-				<value_node value="wpn_fps_upg_ass_ns_linear"/> 
-				<value_node value="wpn_fps_upg_ass_ns_surefire"/> 
+				<value_node value="wpn_fps_upg_o_aimpoint_2"/> 
+				<value_node value="wpn_fps_upg_o_acog"/> 
+				<value_node value="wpn_fps_upg_ns_shot_thick"/> 
+				<value_node value="wpn_fps_upg_ns_shot_shark"/> 
+				<value_node value="wpn_fps_upg_shot_ns_king"/> 
+				<value_node value="wpn_fps_upg_fl_ass_peq15"/> 
+				<value_node value="wpn_fps_upg_fl_ass_laser"/> 
 				<value_node value="wpn_fps_upg_o_eotech_xps"/> 
 				<value_node value="wpn_fps_upg_o_reflex"/> 
 				<value_node value="wpn_fps_upg_o_rx01"/> 
 				<value_node value="wpn_fps_upg_o_rx30"/> 
 				<value_node value="wpn_fps_upg_o_cs"/> 
-				<value_node value="wpn_fps_upg_fl_ass_peq15"/> 
-				<value_node value="wpn_fps_upg_fl_ass_laser"/> 
-				<value_node value="wpn_fps_upg_m4_m_l5"/> 
-				<value_node value="wpn_fps_ass_ak5_b_short"/> 
-				<value_node value="wpn_fps_upg_ass_ns_battle"/> 
 				<value_node value="wpn_fps_upg_fl_ass_utg"/> 
-				<value_node value="wpn_fps_upg_o_45rds"/> 
+				<value_node value="wpn_fps_upg_ns_sho_salvo_large"/> 
 				<value_node value="wpn_fps_upg_o_spot"/> 
-				<value_node value="wpn_fps_m4_upg_m_quick"/> 
+				<value_node value="wpn_fps_upg_ns_duck"/> 
 				<value_node value="wpn_fps_upg_o_xpsg33_magnifier"/> 
-				<value_node value="wpn_fps_upg_o_45rds_v2"/> 
+				<value_node value="wpn_fps_upg_a_slug"/> 
+				<value_node value="wpn_fps_upg_a_custom"/> 
+				<value_node value="wpn_fps_upg_a_custom_free"/> 
+				<value_node value="wpn_fps_upg_a_explosive"/> 
+				<value_node value="wpn_fps_upg_a_piercing"/> 
+				<value_node value="wpn_fps_upg_a_dragons_breath"/> 
 				<value_node value="wpn_fps_upg_o_coyote"/> 
 				<value_node value="wpn_fps_upg_bonus_concealment_p1"/> 
+				<value_node value="wpn_fps_upg_bonus_spread_n1"/> 
 				<value_node value="wpn_fps_upg_bonus_spread_p1"/> 
 				<value_node value="wpn_fps_upg_bonus_team_exp_money_p3"/> 
 				<value_node value="wpn_fps_upg_bonus_recoil_p1"/> 
@@ -5444,6 +5333,197 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
+		<weapon id="new_raging_bull_beakimbo" based_on="new_raging_bull" weapon_hold="jowi_pistol" name_id="bm_new_raging_bull_beakimbo_name" desc_id ="bm_new_raging_bull_beakimbo_desc" description_id="bm_new_raging_bull_beakimbo_desc_long" DAMAGE="2" CLIP_AMMO_MAX="12" NR_CLIPS_MAX="18" AMMO_MAX="108"  > 
+			<use_data selection_index="2"/> 
+			<categories> 
+				<value_node value="akimbo"/> 
+				<value_node value="pistol"/> 
+			</categories> 
+			<stats/> 
+			<stats_modifiers/> 
+		</weapon> 
+		<factory id="wpn_fps_pis_rage_beakimbo" based_on="wpn_fps_pis_rage" unit="units/payday2/weapons/wpn_fps_pis_rage/wpn_fps_pis_rage_beakimbo"> 
+			<default_blueprint> 
+				<value_node value="wpn_fps_pis_rage_body_standard"/> 
+				<value_node value="wpn_fps_pis_rage_b_standard"/> 
+				<value_node value="wpn_fps_pis_rage_g_standard"/> 
+			</default_blueprint> 
+			<uses_parts> 
+				<value_node value="wpn_fps_pis_rage_body_standard"/> 
+				<value_node value="wpn_fps_pis_rage_body_smooth"/> 
+				<value_node value="wpn_fps_pis_rage_b_standard"/> 
+				<value_node value="wpn_fps_pis_rage_b_short"/> 
+				<value_node value="wpn_fps_pis_rage_b_long"/> 
+				<value_node value="wpn_fps_pis_rage_b_comp1"/> 
+				<value_node value="wpn_fps_pis_rage_b_comp2"/> 
+				<value_node value="wpn_fps_pis_rage_g_standard"/> 
+				<value_node value="wpn_fps_pis_rage_g_ergo"/> 
+				<value_node value="wpn_fps_upg_o_specter"/> 
+				<value_node value="wpn_fps_upg_o_aimpoint"/> 
+				<value_node value="wpn_fps_upg_o_docter"/> 
+				<value_node value="wpn_fps_upg_o_eotech"/> 
+				<value_node value="wpn_fps_upg_o_t1micro"/> 
+				<value_node value="wpn_fps_upg_o_cmore"/> 
+				<value_node value="wpn_fps_upg_o_aimpoint_2"/> 
+				<value_node value="wpn_fps_upg_o_acog"/> 
+				<value_node value="wpn_fps_upg_o_eotech_xps"/> 
+				<value_node value="wpn_fps_upg_o_reflex"/> 
+				<value_node value="wpn_fps_upg_o_rx01"/> 
+				<value_node value="wpn_fps_upg_o_rx30"/> 
+				<value_node value="wpn_fps_upg_o_cs"/> 
+				<value_node value="wpn_fps_upg_pis_ns_flash"/> 
+				<value_node value="wpn_fps_pis_rage_extra"/> 
+				<value_node value="wpn_fps_pis_rage_o_adapter"/> 
+				<value_node value="wpn_fps_pis_rage_lock"/> 
+				<value_node value="wpn_fps_upg_o_spot"/> 
+				<value_node value="wpn_fps_upg_o_xpsg33_magnifier"/> 
+				<value_node value="wpn_fps_upg_o_coyote"/> 
+				<value_node value="wpn_fps_upg_bonus_concealment_p1"/> 
+				<value_node value="wpn_fps_upg_bonus_concealment_p3"/> 
+				<value_node value="wpn_fps_upg_bonus_spread_p1"/> 
+				<value_node value="wpn_fps_upg_bonus_team_exp_money_p3"/> 
+				<value_node value="wpn_fps_upg_bonus_recoil_p1"/> 
+			</uses_parts> 
+		</factory> 
+		<stance/> 
+	</WeaponNew> 
+	<WeaponNew> 
+		<weapon id="aug_beakimbo" based_on="aug" weapon_hold="jowi_pistol" name_id="bm_aug_beakimbo_name" desc_id ="bm_aug_beakimbo_desc" description_id="bm_aug_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="60" NR_CLIPS_MAX="10" AMMO_MAX="300"  > 
+			<use_data selection_index="2"/> 
+			<categories> 
+				<value_node value="akimbo"/> 
+				<value_node value="assault_rifle"/> 
+			</categories> 
+			<stats/> 
+			<stats_modifiers/> 
+		</weapon> 
+		<factory id="wpn_fps_ass_aug_beakimbo" based_on="wpn_fps_ass_aug" unit="units/payday2/weapons/wpn_fps_ass_aug/wpn_fps_ass_aug_beakimbo"> 
+			<default_blueprint> 
+				<value_node value="wpn_fps_aug_body_aug"/> 
+				<value_node value="wpn_fps_aug_b_medium"/> 
+				<value_node value="wpn_fps_upg_vg_ass_smg_verticalgrip"/> 
+				<value_node value="wpn_fps_aug_m_pmag"/> 
+				<value_node value="wpn_upg_o_marksmansight_rear_vanilla"/> 
+			</default_blueprint> 
+			<uses_parts> 
+				<value_node value="wpn_fps_aug_body_aug"/> 
+				<value_node value="wpn_fps_aug_fg_a3"/> 
+				<value_node value="wpn_fps_aug_ris_special"/> 
+				<value_node value="wpn_fps_aug_b_long"/> 
+				<value_node value="wpn_fps_aug_b_medium"/> 
+				<value_node value="wpn_fps_aug_b_short"/> 
+				<value_node value="wpn_fps_aug_m_pmag"/> 
+				<value_node value="wpn_fps_upg_o_specter"/> 
+				<value_node value="wpn_fps_upg_o_aimpoint"/> 
+				<value_node value="wpn_fps_upg_o_docter"/> 
+				<value_node value="wpn_fps_upg_o_eotech"/> 
+				<value_node value="wpn_fps_upg_o_t1micro"/> 
+				<value_node value="wpn_fps_upg_o_cmore"/> 
+				<value_node value="wpn_fps_upg_o_aimpoint_2"/> 
+				<value_node value="wpn_fps_upg_o_acog"/> 
+				<value_node value="wpn_upg_o_marksmansight_rear_vanilla"/> 
+				<value_node value="wpn_upg_o_marksmansight_front_vanilla"/> 
+				<value_node value="wpn_fps_upg_vg_ass_smg_verticalgrip"/> 
+				<value_node value="wpn_fps_upg_vg_ass_smg_stubby"/> 
+				<value_node value="wpn_fps_upg_vg_ass_smg_afg"/> 
+				<value_node value="wpn_fps_upg_ns_ass_smg_large"/> 
+				<value_node value="wpn_fps_upg_ns_ass_smg_medium"/> 
+				<value_node value="wpn_fps_upg_ns_ass_smg_small"/> 
+				<value_node value="wpn_fps_upg_ns_ass_smg_firepig"/> 
+				<value_node value="wpn_fps_upg_ns_ass_smg_stubby"/> 
+				<value_node value="wpn_fps_upg_ns_ass_smg_tank"/> 
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_peqbox"/> 
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_surefire"/> 
+				<value_node value="wpn_fps_upg_i_singlefire"/> 
+				<value_node value="wpn_fps_upg_i_autofire"/> 
+				<value_node value="wpn_fps_upg_ass_ns_jprifles"/> 
+				<value_node value="wpn_fps_upg_ass_ns_linear"/> 
+				<value_node value="wpn_fps_upg_ass_ns_surefire"/> 
+				<value_node value="wpn_fps_upg_o_eotech_xps"/> 
+				<value_node value="wpn_fps_upg_o_reflex"/> 
+				<value_node value="wpn_fps_upg_o_rx01"/> 
+				<value_node value="wpn_fps_upg_o_rx30"/> 
+				<value_node value="wpn_fps_upg_o_cs"/> 
+				<value_node value="wpn_fps_upg_fl_ass_peq15"/> 
+				<value_node value="wpn_fps_upg_fl_ass_laser"/> 
+				<value_node value="wpn_fps_aug_body_f90"/> 
+				<value_node value="wpn_fps_upg_ass_ns_battle"/> 
+				<value_node value="wpn_fps_upg_fl_ass_utg"/> 
+				<value_node value="wpn_fps_upg_o_45rds"/> 
+				<value_node value="wpn_fps_upg_o_spot"/> 
+				<value_node value="wpn_fps_ass_aug_m_quick"/> 
+				<value_node value="wpn_fps_upg_o_xpsg33_magnifier"/> 
+				<value_node value="wpn_fps_upg_o_45rds_v2"/> 
+				<value_node value="wpn_fps_upg_o_coyote"/> 
+				<value_node value="wpn_fps_upg_bonus_concealment_p1"/> 
+				<value_node value="wpn_fps_upg_bonus_spread_p1"/> 
+				<value_node value="wpn_fps_upg_bonus_team_exp_money_p3"/> 
+				<value_node value="wpn_fps_upg_bonus_recoil_p1"/> 
+			</uses_parts> 
+		</factory> 
+		<stance/> 
+	</WeaponNew> 
+	<WeaponNew> 
+		<weapon id="asval_beakimbo" based_on="asval" weapon_hold="jowi_pistol" name_id="bm_asval_beakimbo_name" desc_id ="bm_asval_beakimbo_desc" description_id="bm_asval_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="40" NR_CLIPS_MAX="22" AMMO_MAX="440" global_value="character_pack_sokol" texture_bundle_folder="character_pack_sokol"> 
+			<use_data selection_index="2"/> 
+			<categories> 
+				<value_node value="akimbo"/> 
+				<value_node value="assault_rifle"/> 
+			</categories> 
+			<stats/> 
+			<stats_modifiers/> 
+		</weapon> 
+		<factory id="wpn_fps_ass_asval_beakimbo" based_on="wpn_fps_ass_asval" unit="units/pd2_dlc_character_sokol/weapons/wpn_fps_ass_asval/wpn_fps_ass_asval_beakimbo"> 
+			<default_blueprint> 
+				<value_node value="wpn_fps_ass_asval_b_standard"/> 
+				<value_node value="wpn_fps_ass_asval_body_standard"/> 
+				<value_node value="wpn_fps_ass_asval_fg_standard"/> 
+				<value_node value="wpn_fps_ass_asval_m_standard"/> 
+				<value_node value="wpn_fps_ass_asval_s_standard"/> 
+			</default_blueprint> 
+			<uses_parts> 
+				<value_node value="wpn_fps_ass_asval_b_standard"/> 
+				<value_node value="wpn_fps_ass_asval_b_proto"/> 
+				<value_node value="wpn_fps_ass_asval_body_standard"/> 
+				<value_node value="wpn_fps_ass_asval_fg_standard"/> 
+				<value_node value="wpn_fps_ass_asval_g_standard"/> 
+				<value_node value="wpn_fps_ass_asval_m_standard"/> 
+				<value_node value="wpn_fps_ass_asval_s_standard"/> 
+				<value_node value="wpn_fps_ass_asval_s_solid"/> 
+				<value_node value="wpn_fps_ass_asval_scopemount"/> 
+				<value_node value="wpn_fps_upg_o_specter"/> 
+				<value_node value="wpn_fps_upg_o_aimpoint"/> 
+				<value_node value="wpn_fps_upg_o_docter"/> 
+				<value_node value="wpn_fps_upg_o_eotech"/> 
+				<value_node value="wpn_fps_upg_o_t1micro"/> 
+				<value_node value="wpn_fps_upg_o_rx30"/> 
+				<value_node value="wpn_fps_upg_o_rx01"/> 
+				<value_node value="wpn_fps_upg_o_reflex"/> 
+				<value_node value="wpn_fps_upg_o_eotech_xps"/> 
+				<value_node value="wpn_fps_upg_o_cmore"/> 
+				<value_node value="wpn_fps_upg_o_aimpoint_2"/> 
+				<value_node value="wpn_fps_upg_o_acog"/> 
+				<value_node value="wpn_fps_upg_o_cs"/> 
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_peqbox"/> 
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_surefire"/> 
+				<value_node value="wpn_fps_upg_i_singlefire"/> 
+				<value_node value="wpn_fps_upg_i_autofire"/> 
+				<value_node value="wpn_fps_upg_fl_ass_peq15"/> 
+				<value_node value="wpn_fps_upg_fl_ass_laser"/> 
+				<value_node value="wpn_fps_upg_fl_ass_utg"/> 
+				<value_node value="wpn_fps_upg_o_45rds"/> 
+				<value_node value="wpn_fps_upg_o_spot"/> 
+				<value_node value="wpn_fps_upg_o_45rds_v2"/> 
+				<value_node value="wpn_fps_upg_o_coyote"/> 
+				<value_node value="wpn_fps_upg_bonus_concealment_p1"/> 
+				<value_node value="wpn_fps_upg_bonus_spread_p1"/> 
+				<value_node value="wpn_fps_upg_bonus_team_exp_money_p3"/> 
+				<value_node value="wpn_fps_upg_bonus_recoil_p1"/> 
+			</uses_parts> 
+		</factory> 
+		<stance/> 
+	</WeaponNew> 
+	<WeaponNew> 
 		<weapon id="polymer_beakimbo" based_on="polymer" weapon_hold="jowi_pistol" name_id="bm_polymer_beakimbo_name" desc_id ="bm_polymer_beakimbo_desc" description_id="bm_polymer_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="60" NR_CLIPS_MAX="10" AMMO_MAX="300" global_value="turtles" texture_bundle_folder="turtles"> 
 			<use_data selection_index="2"/> 
 			<categories> 
@@ -5529,137 +5609,6 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="aug_beakimbo" based_on="aug" weapon_hold="jowi_pistol" name_id="bm_aug_beakimbo_name" desc_id ="bm_aug_beakimbo_desc" description_id="bm_aug_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="60" NR_CLIPS_MAX="10" AMMO_MAX="300"  > 
-			<use_data selection_index="2"/> 
-			<categories> 
-				<value_node value="akimbo"/> 
-				<value_node value="assault_rifle"/> 
-			</categories> 
-			<stats/> 
-			<stats_modifiers/> 
-		</weapon> 
-		<factory id="wpn_fps_ass_aug_beakimbo" based_on="wpn_fps_ass_aug" unit="units/payday2/weapons/wpn_fps_ass_aug/wpn_fps_ass_aug_beakimbo"> 
-			<default_blueprint> 
-				<value_node value="wpn_fps_aug_body_aug"/> 
-				<value_node value="wpn_fps_aug_b_medium"/> 
-				<value_node value="wpn_fps_upg_vg_ass_smg_verticalgrip"/> 
-				<value_node value="wpn_fps_aug_m_pmag"/> 
-				<value_node value="wpn_upg_o_marksmansight_rear_vanilla"/> 
-			</default_blueprint> 
-			<uses_parts> 
-				<value_node value="wpn_fps_aug_body_aug"/> 
-				<value_node value="wpn_fps_aug_fg_a3"/> 
-				<value_node value="wpn_fps_aug_ris_special"/> 
-				<value_node value="wpn_fps_aug_b_long"/> 
-				<value_node value="wpn_fps_aug_b_medium"/> 
-				<value_node value="wpn_fps_aug_b_short"/> 
-				<value_node value="wpn_fps_aug_m_pmag"/> 
-				<value_node value="wpn_fps_upg_o_specter"/> 
-				<value_node value="wpn_fps_upg_o_aimpoint"/> 
-				<value_node value="wpn_fps_upg_o_docter"/> 
-				<value_node value="wpn_fps_upg_o_eotech"/> 
-				<value_node value="wpn_fps_upg_o_t1micro"/> 
-				<value_node value="wpn_fps_upg_o_cmore"/> 
-				<value_node value="wpn_fps_upg_o_aimpoint_2"/> 
-				<value_node value="wpn_fps_upg_o_acog"/> 
-				<value_node value="wpn_upg_o_marksmansight_rear_vanilla"/> 
-				<value_node value="wpn_upg_o_marksmansight_front_vanilla"/> 
-				<value_node value="wpn_fps_upg_vg_ass_smg_verticalgrip"/> 
-				<value_node value="wpn_fps_upg_vg_ass_smg_stubby"/> 
-				<value_node value="wpn_fps_upg_vg_ass_smg_afg"/> 
-				<value_node value="wpn_fps_upg_ns_ass_smg_large"/> 
-				<value_node value="wpn_fps_upg_ns_ass_smg_medium"/> 
-				<value_node value="wpn_fps_upg_ns_ass_smg_small"/> 
-				<value_node value="wpn_fps_upg_ns_ass_smg_firepig"/> 
-				<value_node value="wpn_fps_upg_ns_ass_smg_stubby"/> 
-				<value_node value="wpn_fps_upg_ns_ass_smg_tank"/> 
-				<value_node value="wpn_fps_upg_fl_ass_smg_sho_peqbox"/> 
-				<value_node value="wpn_fps_upg_fl_ass_smg_sho_surefire"/> 
-				<value_node value="wpn_fps_upg_i_singlefire"/> 
-				<value_node value="wpn_fps_upg_i_autofire"/> 
-				<value_node value="wpn_fps_upg_ass_ns_jprifles"/> 
-				<value_node value="wpn_fps_upg_ass_ns_linear"/> 
-				<value_node value="wpn_fps_upg_ass_ns_surefire"/> 
-				<value_node value="wpn_fps_upg_o_eotech_xps"/> 
-				<value_node value="wpn_fps_upg_o_reflex"/> 
-				<value_node value="wpn_fps_upg_o_rx01"/> 
-				<value_node value="wpn_fps_upg_o_rx30"/> 
-				<value_node value="wpn_fps_upg_o_cs"/> 
-				<value_node value="wpn_fps_upg_fl_ass_peq15"/> 
-				<value_node value="wpn_fps_upg_fl_ass_laser"/> 
-				<value_node value="wpn_fps_aug_body_f90"/> 
-				<value_node value="wpn_fps_upg_ass_ns_battle"/> 
-				<value_node value="wpn_fps_upg_fl_ass_utg"/> 
-				<value_node value="wpn_fps_upg_o_45rds"/> 
-				<value_node value="wpn_fps_upg_o_spot"/> 
-				<value_node value="wpn_fps_ass_aug_m_quick"/> 
-				<value_node value="wpn_fps_upg_o_xpsg33_magnifier"/> 
-				<value_node value="wpn_fps_upg_o_45rds_v2"/> 
-				<value_node value="wpn_fps_upg_o_coyote"/> 
-				<value_node value="wpn_fps_upg_bonus_concealment_p1"/> 
-				<value_node value="wpn_fps_upg_bonus_spread_p1"/> 
-				<value_node value="wpn_fps_upg_bonus_team_exp_money_p3"/> 
-				<value_node value="wpn_fps_upg_bonus_recoil_p1"/> 
-			</uses_parts> 
-		</factory> 
-		<stance/> 
-	</WeaponNew> 
-	<WeaponNew> 
-		<weapon id="new_raging_bull_beakimbo" based_on="new_raging_bull" weapon_hold="jowi_pistol" name_id="bm_new_raging_bull_beakimbo_name" desc_id ="bm_new_raging_bull_beakimbo_desc" description_id="bm_new_raging_bull_beakimbo_desc_long" DAMAGE="2" CLIP_AMMO_MAX="12" NR_CLIPS_MAX="18" AMMO_MAX="108"  > 
-			<use_data selection_index="2"/> 
-			<categories> 
-				<value_node value="akimbo"/> 
-				<value_node value="pistol"/> 
-			</categories> 
-			<stats/> 
-			<stats_modifiers/> 
-		</weapon> 
-		<factory id="wpn_fps_pis_rage_beakimbo" based_on="wpn_fps_pis_rage" unit="units/payday2/weapons/wpn_fps_pis_rage/wpn_fps_pis_rage_beakimbo"> 
-			<default_blueprint> 
-				<value_node value="wpn_fps_pis_rage_body_standard"/> 
-				<value_node value="wpn_fps_pis_rage_b_standard"/> 
-				<value_node value="wpn_fps_pis_rage_g_standard"/> 
-			</default_blueprint> 
-			<uses_parts> 
-				<value_node value="wpn_fps_pis_rage_body_standard"/> 
-				<value_node value="wpn_fps_pis_rage_body_smooth"/> 
-				<value_node value="wpn_fps_pis_rage_b_standard"/> 
-				<value_node value="wpn_fps_pis_rage_b_short"/> 
-				<value_node value="wpn_fps_pis_rage_b_long"/> 
-				<value_node value="wpn_fps_pis_rage_b_comp1"/> 
-				<value_node value="wpn_fps_pis_rage_b_comp2"/> 
-				<value_node value="wpn_fps_pis_rage_g_standard"/> 
-				<value_node value="wpn_fps_pis_rage_g_ergo"/> 
-				<value_node value="wpn_fps_upg_o_specter"/> 
-				<value_node value="wpn_fps_upg_o_aimpoint"/> 
-				<value_node value="wpn_fps_upg_o_docter"/> 
-				<value_node value="wpn_fps_upg_o_eotech"/> 
-				<value_node value="wpn_fps_upg_o_t1micro"/> 
-				<value_node value="wpn_fps_upg_o_cmore"/> 
-				<value_node value="wpn_fps_upg_o_aimpoint_2"/> 
-				<value_node value="wpn_fps_upg_o_acog"/> 
-				<value_node value="wpn_fps_upg_o_eotech_xps"/> 
-				<value_node value="wpn_fps_upg_o_reflex"/> 
-				<value_node value="wpn_fps_upg_o_rx01"/> 
-				<value_node value="wpn_fps_upg_o_rx30"/> 
-				<value_node value="wpn_fps_upg_o_cs"/> 
-				<value_node value="wpn_fps_upg_pis_ns_flash"/> 
-				<value_node value="wpn_fps_pis_rage_extra"/> 
-				<value_node value="wpn_fps_pis_rage_o_adapter"/> 
-				<value_node value="wpn_fps_pis_rage_lock"/> 
-				<value_node value="wpn_fps_upg_o_spot"/> 
-				<value_node value="wpn_fps_upg_o_xpsg33_magnifier"/> 
-				<value_node value="wpn_fps_upg_o_coyote"/> 
-				<value_node value="wpn_fps_upg_bonus_concealment_p1"/> 
-				<value_node value="wpn_fps_upg_bonus_concealment_p3"/> 
-				<value_node value="wpn_fps_upg_bonus_spread_p1"/> 
-				<value_node value="wpn_fps_upg_bonus_team_exp_money_p3"/> 
-				<value_node value="wpn_fps_upg_bonus_recoil_p1"/> 
-			</uses_parts> 
-		</factory> 
-		<stance/> 
-	</WeaponNew> 
-	<WeaponNew> 
 		<weapon id="par_beakimbo" based_on="par" weapon_hold="jowi_pistol" name_id="bm_par_beakimbo_name" desc_id ="bm_par_beakimbo_desc" description_id="bm_par_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="400" NR_CLIPS_MAX="4" AMMO_MAX="800"  texture_bundle_folder="par"> 
 			<use_data selection_index="2"/> 
 			<categories> 
@@ -5712,6 +5661,110 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
+		<weapon id="olympic_beakimbo" based_on="olympic" weapon_hold="jowi_pistol" name_id="bm_olympic_beakimbo_name" desc_id ="bm_olympic_beakimbo_desc" description_id="bm_olympic_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="50" NR_CLIPS_MAX="12" AMMO_MAX="300"  > 
+			<use_data selection_index="2"/> 
+			<categories> 
+				<value_node value="akimbo"/> 
+				<value_node value="smg"/> 
+			</categories> 
+			<stats/> 
+			<stats_modifiers/> 
+		</weapon> 
+		<factory id="wpn_fps_smg_olympic_beakimbo" based_on="wpn_fps_smg_olympic" unit="units/payday2/weapons/wpn_fps_smg_olympic/wpn_fps_smg_olympic_beakimbo"> 
+			<default_blueprint> 
+				<value_node value="wpn_fps_smg_olympic_s_adjust"/> 
+				<value_node value="wpn_fps_m4_uupg_draghandle"/> 
+				<value_node value="wpn_fps_upg_m4_m_straight_vanilla"/> 
+				<value_node value="wpn_fps_upg_m4_g_standard_vanilla"/> 
+				<value_node value="wpn_fps_m4_uupg_b_short_vanilla"/> 
+				<value_node value="wpn_fps_m4_upper_reciever_round"/> 
+				<value_node value="wpn_fps_m4_lower_reciever"/> 
+				<value_node value="wpn_fps_smg_olympic_fg_olympic"/> 
+				<value_node value="wpn_fps_ass_m16_o_handle_sight"/> 
+			</default_blueprint> 
+			<uses_parts> 
+				<value_node value="wpn_fps_m4_lower_reciever"/> 
+				<value_node value="wpn_fps_m4_upper_reciever_edge"/> 
+				<value_node value="wpn_fps_m4_upper_reciever_round"/> 
+				<value_node value="wpn_fps_m4_uupg_draghandle"/> 
+				<value_node value="wpn_fps_smg_olympic_fg_olympic"/> 
+				<value_node value="wpn_fps_smg_olympic_fg_railed"/> 
+				<value_node value="wpn_fps_smg_olympic_s_short"/> 
+				<value_node value="wpn_fps_smg_olympic_s_adjust"/> 
+				<value_node value="wpn_fps_upg_m4_s_standard"/> 
+				<value_node value="wpn_fps_upg_m4_s_pts"/> 
+				<value_node value="wpn_fps_m4_uupg_b_short_vanilla"/> 
+				<value_node value="wpn_fps_m4_uupg_b_medium"/> 
+				<value_node value="wpn_fps_m4_uupg_m_std"/> 
+				<value_node value="wpn_fps_upg_m4_m_drum"/> 
+				<value_node value="wpn_fps_upg_m4_m_pmag"/> 
+				<value_node value="wpn_fps_upg_m4_m_straight_vanilla"/> 
+				<value_node value="wpn_fps_ass_m16_o_handle_sight"/> 
+				<value_node value="wpn_fps_upg_o_specter"/> 
+				<value_node value="wpn_fps_upg_o_aimpoint"/> 
+				<value_node value="wpn_fps_upg_o_docter"/> 
+				<value_node value="wpn_fps_upg_o_eotech"/> 
+				<value_node value="wpn_fps_upg_o_t1micro"/> 
+				<value_node value="wpn_fps_upg_o_cmore"/> 
+				<value_node value="wpn_fps_upg_o_aimpoint_2"/> 
+				<value_node value="wpn_fps_upg_o_acog"/> 
+				<value_node value="wpn_fps_upg_vg_ass_smg_verticalgrip"/> 
+				<value_node value="wpn_fps_upg_vg_ass_smg_stubby"/> 
+				<value_node value="wpn_fps_upg_vg_ass_smg_afg"/> 
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_peqbox"/> 
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_surefire"/> 
+				<value_node value="wpn_fps_upg_m4_g_standard_vanilla"/> 
+				<value_node value="wpn_fps_upg_m4_g_ergo"/> 
+				<value_node value="wpn_fps_upg_m4_g_sniper"/> 
+				<value_node value="wpn_fps_upg_ns_ass_smg_large"/> 
+				<value_node value="wpn_fps_upg_ns_ass_smg_medium"/> 
+				<value_node value="wpn_fps_upg_ns_ass_smg_small"/> 
+				<value_node value="wpn_fps_upg_ns_ass_smg_firepig"/> 
+				<value_node value="wpn_fps_upg_ns_ass_smg_stubby"/> 
+				<value_node value="wpn_fps_upg_ns_ass_smg_tank"/> 
+				<value_node value="wpn_fps_upg_m4_g_hgrip"/> 
+				<value_node value="wpn_fps_upg_m4_g_mgrip"/> 
+				<value_node value="wpn_fps_upg_i_singlefire"/> 
+				<value_node value="wpn_fps_upg_i_autofire"/> 
+				<value_node value="wpn_fps_upg_m4_m_quad"/> 
+				<value_node value="wpn_fps_ass_l85a2_m_emag"/> 
+				<value_node value="wpn_fps_upg_m4_s_crane"/> 
+				<value_node value="wpn_fps_upg_m4_s_mk46"/> 
+				<value_node value="wpn_fps_upg_fl_ass_peq15"/> 
+				<value_node value="wpn_fps_upg_fl_ass_laser"/> 
+				<value_node value="wpn_fps_upg_ass_ns_jprifles"/> 
+				<value_node value="wpn_fps_upg_ass_ns_linear"/> 
+				<value_node value="wpn_fps_upg_ass_ns_surefire"/> 
+				<value_node value="wpn_fps_upg_o_cs"/> 
+				<value_node value="wpn_fps_upg_o_rx30"/> 
+				<value_node value="wpn_fps_upg_o_rx01"/> 
+				<value_node value="wpn_fps_upg_o_reflex"/> 
+				<value_node value="wpn_fps_upg_o_eotech_xps"/> 
+				<value_node value="wpn_fps_upg_m4_s_ubr"/> 
+				<value_node value="wpn_fps_upg_m4_m_l5"/> 
+				<value_node value="wpn_fps_upg_ass_m4_upper_reciever_ballos"/> 
+				<value_node value="wpn_fps_upg_ass_m4_upper_reciever_core"/> 
+				<value_node value="wpn_fps_upg_ass_m4_lower_reciever_core"/> 
+				<value_node value="wpn_fps_m4_uupg_draghandle_ballos"/> 
+				<value_node value="wpn_fps_m4_uupg_draghandle_core"/> 
+				<value_node value="wpn_fps_upg_smg_olympic_fg_lr300"/> 
+				<value_node value="wpn_fps_upg_ass_ns_battle"/> 
+				<value_node value="wpn_fps_upg_fl_ass_utg"/> 
+				<value_node value="wpn_fps_upg_o_spot"/> 
+				<value_node value="wpn_fps_m4_upg_m_quick"/> 
+				<value_node value="wpn_fps_snp_tti_s_vltor"/> 
+				<value_node value="wpn_fps_snp_tti_g_grippy"/> 
+				<value_node value="wpn_fps_upg_o_xpsg33_magnifier"/> 
+				<value_node value="wpn_fps_upg_o_coyote"/> 
+				<value_node value="wpn_fps_upg_bonus_concealment_p1"/> 
+				<value_node value="wpn_fps_upg_bonus_spread_p1"/> 
+				<value_node value="wpn_fps_upg_bonus_team_exp_money_p3"/> 
+				<value_node value="wpn_fps_upg_bonus_recoil_p1"/> 
+			</uses_parts> 
+		</factory> 
+		<stance/> 
+	</WeaponNew> 
+	<WeaponNew> 
 		<weapon id="b682_beakimbo" based_on="b682" weapon_hold="jowi_pistol" name_id="bm_b682_beakimbo_name" desc_id ="bm_b682_beakimbo_desc" description_id="bm_b682_beakimbo_desc_long" DAMAGE="6" CLIP_AMMO_MAX="4" NR_CLIPS_MAX="28" AMMO_MAX="56" global_value="pd2_clan" texture_bundle_folder="character_pack_bonnie"> 
 			<use_data selection_index="2"/> 
 			<categories> 
@@ -5742,123 +5795,6 @@
 				<value_node value="wpn_fps_upg_a_dragons_breath"/> 
 				<value_node value="wpn_fps_upg_bonus_concealment_p1"/> 
 				<value_node value="wpn_fps_upg_bonus_spread_n1"/> 
-				<value_node value="wpn_fps_upg_bonus_spread_p1"/> 
-				<value_node value="wpn_fps_upg_bonus_team_exp_money_p3"/> 
-				<value_node value="wpn_fps_upg_bonus_recoil_p1"/> 
-			</uses_parts> 
-		</factory> 
-		<stance/> 
-	</WeaponNew> 
-	<WeaponNew> 
-		<weapon id="schakal_beakimbo" based_on="schakal" weapon_hold="jowi_pistol" name_id="bm_schakal_beakimbo_name" desc_id ="bm_schakal_beakimbo_desc" description_id="bm_schakal_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="60" NR_CLIPS_MAX="6" AMMO_MAX="180" global_value="pim" texture_bundle_folder="pim"> 
-			<use_data selection_index="2"/> 
-			<categories> 
-				<value_node value="akimbo"/> 
-				<value_node value="smg"/> 
-			</categories> 
-			<stats/> 
-			<stats_modifiers/> 
-		</weapon> 
-		<factory id="wpn_fps_smg_schakal_beakimbo" based_on="wpn_fps_smg_schakal" unit="units/pd2_dlc_pim/weapons/wpn_fps_smg_schakal/wpn_fps_smg_schakal_beakimbo"> 
-			<default_blueprint> 
-				<value_node value="wpn_fps_smg_schakal_b_standard"/> 
-				<value_node value="wpn_fps_smg_schakal_body_lower"/> 
-				<value_node value="wpn_fps_smg_schakal_body_upper"/> 
-				<value_node value="wpn_fps_smg_schakal_m_standard"/> 
-				<value_node value="wpn_fps_smg_schakal_s_standard"/> 
-				<value_node value="wpn_fps_smg_schakal_dh_standard"/> 
-				<value_node value="wpn_fps_smg_schakal_bolt_standard"/> 
-				<value_node value="wpn_fps_upg_vg_ass_smg_verticalgrip"/> 
-				<value_node value="wpn_fps_smg_schakal_extra_magrelease"/> 
-			</default_blueprint> 
-			<uses_parts> 
-				<value_node value="wpn_fps_smg_schakal_b_civil"/> 
-				<value_node value="wpn_fps_smg_schakal_b_standard"/> 
-				<value_node value="wpn_fps_smg_schakal_body_lower"/> 
-				<value_node value="wpn_fps_smg_schakal_body_upper"/> 
-				<value_node value="wpn_fps_smg_schakal_m_long"/> 
-				<value_node value="wpn_fps_smg_schakal_m_short"/> 
-				<value_node value="wpn_fps_smg_schakal_m_standard"/> 
-				<value_node value="wpn_fps_smg_schakal_ns_silencer"/> 
-				<value_node value="wpn_fps_smg_schakal_s_civil"/> 
-				<value_node value="wpn_fps_smg_schakal_s_folded"/> 
-				<value_node value="wpn_fps_smg_schakal_s_standard"/> 
-				<value_node value="wpn_fps_smg_schakal_dh_standard"/> 
-				<value_node value="wpn_fps_smg_schakal_bolt_standard"/> 
-				<value_node value="wpn_fps_smg_schakal_vg_extra"/> 
-				<value_node value="wpn_fps_smg_schakal_vg_surefire"/> 
-				<value_node value="wpn_fps_smg_schakal_extra_magrelease"/> 
-				<value_node value="wpn_fps_upg_ns_ass_smg_large"/> 
-				<value_node value="wpn_fps_upg_ns_ass_smg_medium"/> 
-				<value_node value="wpn_fps_upg_ns_ass_smg_small"/> 
-				<value_node value="wpn_fps_upg_ns_ass_smg_firepig"/> 
-				<value_node value="wpn_fps_upg_ns_ass_smg_stubby"/> 
-				<value_node value="wpn_fps_upg_ns_ass_smg_tank"/> 
-				<value_node value="wpn_fps_upg_fl_ass_smg_sho_peqbox"/> 
-				<value_node value="wpn_fps_upg_fl_ass_smg_sho_surefire"/> 
-				<value_node value="wpn_fps_upg_vg_ass_smg_verticalgrip"/> 
-				<value_node value="wpn_fps_upg_vg_ass_smg_stubby"/> 
-				<value_node value="wpn_fps_upg_vg_ass_smg_afg"/> 
-				<value_node value="wpn_fps_upg_i_singlefire"/> 
-				<value_node value="wpn_fps_upg_i_autofire"/> 
-				<value_node value="wpn_fps_upg_ass_ns_jprifles"/> 
-				<value_node value="wpn_fps_upg_ass_ns_linear"/> 
-				<value_node value="wpn_fps_upg_ass_ns_surefire"/> 
-				<value_node value="wpn_fps_upg_fl_ass_peq15"/> 
-				<value_node value="wpn_fps_upg_fl_ass_laser"/> 
-				<value_node value="wpn_fps_upg_o_specter"/> 
-				<value_node value="wpn_fps_upg_o_aimpoint"/> 
-				<value_node value="wpn_fps_upg_o_docter"/> 
-				<value_node value="wpn_fps_upg_o_eotech"/> 
-				<value_node value="wpn_fps_upg_o_t1micro"/> 
-				<value_node value="wpn_fps_upg_o_cmore"/> 
-				<value_node value="wpn_fps_upg_o_aimpoint_2"/> 
-				<value_node value="wpn_fps_upg_o_acog"/> 
-				<value_node value="wpn_fps_upg_o_eotech_xps"/> 
-				<value_node value="wpn_fps_upg_o_reflex"/> 
-				<value_node value="wpn_fps_upg_o_rx01"/> 
-				<value_node value="wpn_fps_upg_o_rx30"/> 
-				<value_node value="wpn_fps_upg_o_cs"/> 
-				<value_node value="wpn_fps_upg_ass_ns_battle"/> 
-				<value_node value="wpn_fps_upg_fl_ass_utg"/> 
-				<value_node value="wpn_fps_upg_o_spot"/> 
-				<value_node value="wpn_fps_upg_o_xpsg33_magnifier"/> 
-				<value_node value="wpn_fps_upg_o_coyote"/> 
-				<value_node value="wpn_fps_upg_bonus_concealment_p1"/> 
-				<value_node value="wpn_fps_upg_bonus_spread_p1"/> 
-				<value_node value="wpn_fps_upg_bonus_team_exp_money_p3"/> 
-				<value_node value="wpn_fps_upg_bonus_recoil_p1"/> 
-			</uses_parts> 
-		</factory> 
-		<stance/> 
-	</WeaponNew> 
-	<WeaponNew> 
-		<weapon id="winchester1874_beakimbo" based_on="winchester1874" weapon_hold="jowi_pistol" name_id="bm_winchester1874_beakimbo_name" desc_id ="bm_winchester1874_beakimbo_desc" description_id="bm_winchester1874_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="30" NR_CLIPS_MAX="6" AMMO_MAX="90" global_value="west" texture_bundle_folder="west"> 
-			<use_data selection_index="2"/> 
-			<categories> 
-				<value_node value="akimbo"/> 
-				<value_node value="snp"/> 
-			</categories> 
-			<stats/> 
-			<stats_modifiers/> 
-		</weapon> 
-		<factory id="wpn_fps_snp_winchester_beakimbo" based_on="wpn_fps_snp_winchester" unit="units/pd2_dlc_west/weapons/wpn_fps_snp_winchester/wpn_fps_snp_winchester_beakimbo"> 
-			<default_blueprint> 
-				<value_node value="wpn_fps_snp_winchester_b_standard"/> 
-				<value_node value="wpn_fps_snp_winchester_body_standard"/> 
-				<value_node value="wpn_fps_snp_winchester_m_standard"/> 
-				<value_node value="wpn_fps_snp_winchester_s_standard"/> 
-			</default_blueprint> 
-			<uses_parts> 
-				<value_node value="wpn_fps_snp_winchester_b_standard"/> 
-				<value_node value="wpn_fps_snp_winchester_b_long"/> 
-				<value_node value="wpn_fps_snp_winchester_b_suppressed"/> 
-				<value_node value="wpn_fps_snp_winchester_body_standard"/> 
-				<value_node value="wpn_fps_snp_winchester_m_standard"/> 
-				<value_node value="wpn_fps_snp_winchester_s_standard"/> 
-				<value_node value="wpn_fps_upg_winchester_o_classic"/> 
-				<value_node value="wpn_fps_upg_bonus_concealment_p1"/> 
-				<value_node value="wpn_fps_upg_bonus_total_ammo_p1"/> 
 				<value_node value="wpn_fps_upg_bonus_spread_p1"/> 
 				<value_node value="wpn_fps_upg_bonus_team_exp_money_p3"/> 
 				<value_node value="wpn_fps_upg_bonus_recoil_p1"/> 
@@ -5910,72 +5846,6 @@
 				<value_node value="wpn_fps_upg_ns_ass_filter"/> 
 				<value_node value="wpn_fps_upg_ns_pis_jungle"/> 
 				<value_node value="wpn_fps_upg_bonus_concealment_p1"/> 
-				<value_node value="wpn_fps_upg_bonus_spread_p1"/> 
-				<value_node value="wpn_fps_upg_bonus_team_exp_money_p3"/> 
-				<value_node value="wpn_fps_upg_bonus_recoil_p1"/> 
-			</uses_parts> 
-		</factory> 
-		<stance/> 
-	</WeaponNew> 
-	<WeaponNew> 
-		<weapon id="wa2000_beakimbo" based_on="wa2000" weapon_hold="jowi_pistol" name_id="bm_wa2000_beakimbo_name" desc_id ="bm_wa2000_beakimbo_desc" description_id="bm_wa2000_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="20" NR_CLIPS_MAX="8" AMMO_MAX="80" global_value="turtles" texture_bundle_folder="turtles"> 
-			<use_data selection_index="2"/> 
-			<categories> 
-				<value_node value="akimbo"/> 
-				<value_node value="snp"/> 
-			</categories> 
-			<stats/> 
-			<stats_modifiers/> 
-		</weapon> 
-		<factory id="wpn_fps_snp_wa2000_beakimbo" based_on="wpn_fps_snp_wa2000" unit="units/pd2_dlc_turtles/weapons/wpn_fps_snp_wa2000/wpn_fps_snp_wa2000_beakimbo"> 
-			<default_blueprint> 
-				<value_node value="wpn_fps_snp_wa2000_body_standard"/> 
-				<value_node value="wpn_fps_snp_wa2000_m_standard"/> 
-				<value_node value="wpn_fps_snp_wa2000_b_standard"/> 
-				<value_node value="wpn_fps_snp_wa2000_g_standard"/> 
-				<value_node value="wpn_fps_snp_wa2000_s_standard"/> 
-				<value_node value="wpn_fps_upg_o_shortdot"/> 
-			</default_blueprint> 
-			<uses_parts> 
-				<value_node value="wpn_fps_snp_wa2000_body_standard"/> 
-				<value_node value="wpn_fps_snp_wa2000_m_standard"/> 
-				<value_node value="wpn_fps_snp_wa2000_b_standard"/> 
-				<value_node value="wpn_fps_snp_wa2000_g_standard"/> 
-				<value_node value="wpn_fps_snp_wa2000_s_standard"/> 
-				<value_node value="wpn_fps_snp_wa2000_g_walnut"/> 
-				<value_node value="wpn_fps_snp_wa2000_g_stealth"/> 
-				<value_node value="wpn_fps_snp_wa2000_g_light"/> 
-				<value_node value="wpn_fps_snp_wa2000_b_long"/> 
-				<value_node value="wpn_fps_snp_wa2000_b_suppressed"/> 
-				<value_node value="wpn_fps_upg_o_specter"/> 
-				<value_node value="wpn_fps_upg_o_aimpoint"/> 
-				<value_node value="wpn_fps_upg_o_docter"/> 
-				<value_node value="wpn_fps_upg_o_eotech"/> 
-				<value_node value="wpn_fps_upg_o_t1micro"/> 
-				<value_node value="wpn_fps_upg_o_cmore"/> 
-				<value_node value="wpn_fps_upg_o_aimpoint_2"/> 
-				<value_node value="wpn_fps_upg_o_acog"/> 
-				<value_node value="wpn_fps_upg_o_shortdot"/> 
-				<value_node value="wpn_fps_upg_o_leupold"/> 
-				<value_node value="wpn_fps_upg_o_45iron"/> 
-				<value_node value="wpn_fps_upg_fl_ass_smg_sho_peqbox"/> 
-				<value_node value="wpn_fps_upg_fl_ass_smg_sho_surefire"/> 
-				<value_node value="wpn_fps_upg_o_eotech_xps"/> 
-				<value_node value="wpn_fps_upg_o_reflex"/> 
-				<value_node value="wpn_fps_upg_o_rx01"/> 
-				<value_node value="wpn_fps_upg_o_rx30"/> 
-				<value_node value="wpn_fps_upg_o_cs"/> 
-				<value_node value="wpn_fps_upg_fl_ass_peq15"/> 
-				<value_node value="wpn_fps_upg_fl_ass_laser"/> 
-				<value_node value="wpn_fps_upg_fl_ass_utg"/> 
-				<value_node value="wpn_fps_upg_o_spot"/> 
-				<value_node value="wpn_fps_upg_o_box"/> 
-				<value_node value="wpn_fps_upg_o_45rds"/> 
-				<value_node value="wpn_fps_upg_o_xpsg33_magnifier"/> 
-				<value_node value="wpn_fps_upg_o_45rds_v2"/> 
-				<value_node value="wpn_fps_upg_o_coyote"/> 
-				<value_node value="wpn_fps_upg_bonus_concealment_p1"/> 
-				<value_node value="wpn_fps_upg_bonus_total_ammo_p1"/> 
 				<value_node value="wpn_fps_upg_bonus_spread_p1"/> 
 				<value_node value="wpn_fps_upg_bonus_team_exp_money_p3"/> 
 				<value_node value="wpn_fps_upg_bonus_recoil_p1"/> 
@@ -6205,40 +6075,69 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="chinchilla_beakimbo" based_on="chinchilla" weapon_hold="jowi_pistol" name_id="bm_chinchilla_beakimbo_name" desc_id ="bm_chinchilla_beakimbo_desc" description_id="bm_chinchilla_beakimbo_desc_long" DAMAGE="2" CLIP_AMMO_MAX="12" NR_CLIPS_MAX="18" AMMO_MAX="108"  texture_bundle_folder="max"> 
+		<weapon id="sr2_beakimbo" based_on="sr2" weapon_hold="jowi_pistol" name_id="bm_sr2_beakimbo_name" desc_id ="bm_sr2_beakimbo_desc" description_id="bm_sr2_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="64" NR_CLIPS_MAX="10" AMMO_MAX="320"  texture_bundle_folder="coco"> 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
-				<value_node value="pistol"/> 
+				<value_node value="smg"/> 
 			</categories> 
 			<stats/> 
 			<stats_modifiers/> 
 		</weapon> 
-		<factory id="wpn_fps_pis_chinchilla_beakimbo" based_on="wpn_fps_pis_chinchilla" unit="units/pd2_dlc_max/weapons/wpn_fps_pis_chinchilla/wpn_fps_pis_chinchilla_beakimbo"> 
+		<factory id="wpn_fps_smg_sr2_beakimbo" based_on="wpn_fps_smg_sr2" unit="units/pd2_dlc_coco/weapons/wpn_fps_smg_sr2/wpn_fps_smg_sr2_beakimbo"> 
 			<default_blueprint> 
-				<value_node value="wpn_fps_pis_chinchilla_b_standard"/> 
-				<value_node value="wpn_fps_pis_chinchilla_body"/> 
-				<value_node value="wpn_fps_pis_chinchilla_cylinder"/> 
-				<value_node value="wpn_fps_pis_chinchilla_dh_hammer"/> 
-				<value_node value="wpn_fps_pis_chinchilla_ejector"/> 
-				<value_node value="wpn_fps_pis_chinchilla_ejectorpin"/> 
-				<value_node value="wpn_fps_pis_chinchilla_g_standard"/> 
-				<value_node value="wpn_fps_pis_chinchilla_lock_arm"/> 
-				<value_node value="wpn_fps_pis_chinchilla_m_bullets"/> 
+				<value_node value="wpn_fps_smg_sr2_body_lower"/> 
+				<value_node value="wpn_fps_smg_sr2_b_standard"/> 
+				<value_node value="wpn_fps_smg_sr2_fg_standard"/> 
+				<value_node value="wpn_fps_smg_sr2_m_mag"/> 
+				<value_node value="wpn_fps_smg_sr2_s_folded"/> 
+				<value_node value="wpn_fps_smg_sr2_vg_standard"/> 
 			</default_blueprint> 
 			<uses_parts> 
-				<value_node value="wpn_fps_pis_chinchilla_b_standard"/> 
-				<value_node value="wpn_fps_pis_chinchilla_b_satan"/> 
-				<value_node value="wpn_fps_pis_chinchilla_body"/> 
-				<value_node value="wpn_fps_pis_chinchilla_cylinder"/> 
-				<value_node value="wpn_fps_pis_chinchilla_dh_hammer"/> 
-				<value_node value="wpn_fps_pis_chinchilla_ejector"/> 
-				<value_node value="wpn_fps_pis_chinchilla_ejectorpin"/> 
-				<value_node value="wpn_fps_pis_chinchilla_g_black"/> 
-				<value_node value="wpn_fps_pis_chinchilla_g_death"/> 
-				<value_node value="wpn_fps_pis_chinchilla_g_standard"/> 
-				<value_node value="wpn_fps_pis_chinchilla_lock_arm"/> 
-				<value_node value="wpn_fps_pis_chinchilla_m_bullets"/> 
+				<value_node value="wpn_fps_smg_sr2_body_lower"/> 
+				<value_node value="wpn_fps_smg_sr2_b_standard"/> 
+				<value_node value="wpn_fps_smg_sr2_fg_standard"/> 
+				<value_node value="wpn_fps_smg_sr2_m_mag"/> 
+				<value_node value="wpn_fps_smg_sr2_s_folded"/> 
+				<value_node value="wpn_fps_smg_sr2_s_unfolded"/> 
+				<value_node value="wpn_fps_smg_sr2_vg_standard"/> 
+				<value_node value="wpn_fps_smg_sr2_ns_silencer"/> 
+				<value_node value="wpn_fps_upg_ns_ass_smg_large"/> 
+				<value_node value="wpn_fps_upg_ns_ass_smg_medium"/> 
+				<value_node value="wpn_fps_upg_ns_ass_smg_small"/> 
+				<value_node value="wpn_fps_upg_ns_ass_smg_firepig"/> 
+				<value_node value="wpn_fps_upg_ns_ass_smg_stubby"/> 
+				<value_node value="wpn_fps_upg_ns_ass_smg_tank"/> 
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_peqbox"/> 
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_surefire"/> 
+				<value_node value="wpn_fps_upg_vg_ass_smg_verticalgrip"/> 
+				<value_node value="wpn_fps_upg_vg_ass_smg_stubby"/> 
+				<value_node value="wpn_fps_upg_vg_ass_smg_afg"/> 
+				<value_node value="wpn_fps_upg_i_singlefire"/> 
+				<value_node value="wpn_fps_upg_i_autofire"/> 
+				<value_node value="wpn_fps_upg_ass_ns_jprifles"/> 
+				<value_node value="wpn_fps_upg_ass_ns_linear"/> 
+				<value_node value="wpn_fps_upg_ass_ns_surefire"/> 
+				<value_node value="wpn_fps_upg_fl_ass_peq15"/> 
+				<value_node value="wpn_fps_upg_fl_ass_laser"/> 
+				<value_node value="wpn_fps_upg_o_aimpoint"/> 
+				<value_node value="wpn_fps_upg_o_docter"/> 
+				<value_node value="wpn_fps_upg_o_eotech"/> 
+				<value_node value="wpn_fps_upg_o_t1micro"/> 
+				<value_node value="wpn_fps_upg_o_cmore"/> 
+				<value_node value="wpn_fps_upg_o_aimpoint_2"/> 
+				<value_node value="wpn_fps_upg_o_acog"/> 
+				<value_node value="wpn_fps_upg_o_specter"/> 
+				<value_node value="wpn_fps_upg_o_eotech_xps"/> 
+				<value_node value="wpn_fps_upg_o_reflex"/> 
+				<value_node value="wpn_fps_upg_o_rx01"/> 
+				<value_node value="wpn_fps_upg_o_rx30"/> 
+				<value_node value="wpn_fps_upg_o_cs"/> 
+				<value_node value="wpn_fps_upg_ass_ns_battle"/> 
+				<value_node value="wpn_fps_upg_fl_ass_utg"/> 
+				<value_node value="wpn_fps_upg_o_spot"/> 
+				<value_node value="wpn_fps_smg_sr2_m_quick"/> 
+				<value_node value="wpn_fps_upg_o_coyote"/> 
 				<value_node value="wpn_fps_upg_bonus_concealment_p1"/> 
 				<value_node value="wpn_fps_upg_bonus_spread_p1"/> 
 				<value_node value="wpn_fps_upg_bonus_team_exp_money_p3"/> 
@@ -6248,42 +6147,153 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="s552_beakimbo" based_on="s552" weapon_hold="jowi_pistol" name_id="bm_s552_beakimbo_name" desc_id ="bm_s552_beakimbo_desc" description_id="bm_s552_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="60" NR_CLIPS_MAX="16" AMMO_MAX="480" global_value="armored_transport" texture_bundle_folder="dlc1"> 
+		<weapon id="shrew_beakimbo" based_on="shrew" weapon_hold="jowi_pistol" name_id="bm_shrew_beakimbo_name" desc_id ="bm_shrew_beakimbo_desc" description_id="bm_shrew_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="34" NR_CLIPS_MAX="18" AMMO_MAX="306"  texture_bundle_folder="myh"> 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
-				<value_node value="assault_rifle"/> 
+				<value_node value="pistol"/> 
 			</categories> 
 			<stats/> 
 			<stats_modifiers/> 
 		</weapon> 
-		<factory id="wpn_fps_ass_s552_beakimbo" based_on="wpn_fps_ass_s552" unit="units/pd2_dlc1/weapons/wpn_fps_ass_s552/wpn_fps_ass_s552_beakimbo"> 
+		<factory id="wpn_fps_pis_shrew_beakimbo" based_on="wpn_fps_pis_shrew" unit="units/pd2_dlc_myh/weapons/wpn_fps_pis_shrew/wpn_fps_pis_shrew_beakimbo"> 
 			<default_blueprint> 
-				<value_node value="wpn_fps_ass_s552_o_flipup"/> 
-				<value_node value="wpn_fps_ass_s552_m_standard"/> 
-				<value_node value="wpn_fps_ass_s552_b_standard"/> 
-				<value_node value="wpn_fps_ass_s552_body_standard"/> 
-				<value_node value="wpn_fps_ass_s552_fg_standard"/> 
-				<value_node value="wpn_fps_ass_s552_s_standard"/> 
-				<value_node value="wpn_fps_ass_s552_g_standard"/> 
+				<value_node value="wpn_fps_pis_shrew_b_barrel"/> 
+				<value_node value="wpn_fps_pis_shrew_body_frame"/> 
+				<value_node value="wpn_fps_pis_shrew_g_standard"/> 
+				<value_node value="wpn_fps_pis_shrew_h_hammer"/> 
+				<value_node value="wpn_fps_pis_shrew_m_standard"/> 
+				<value_node value="wpn_fps_pis_shrew_sl_standard"/> 
 			</default_blueprint> 
 			<uses_parts> 
-				<value_node value="wpn_fps_ass_s552_o_flipup"/> 
-				<value_node value="wpn_fps_ass_s552_m_standard"/> 
-				<value_node value="wpn_fps_ass_s552_b_standard"/> 
-				<value_node value="wpn_fps_ass_s552_b_long"/> 
-				<value_node value="wpn_fps_ass_s552_body_standard"/> 
-				<value_node value="wpn_fps_ass_s552_body_standard_black"/> 
-				<value_node value="wpn_fps_ass_s552_fg_standard"/> 
-				<value_node value="wpn_fps_ass_s552_fg_railed"/> 
-				<value_node value="wpn_fps_ass_s552_fg_standard_green"/> 
-				<value_node value="wpn_fps_ass_s552_s_standard"/> 
-				<value_node value="wpn_fps_ass_s552_s_m4"/> 
-				<value_node value="wpn_fps_ass_s552_s_standard_green"/> 
-				<value_node value="wpn_fps_ass_s552_g_standard"/> 
-				<value_node value="wpn_fps_ass_s552_g_standard_green"/> 
-				<value_node value="wpn_fps_upg_m4_s_standard_vanilla"/> 
-				<value_node value="wpn_fps_upg_m4_s_pts"/> 
+				<value_node value="wpn_fps_pis_shrew_b_barrel"/> 
+				<value_node value="wpn_fps_pis_shrew_body_frame"/> 
+				<value_node value="wpn_fps_pis_shrew_g_standard"/> 
+				<value_node value="wpn_fps_pis_shrew_h_hammer"/> 
+				<value_node value="wpn_fps_pis_shrew_m_standard"/> 
+				<value_node value="wpn_fps_pis_shrew_sl_standard"/> 
+				<value_node value="wpn_fps_pis_shrew_g_bling"/> 
+				<value_node value="wpn_fps_pis_shrew_g_ergo"/> 
+				<value_node value="wpn_fps_pis_shrew_m_extended"/> 
+				<value_node value="wpn_fps_pis_shrew_sl_milled"/> 
+				<value_node value="wpn_fps_pis_shrew_fl_adapter"/> 
+				<value_node value="wpn_fps_upg_o_rmr"/> 
+				<value_node value="wpn_fps_upg_fl_pis_laser"/> 
+				<value_node value="wpn_fps_upg_fl_pis_tlr1"/> 
+				<value_node value="wpn_fps_upg_fl_pis_x400v"/> 
+				<value_node value="wpn_fps_upg_fl_pis_m3x"/> 
+				<value_node value="wpn_fps_upg_fl_pis_crimson"/> 
+				<value_node value="wpn_fps_upg_ns_ass_filter"/> 
+				<value_node value="wpn_fps_upg_ns_pis_jungle"/> 
+				<value_node value="wpn_fps_upg_ns_pis_ipsccomp"/> 
+				<value_node value="wpn_fps_upg_ns_pis_meatgrinder"/> 
+				<value_node value="wpn_fps_upg_ns_pis_medium_slim"/> 
+				<value_node value="wpn_fps_upg_pis_ns_flash"/> 
+				<value_node value="wpn_fps_upg_ns_pis_large"/> 
+				<value_node value="wpn_fps_upg_ns_pis_medium"/> 
+				<value_node value="wpn_fps_upg_ns_pis_small"/> 
+				<value_node value="wpn_fps_upg_ns_pis_large_kac"/> 
+				<value_node value="wpn_fps_upg_ns_pis_medium_gem"/> 
+				<value_node value="wpn_fps_upg_bonus_concealment_p1"/> 
+				<value_node value="wpn_fps_upg_bonus_spread_p1"/> 
+				<value_node value="wpn_fps_upg_bonus_team_exp_money_p3"/> 
+				<value_node value="wpn_fps_upg_bonus_recoil_p1"/> 
+			</uses_parts> 
+		</factory> 
+		<stance/> 
+	</WeaponNew> 
+	<WeaponNew> 
+		<weapon id="wa2000_beakimbo" based_on="wa2000" weapon_hold="jowi_pistol" name_id="bm_wa2000_beakimbo_name" desc_id ="bm_wa2000_beakimbo_desc" description_id="bm_wa2000_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="20" NR_CLIPS_MAX="8" AMMO_MAX="80" global_value="turtles" texture_bundle_folder="turtles"> 
+			<use_data selection_index="2"/> 
+			<categories> 
+				<value_node value="akimbo"/> 
+				<value_node value="snp"/> 
+			</categories> 
+			<stats/> 
+			<stats_modifiers/> 
+		</weapon> 
+		<factory id="wpn_fps_snp_wa2000_beakimbo" based_on="wpn_fps_snp_wa2000" unit="units/pd2_dlc_turtles/weapons/wpn_fps_snp_wa2000/wpn_fps_snp_wa2000_beakimbo"> 
+			<default_blueprint> 
+				<value_node value="wpn_fps_snp_wa2000_body_standard"/> 
+				<value_node value="wpn_fps_snp_wa2000_m_standard"/> 
+				<value_node value="wpn_fps_snp_wa2000_b_standard"/> 
+				<value_node value="wpn_fps_snp_wa2000_g_standard"/> 
+				<value_node value="wpn_fps_snp_wa2000_s_standard"/> 
+				<value_node value="wpn_fps_upg_o_shortdot"/> 
+			</default_blueprint> 
+			<uses_parts> 
+				<value_node value="wpn_fps_snp_wa2000_body_standard"/> 
+				<value_node value="wpn_fps_snp_wa2000_m_standard"/> 
+				<value_node value="wpn_fps_snp_wa2000_b_standard"/> 
+				<value_node value="wpn_fps_snp_wa2000_g_standard"/> 
+				<value_node value="wpn_fps_snp_wa2000_s_standard"/> 
+				<value_node value="wpn_fps_snp_wa2000_g_walnut"/> 
+				<value_node value="wpn_fps_snp_wa2000_g_stealth"/> 
+				<value_node value="wpn_fps_snp_wa2000_g_light"/> 
+				<value_node value="wpn_fps_snp_wa2000_b_long"/> 
+				<value_node value="wpn_fps_snp_wa2000_b_suppressed"/> 
+				<value_node value="wpn_fps_upg_o_specter"/> 
+				<value_node value="wpn_fps_upg_o_aimpoint"/> 
+				<value_node value="wpn_fps_upg_o_docter"/> 
+				<value_node value="wpn_fps_upg_o_eotech"/> 
+				<value_node value="wpn_fps_upg_o_t1micro"/> 
+				<value_node value="wpn_fps_upg_o_cmore"/> 
+				<value_node value="wpn_fps_upg_o_aimpoint_2"/> 
+				<value_node value="wpn_fps_upg_o_acog"/> 
+				<value_node value="wpn_fps_upg_o_shortdot"/> 
+				<value_node value="wpn_fps_upg_o_leupold"/> 
+				<value_node value="wpn_fps_upg_o_45iron"/> 
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_peqbox"/> 
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_surefire"/> 
+				<value_node value="wpn_fps_upg_o_eotech_xps"/> 
+				<value_node value="wpn_fps_upg_o_reflex"/> 
+				<value_node value="wpn_fps_upg_o_rx01"/> 
+				<value_node value="wpn_fps_upg_o_rx30"/> 
+				<value_node value="wpn_fps_upg_o_cs"/> 
+				<value_node value="wpn_fps_upg_fl_ass_peq15"/> 
+				<value_node value="wpn_fps_upg_fl_ass_laser"/> 
+				<value_node value="wpn_fps_upg_fl_ass_utg"/> 
+				<value_node value="wpn_fps_upg_o_spot"/> 
+				<value_node value="wpn_fps_upg_o_box"/> 
+				<value_node value="wpn_fps_upg_o_45rds"/> 
+				<value_node value="wpn_fps_upg_o_xpsg33_magnifier"/> 
+				<value_node value="wpn_fps_upg_o_45rds_v2"/> 
+				<value_node value="wpn_fps_upg_o_coyote"/> 
+				<value_node value="wpn_fps_upg_bonus_concealment_p1"/> 
+				<value_node value="wpn_fps_upg_bonus_total_ammo_p1"/> 
+				<value_node value="wpn_fps_upg_bonus_spread_p1"/> 
+				<value_node value="wpn_fps_upg_bonus_team_exp_money_p3"/> 
+				<value_node value="wpn_fps_upg_bonus_recoil_p1"/> 
+			</uses_parts> 
+		</factory> 
+		<stance/> 
+	</WeaponNew> 
+	<WeaponNew> 
+		<weapon id="mp7_beakimbo" based_on="mp7" weapon_hold="jowi_pistol" name_id="bm_mp7_beakimbo_name" desc_id ="bm_mp7_beakimbo_desc" description_id="bm_mp7_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="40" NR_CLIPS_MAX="16" AMMO_MAX="320" global_value="gage_pack" texture_bundle_folder="gage_pack"> 
+			<use_data selection_index="2"/> 
+			<categories> 
+				<value_node value="akimbo"/> 
+				<value_node value="smg"/> 
+			</categories> 
+			<stats/> 
+			<stats_modifiers/> 
+		</weapon> 
+		<factory id="wpn_fps_smg_mp7_beakimbo" based_on="wpn_fps_smg_mp7" unit="units/pd2_dlc_dec5/weapons/wpn_fps_smg_mp7/wpn_fps_smg_mp7_beakimbo"> 
+			<default_blueprint> 
+				<value_node value="wpn_fps_smg_mp7_m_short"/> 
+				<value_node value="wpn_fps_smg_mp7_b_standard"/> 
+				<value_node value="wpn_fps_smg_mp7_body_standard"/> 
+				<value_node value="wpn_fps_smg_mp7_s_standard"/> 
+			</default_blueprint> 
+			<uses_parts> 
+				<value_node value="wpn_fps_smg_mp7_m_short"/> 
+				<value_node value="wpn_fps_smg_mp7_b_standard"/> 
+				<value_node value="wpn_fps_smg_mp7_body_standard"/> 
+				<value_node value="wpn_fps_smg_mp7_s_standard"/> 
+				<value_node value="wpn_fps_smg_mp7_m_extended"/> 
+				<value_node value="wpn_fps_smg_mp7_b_suppressed"/> 
+				<value_node value="wpn_fps_smg_mp7_s_long"/> 
+				<value_node value="wpn_fps_upg_vg_ass_smg_stubby"/> 
 				<value_node value="wpn_fps_upg_o_specter"/> 
 				<value_node value="wpn_fps_upg_o_aimpoint"/> 
 				<value_node value="wpn_fps_upg_o_docter"/> 
@@ -6312,16 +6322,10 @@
 				<value_node value="wpn_fps_upg_ass_ns_surefire"/> 
 				<value_node value="wpn_fps_upg_fl_ass_peq15"/> 
 				<value_node value="wpn_fps_upg_fl_ass_laser"/> 
-				<value_node value="wpn_fps_upg_m4_s_crane"/> 
-				<value_node value="wpn_fps_upg_m4_s_mk46"/> 
-				<value_node value="wpn_fps_upg_m4_s_ubr"/> 
 				<value_node value="wpn_fps_upg_ass_ns_battle"/> 
 				<value_node value="wpn_fps_upg_fl_ass_utg"/> 
-				<value_node value="wpn_fps_upg_o_45rds"/> 
 				<value_node value="wpn_fps_upg_o_spot"/> 
-				<value_node value="wpn_fps_snp_tti_s_vltor"/> 
 				<value_node value="wpn_fps_upg_o_xpsg33_magnifier"/> 
-				<value_node value="wpn_fps_upg_o_45rds_v2"/> 
 				<value_node value="wpn_fps_upg_o_coyote"/> 
 				<value_node value="wpn_fps_upg_bonus_concealment_p1"/> 
 				<value_node value="wpn_fps_upg_bonus_spread_p1"/> 
@@ -6517,73 +6521,69 @@
 		<stance/> 
 	</WeaponNew> 
 	<WeaponNew> 
-		<weapon id="rota_beakimbo" based_on="rota" weapon_hold="jowi_pistol" name_id="bm_rota_beakimbo_name" desc_id ="bm_rota_beakimbo_desc" description_id="bm_rota_beakimbo_desc_long" DAMAGE="6" CLIP_AMMO_MAX="12" NR_CLIPS_MAX="18" AMMO_MAX="108" global_value="rota" texture_bundle_folder="rota"> 
+		<weapon id="siltstone_beakimbo" based_on="siltstone" weapon_hold="jowi_pistol" name_id="bm_siltstone_beakimbo_name" desc_id ="bm_siltstone_beakimbo_desc" description_id="bm_siltstone_beakimbo_desc_long" DAMAGE="1" CLIP_AMMO_MAX="20" NR_CLIPS_MAX="6" AMMO_MAX="60" global_value="grv" texture_bundle_folder="grv"> 
 			<use_data selection_index="2"/> 
 			<categories> 
 				<value_node value="akimbo"/> 
-				<value_node value="shotgun"/> 
+				<value_node value="snp"/> 
 			</categories> 
 			<stats/> 
 			<stats_modifiers/> 
 		</weapon> 
-		<factory id="wpn_fps_sho_rota_beakimbo" based_on="wpn_fps_sho_rota" unit="units/pd2_dlc_rota/weapons/wpn_fps_sho_rota/wpn_fps_sho_rota_beakimbo"> 
+		<factory id="wpn_fps_snp_siltstone_beakimbo" based_on="wpn_fps_snp_siltstone" unit="units/pd2_dlc_grv/weapons/wpn_fps_snp_siltstone/wpn_fps_snp_siltstone_beakimbo"> 
 			<default_blueprint> 
-				<value_node value="wpn_fps_sho_rota_b_long"/> 
-				<value_node value="wpn_fps_sho_rota_body_lower"/> 
-				<value_node value="wpn_fps_sho_rota_body_upper"/> 
-				<value_node value="wpn_fps_sho_rota_fg_standard"/> 
-				<value_node value="wpn_fps_sho_rota_g_standard"/> 
-				<value_node value="wpn_fps_sho_rota_m_standard"/> 
-				<value_node value="wpn_fps_sho_rota_mag_realese"/> 
-				<value_node value="wpn_fps_sho_rota_o_standard"/> 
-				<value_node value="wpn_fps_smg_hajk_vg_moe"/> 
+				<value_node value="wpn_fps_snp_siltstone_b_standard"/> 
+				<value_node value="wpn_fps_snp_siltstone_body_receiver"/> 
+				<value_node value="wpn_fps_snp_siltstone_dh_standard"/> 
+				<value_node value="wpn_fps_snp_siltstone_ejector"/> 
+				<value_node value="wpn_fps_snp_siltstone_fg_wood"/> 
+				<value_node value="wpn_fps_snp_siltstone_m_standard"/> 
+				<value_node value="wpn_fps_snp_siltstone_s_wood"/> 
+				<value_node value="wpn_fps_upg_o_shortdot"/> 
 			</default_blueprint> 
 			<uses_parts> 
-				<value_node value="wpn_fps_sho_rota_b_long"/> 
-				<value_node value="wpn_fps_sho_rota_b_short"/> 
-				<value_node value="wpn_fps_sho_rota_b_silencer"/> 
-				<value_node value="wpn_fps_sho_rota_body_lower"/> 
-				<value_node value="wpn_fps_sho_rota_body_upper"/> 
-				<value_node value="wpn_fps_sho_rota_fg_standard"/> 
-				<value_node value="wpn_fps_sho_rota_g_standard"/> 
-				<value_node value="wpn_fps_sho_rota_m_standard"/> 
-				<value_node value="wpn_fps_sho_rota_mag_realese"/> 
-				<value_node value="wpn_fps_sho_rota_o_standard"/> 
-				<value_node value="wpn_fps_smg_hajk_vg_moe"/> 
+				<value_node value="wpn_fps_snp_siltstone_b_standard"/> 
+				<value_node value="wpn_fps_snp_siltstone_b_silenced"/> 
+				<value_node value="wpn_fps_snp_siltstone_body_receiver"/> 
+				<value_node value="wpn_fps_snp_siltstone_dh_standard"/> 
+				<value_node value="wpn_fps_snp_siltstone_ejector"/> 
+				<value_node value="wpn_fps_snp_siltstone_fg_polymer"/> 
+				<value_node value="wpn_fps_snp_siltstone_fg_wood"/> 
+				<value_node value="wpn_fps_snp_siltstone_m_standard"/> 
+				<value_node value="wpn_fps_snp_siltstone_ns_variation_b"/> 
+				<value_node value="wpn_fps_snp_siltstone_o_scopemount"/> 
+				<value_node value="wpn_fps_snp_siltstone_s_polymer"/> 
+				<value_node value="wpn_fps_snp_siltstone_s_wood"/> 
+				<value_node value="wpn_fps_snp_siltstone_iron_sight"/> 
 				<value_node value="wpn_fps_upg_o_specter"/> 
 				<value_node value="wpn_fps_upg_o_aimpoint"/> 
 				<value_node value="wpn_fps_upg_o_docter"/> 
 				<value_node value="wpn_fps_upg_o_eotech"/> 
 				<value_node value="wpn_fps_upg_o_t1micro"/> 
 				<value_node value="wpn_fps_upg_o_cmore"/> 
-				<value_node value="wpn_fps_upg_fl_ass_smg_sho_peqbox"/> 
-				<value_node value="wpn_fps_upg_fl_ass_smg_sho_surefire"/> 
 				<value_node value="wpn_fps_upg_o_aimpoint_2"/> 
 				<value_node value="wpn_fps_upg_o_acog"/> 
-				<value_node value="wpn_fps_upg_ns_shot_thick"/> 
-				<value_node value="wpn_fps_upg_ns_shot_shark"/> 
-				<value_node value="wpn_fps_upg_shot_ns_king"/> 
-				<value_node value="wpn_fps_upg_fl_ass_peq15"/> 
-				<value_node value="wpn_fps_upg_fl_ass_laser"/> 
+				<value_node value="wpn_fps_upg_o_shortdot"/> 
+				<value_node value="wpn_fps_upg_o_leupold"/> 
+				<value_node value="wpn_fps_upg_o_45iron"/> 
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_peqbox"/> 
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_surefire"/> 
 				<value_node value="wpn_fps_upg_o_eotech_xps"/> 
 				<value_node value="wpn_fps_upg_o_reflex"/> 
 				<value_node value="wpn_fps_upg_o_rx01"/> 
 				<value_node value="wpn_fps_upg_o_rx30"/> 
 				<value_node value="wpn_fps_upg_o_cs"/> 
+				<value_node value="wpn_fps_upg_fl_ass_peq15"/> 
+				<value_node value="wpn_fps_upg_fl_ass_laser"/> 
 				<value_node value="wpn_fps_upg_fl_ass_utg"/> 
-				<value_node value="wpn_fps_upg_ns_sho_salvo_large"/> 
 				<value_node value="wpn_fps_upg_o_spot"/> 
-				<value_node value="wpn_fps_upg_ns_duck"/> 
+				<value_node value="wpn_fps_upg_o_box"/> 
+				<value_node value="wpn_fps_upg_o_45rds"/> 
 				<value_node value="wpn_fps_upg_o_xpsg33_magnifier"/> 
-				<value_node value="wpn_fps_upg_a_slug"/> 
-				<value_node value="wpn_fps_upg_a_custom"/> 
-				<value_node value="wpn_fps_upg_a_custom_free"/> 
-				<value_node value="wpn_fps_upg_a_explosive"/> 
-				<value_node value="wpn_fps_upg_a_piercing"/> 
-				<value_node value="wpn_fps_upg_a_dragons_breath"/> 
+				<value_node value="wpn_fps_upg_o_45rds_v2"/> 
 				<value_node value="wpn_fps_upg_o_coyote"/> 
 				<value_node value="wpn_fps_upg_bonus_concealment_p1"/> 
-				<value_node value="wpn_fps_upg_bonus_spread_n1"/> 
+				<value_node value="wpn_fps_upg_bonus_total_ammo_p1"/> 
 				<value_node value="wpn_fps_upg_bonus_spread_p1"/> 
 				<value_node value="wpn_fps_upg_bonus_team_exp_money_p3"/> 
 				<value_node value="wpn_fps_upg_bonus_recoil_p1"/> 
@@ -6729,52 +6729,52 @@
 		<unit path="units/pd2_dlc_old/weapons/wpn_fps_smg_erma/wpn_fps_smg_erma_beakimbo" force="true"/> 
 		<unit path="units/pd2_dlc_opera/weapons/wpn_fps_ass_tecci/wpn_fps_ass_tecci_beakimbo" force="true"/> 
 		<unit path="units/payday2/weapons/wpn_fps_pis_g18c/wpn_fps_pis_g18c_beakimbo" force="true"/> 
-		<unit path="units/pd2_dlc_gage_shot/weapons/wpn_fps_sho_ben/wpn_fps_sho_ben_beakimbo" force="true"/> 
-		<unit path="units/pd2_dlc_rota/weapons/wpn_fps_sho_rota/wpn_fps_sho_rota_beakimbo" force="true"/> 
+		<unit path="units/pd2_dlc_west/weapons/wpn_fps_snp_winchester/wpn_fps_snp_winchester_beakimbo" force="true"/> 
+		<unit path="units/pd2_dlc1/weapons/wpn_fps_ass_s552/wpn_fps_ass_s552_beakimbo" force="true"/> 
 		<unit path="units/pd2_dlc_clover/weapons/wpn_fps_ass_l85a2/wpn_fps_ass_l85a2_beakimbo" force="true"/> 
 		<unit path="units/pd2_dlc_gage_shot/weapons/wpn_fps_sho_striker/wpn_fps_sho_striker_beakimbo" force="true"/> 
 		<unit path="units/pd2_dlc1/weapons/wpn_fps_smg_m45/wpn_fps_smg_m45_beakimbo" force="true"/> 
-		<unit path="units/pd2_dlc_coco/weapons/wpn_fps_smg_sr2/wpn_fps_smg_sr2_beakimbo" force="true"/> 
+		<unit path="units/pd2_dlc_gage_assault/weapons/wpn_fps_ass_galil/wpn_fps_ass_galil_beakimbo" force="true"/> 
 		<unit path="units/pd2_million/weapons/wpn_fps_pis_judge/wpn_fps_pis_judge_beakimbo" force="true"/> 
-		<unit path="units/pd2_dlc1/weapons/wpn_fps_ass_s552/wpn_fps_ass_s552_beakimbo" force="true"/> 
-		<unit path="units/pd2_dlc_max/weapons/wpn_fps_pis_chinchilla/wpn_fps_pis_chinchilla_beakimbo" force="true"/> 
+		<unit path="units/pd2_dlc_dec5/weapons/wpn_fps_smg_mp7/wpn_fps_smg_mp7_beakimbo" force="true"/> 
+		<unit path="units/pd2_dlc_turtles/weapons/wpn_fps_snp_wa2000/wpn_fps_snp_wa2000_beakimbo" force="true"/> 
+		<unit path="units/pd2_dlc_coco/weapons/wpn_fps_smg_sr2/wpn_fps_smg_sr2_beakimbo" force="true"/> 
 		<unit path="units/payday2/weapons/wpn_fps_shot_saiga/wpn_fps_shot_saiga_beakimbo" force="true"/> 
 		<unit path="units/pd2_dlc_dragan/weapons/wpn_fps_ass_vhs/wpn_fps_ass_vhs_beakimbo" force="true"/> 
-		<unit path="units/pd2_dlc_turtles/weapons/wpn_fps_snp_wa2000/wpn_fps_snp_wa2000_beakimbo" force="true"/> 
 		<unit path="units/pd2_dlc_miami/weapons/wpn_fps_smg_scorpion/wpn_fps_smg_scorpion_beakimbo" force="true"/> 
-		<unit path="units/pd2_dlc_west/weapons/wpn_fps_snp_winchester/wpn_fps_snp_winchester_beakimbo" force="true"/> 
-		<unit path="units/pd2_dlc_dec5/weapons/wpn_fps_pis_p226/wpn_fps_pis_p226_beakimbo" force="true"/> 
 		<unit path="units/pd2_dlc_bonnie/weapons/wpn_fps_shot_b682/wpn_fps_shot_b682_beakimbo" force="true"/> 
+		<unit path="units/pd2_dlc_gage_lmg/weapons/wpn_fps_lmg_m249/wpn_fps_lmg_m249_beakimbo" force="true"/> 
+		<unit path="units/pd2_dlc_character_sokol/weapons/wpn_fps_ass_asval/wpn_fps_ass_asval_beakimbo" force="true"/> 
 		<unit path="units/pd2_dlc_gage_snp/weapons/wpn_fps_snp_r93/wpn_fps_snp_r93_beakimbo" force="true"/> 
 		<unit path="units/pd2_dlc_gage_assault/weapons/wpn_fps_ass_g3/wpn_fps_ass_g3_beakimbo" force="true"/> 
 		<unit path="units/payday2/weapons/wpn_fps_smg_mp5/wpn_fps_smg_mp5_beakimbo" force="true"/> 
-		<unit path="units/pd2_dlc_character_sokol/weapons/wpn_fps_ass_asval/wpn_fps_ass_asval_beakimbo" force="true"/> 
+		<unit path="units/pd2_dlc_max/weapons/wpn_fps_pis_chinchilla/wpn_fps_pis_chinchilla_beakimbo" force="true"/> 
 		<unit path="units/pd2_dlc_gage_historical/weapons/wpn_fps_smg_sterling/wpn_fps_smg_sterling_beakimbo" force="true"/> 
 		<unit path="units/payday2/weapons/wpn_fps_ass_aug/wpn_fps_ass_aug_beakimbo" force="true"/> 
 		<unit path="units/pd2_dlc_pim/weapons/wpn_fps_snp_desertfox/wpn_fps_snp_desertfox_beakimbo" force="true"/> 
 		<unit path="units/pd2_dlc_miami/weapons/wpn_fps_smg_tec9/wpn_fps_smg_tec9_beakimbo" force="true"/> 
 		<unit path="units/pd2_dlc_fi7/weapons/wpn_fps_pis_lemming/wpn_fps_pis_lemming_beakimbo" force="true"/> 
-		<unit path="units/payday2/weapons/wpn_fps_ass_m14/wpn_fps_ass_m14_beakimbo" force="true"/> 
+		<unit path="units/pd2_dlc_rota/weapons/wpn_fps_sho_rota/wpn_fps_sho_rota_beakimbo" force="true"/> 
 		<unit path="units/payday2/weapons/wpn_fps_shot_huntsman/wpn_fps_shot_huntsman_beakimbo" force="true"/> 
-		<unit path="units/pd2_dlc_gage_assault/weapons/wpn_fps_ass_galil/wpn_fps_ass_galil_beakimbo" force="true"/> 
+		<unit path="units/payday2/weapons/wpn_fps_ass_m14/wpn_fps_ass_m14_beakimbo" force="true"/> 
 		<unit path="units/payday2/weapons/wpn_fps_smg_p90/wpn_fps_smg_p90_beakimbo" force="true"/> 
 		<unit path="units/pd2_dlc_arena/weapons/wpn_fps_pis_2006m/wpn_fps_pis_2006m_beakimbo" force="true"/> 
 		<unit path="units/payday2/weapons/wpn_fps_smg_olympic/wpn_fps_smg_olympic_beakimbo" force="true"/> 
-		<unit path="units/pd2_dlc_gage_lmg/weapons/wpn_fps_lmg_m249/wpn_fps_lmg_m249_beakimbo" force="true"/> 
-		<unit path="units/pd2_dlc_dec5/weapons/wpn_fps_smg_mp7/wpn_fps_smg_mp7_beakimbo" force="true"/> 
+		<unit path="units/pd2_crimefest_2014/oct26/weapons/wpn_fps_sho_spas12/wpn_fps_sho_spas12_beakimbo" force="true"/> 
+		<unit path="units/pd2_dlc_dec5/weapons/wpn_fps_pis_p226/wpn_fps_pis_p226_beakimbo" force="true"/> 
 		<unit path="units/pd2_dlc_pim/weapons/wpn_fps_smg_schakal/wpn_fps_smg_schakal_beakimbo" force="true"/> 
 		<unit path="units/pd2_dlc_casino/weapons/wpn_fps_ass_sub2000/wpn_fps_ass_sub2000_beakimbo" force="true"/> 
 		<unit path="units/pd2_dlc_grv/weapons/wpn_fps_snp_siltstone/wpn_fps_snp_siltstone_beakimbo" force="true"/> 
 		<unit path="units/pd2_dlc_grv/weapons/wpn_fps_smg_coal/wpn_fps_smg_coal_beakimbo" force="true"/> 
-		<unit path="units/pd2_crimefest_2014/oct26/weapons/wpn_fps_sho_spas12/wpn_fps_sho_spas12_beakimbo" force="true"/> 
-		<unit path="units/pd2_dlc_gage_historical/weapons/wpn_fps_snp_mosin/wpn_fps_snp_mosin_beakimbo" force="true"/> 
+		<unit path="units/payday2/weapons/wpn_fps_shot_shorty/wpn_fps_shot_shorty_beakimbo" force="true"/> 
 		<unit path="units/payday2/weapons/wpn_fps_pis_g17/wpn_fps_pis_g17_beakimbo" force="true"/> 
 		<unit path="units/pd2_dlc_grv/weapons/wpn_fps_ass_flint/wpn_fps_ass_flint_beakimbo" force="true"/> 
 		<unit path="units/payday2/weapons/wpn_fps_ass_g36/wpn_fps_ass_g36_beakimbo" force="true"/> 
+		<unit path="units/pd2_dlc_gage_shot/weapons/wpn_fps_sho_ben/wpn_fps_sho_ben_beakimbo" force="true"/> 
 		<unit path="units/pd2_dlc_the_bomb/weapons/wpn_fps_pis_hs2000/wpn_fps_pis_hs2000_beakimbo" force="true"/> 
-		<unit path="units/pd2_dlc_old/weapons/wpn_fps_ass_ching/wpn_fps_ass_ching_beakimbo" force="true"/> 
+		<unit path="units/pd2_dlc_gage_historical/weapons/wpn_fps_snp_mosin/wpn_fps_snp_mosin_beakimbo" force="true"/> 
 		<unit path="units/pd2_dlc_rip/weapons/wpn_fps_pis_sparrow/wpn_fps_pis_sparrow_beakimbo" force="true"/> 
-		<unit path="units/payday2/weapons/wpn_fps_shot_shorty/wpn_fps_shot_shorty_beakimbo" force="true"/> 
+		<unit path="units/pd2_dlc_old/weapons/wpn_fps_ass_ching/wpn_fps_ass_ching_beakimbo" force="true"/> 
 		<unit path="units/pd2_dlc_old/weapons/wpn_fps_pis_breech/wpn_fps_pis_breech_beakimbo" force="true"/> 
 		<unit path="units/payday2/weapons/wpn_fps_pis_usp/wpn_fps_pis_usp_beakimbo" force="true"/> 
 		<unit path="units/pd2_dlc_spa/weapons/wpn_fps_snp_tti/wpn_fps_snp_tti_beakimbo" force="true"/> 
