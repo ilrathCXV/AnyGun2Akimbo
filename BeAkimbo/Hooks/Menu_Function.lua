@@ -13,7 +13,7 @@ end)
 
 Hooks:Add("MenuManagerPopulateCustomMenus", "BeAkimboOptions", function( menu_manager, nodes )
 	MenuCallbackHandler.BeAkimbo_menu_forced_update_callback = function(self, item)
-		local Version = 6
+		local Version = 7
 		local mysplit = function(inputstr, sep)
 			if sep == nil then
 				sep = "%s"
@@ -46,6 +46,7 @@ Hooks:Add("MenuManagerPopulateCustomMenus", "BeAkimboOptions", function( menu_ma
 			local _new_named_ids = {}
 			local _cloned = {}
 			local _new_units = {}
+			local _Use_AkimboShotgunBase = {}
 			for _weapon_id, _ in pairs(tweak_data.weapon) do
 				_factory_id = managers.weapon_factory:get_factory_id_by_weapon_id(_weapon_id)
 				if _factory_id then
@@ -65,6 +66,9 @@ Hooks:Add("MenuManagerPopulateCustomMenus", "BeAkimboOptions", function( menu_ma
 								_hold_base_on = 'jowi_pistol'
 							else
 								_hold_base_on = 'x_akmsu'
+							end
+							if table.contains(_wd.categories, 'shotgun') then
+								_Use_AkimboShotgunBase[_weapon_id] = true
 							end
 							local _locked = ''
 							--Loc
@@ -167,6 +171,10 @@ Hooks:Add("MenuManagerPopulateCustomMenus", "BeAkimboOptions", function( menu_ma
 							local _objectfile = ''
 							local _bnk = ''
 							local _ex = ''
+							local _AkimboBase = 'AkimboWeaponBase'
+							if _Use_AkimboShotgunBase[_weapon_id] then
+								_AkimboBase = 'AkimboShotgunBase'
+							end
 							for node in xml_node_children do
 								if node:name() == 'object' then
 									_objectfile = tostring(node:parameter("file"))
@@ -184,7 +192,7 @@ Hooks:Add("MenuManagerPopulateCustomMenus", "BeAkimboOptions", function( menu_ma
 							_unit_file:write('	</dependencies> \n')
 							_unit_file:write('	<extensions> \n')
 							_unit_file:write('		<extension name="unit_data" class="ScriptUnitData" /> \n')
-							_unit_file:write('			<extension name="base" class="AkimboWeaponBase" > \n')
+							_unit_file:write('			<extension name="base" class="'.. _AkimboBase ..'" > \n')
 							_unit_file:write('			<var name="name_id" value="'.. _weapon_id ..'_beakimbo" /> \n')
 							_unit_file:write('		</extension> \n')
 							_unit_file:write('	</extensions> \n')

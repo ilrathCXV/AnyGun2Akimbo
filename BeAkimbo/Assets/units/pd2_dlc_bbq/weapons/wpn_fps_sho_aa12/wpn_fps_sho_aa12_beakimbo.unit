@@ -5,7 +5,7 @@
 	</dependencies> 
 	<extensions> 
 		<extension name="unit_data" class="ScriptUnitData" /> 
-			<extension name="base" class="AkimboWeaponBase" > 
+			<extension name="base" class="AkimboShotgunBase" > 
 			<var name="name_id" value="aa12_beakimbo" /> 
 		</extension> 
 	</extensions> 
