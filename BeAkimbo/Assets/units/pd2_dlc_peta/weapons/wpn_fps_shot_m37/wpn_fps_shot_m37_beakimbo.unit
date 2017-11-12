@@ -1,6 +1,7 @@
 <unit type="wpn" slot="1" > 
 	<object file="units/pd2_dlc_peta/weapons/wpn_fps_shot_m37/wpn_fps_shot_m37" /> 
 	<dependencies> 
+		<depends_on bnk="nil"/> 
 	</dependencies> 
 	<extensions> 
 		<extension name="unit_data" class="ScriptUnitData" /> 

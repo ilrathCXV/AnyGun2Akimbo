@@ -1,6 +1,7 @@
 <unit type="wpn" slot="1" > 
 	<object file="units/pd2_crimefest_2014/oct26/weapons/wpn_fps_sho_spas12/wpn_fps_sho_spas12" /> 
 	<dependencies> 
+		<depends_on bnk="nil"/> 
 	</dependencies> 
 	<extensions> 
 		<extension name="unit_data" class="ScriptUnitData" /> 

@@ -1,6 +1,7 @@
 <unit type="wpn" slot="1" > 
 	<object file="units/pd2_dlc_turtles/weapons/wpn_fps_smg_polymer/wpn_fps_smg_polymer" /> 
 	<dependencies> 
+		<depends_on bnk="soundbanks/weapon_polymer"/> 
 	</dependencies> 
 	<extensions> 
 		<extension name="unit_data" class="ScriptUnitData" /> 

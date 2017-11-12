@@ -1,6 +1,7 @@
 <unit type="wpn" slot="1" > 
 	<object file="units/pd2_dlc_hotline2/weapons/wpn_fps_smg_cobray/wpn_fps_smg_cobray" /> 
 	<dependencies> 
+		<depends_on bnk="soundbanks/weapon_cobray"/> 
 	</dependencies> 
 	<extensions> 
 		<extension name="unit_data" class="ScriptUnitData" /> 

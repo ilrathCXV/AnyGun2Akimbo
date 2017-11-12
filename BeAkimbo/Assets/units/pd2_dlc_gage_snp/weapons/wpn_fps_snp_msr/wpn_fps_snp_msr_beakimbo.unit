@@ -1,6 +1,7 @@
 <unit type="wpn" slot="1" > 
 	<object file="units/pd2_dlc_gage_snp/weapons/wpn_fps_snp_msr/wpn_fps_snp_msr" /> 
 	<dependencies> 
+		<depends_on bnk="soundbanks/weapon_msr"/> 
 	</dependencies> 
 	<extensions> 
 		<extension name="unit_data" class="ScriptUnitData" /> 

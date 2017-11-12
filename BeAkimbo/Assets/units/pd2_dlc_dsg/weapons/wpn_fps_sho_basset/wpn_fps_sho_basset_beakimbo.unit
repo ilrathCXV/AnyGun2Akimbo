@@ -1,6 +1,7 @@
 <unit type="wpn" slot="1" > 
 	<object file="units/pd2_dlc_dsg/weapons/wpn_fps_sho_basset/wpn_fps_sho_basset" /> 
 	<dependencies> 
+		<depends_on bnk="soundbanks/weapon_basset"/> 
 	</dependencies> 
 	<extensions> 
 		<extension name="unit_data" class="ScriptUnitData" /> 

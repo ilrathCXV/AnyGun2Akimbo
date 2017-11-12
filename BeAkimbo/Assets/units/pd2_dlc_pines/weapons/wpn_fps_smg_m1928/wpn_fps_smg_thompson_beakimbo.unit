@@ -1,6 +1,7 @@
 <unit type="wpn" slot="1" > 
 	<object file="units/pd2_dlc_pines/weapons/wpn_fps_smg_m1928/wpn_fps_smg_thompson" /> 
 	<dependencies> 
+		<depends_on bnk="soundbanks/weapon_m1928"/> 
 	</dependencies> 
 	<extensions> 
 		<extension name="unit_data" class="ScriptUnitData" /> 

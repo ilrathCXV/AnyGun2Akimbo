@@ -13,7 +13,7 @@ end)
 
 Hooks:Add("MenuManagerPopulateCustomMenus", "BeAkimboOptions", function( menu_manager, nodes )
 	MenuCallbackHandler.BeAkimbo_menu_forced_update_callback = function(self, item)
-		local Version = 4
+		local Version = 5
 		local mysplit = function(inputstr, sep)
 			if sep == nil then
 				sep = "%s"
@@ -149,20 +149,41 @@ Hooks:Add("MenuManagerPopulateCustomMenus", "BeAkimboOptions", function( menu_ma
 				_file:write('		<unit path="'.. _nu ..'" force="true"/> \n')
 				if true then
 					os.execute('mkdir "'.. Application:nice_path(Application:base_path()..'assets/mod_overrides/BeAkimbo/Assets/'.. _nu_path, true) ..'"')
-					local _unit_file = io.open('assets/mod_overrides/BeAkimbo/Assets/'.. _nu ..'.unit', "w+")
+					local _unit_file = io.open('assets/mod_overrides/BeAkimbo/Assets/'.. _nu ..'.unit', "w+")					
+					local _org_nu = _nu:gsub('_beakimbo', '')
+					local xml_node = ''
+					if DB:has('unit', _org_nu) then
+						xml_node = DB:load_node('unit', _org_nu)
+					end
 					if _unit_file then
-						_unit_file:write('<unit type="wpn" slot="1" > \n')
-						_unit_file:write('	<object file="'.. tostring(_nu):gsub('_beakimbo', '') ..'" /> \n')
-						_unit_file:write('	<dependencies> \n')
-						--_unit_file:write('		<depends_on bnk="soundbanks/weapon_m16"/> \n')
-						_unit_file:write('	</dependencies> \n')
-						_unit_file:write('	<extensions> \n')
-						_unit_file:write('		<extension name="unit_data" class="ScriptUnitData" /> \n')
-						_unit_file:write('			<extension name="base" class="AkimboWeaponBase" > \n')
-						_unit_file:write('			<var name="name_id" value="'.. _weapon_id ..'_beakimbo" /> \n')
-						_unit_file:write('		</extension> \n')
-						_unit_file:write('	</extensions> \n')
-						_unit_file:write('</unit> \n')
+						if xml_node then
+							local xml_node_children = xml_node:children()
+							local _objectfile = ''
+							local _bnk = ''
+							local _ex = ''
+							for node in xml_node_children do
+								if node:name() == 'object' then
+									_objectfile = tostring(node:parameter("file"))
+								end
+								if node:name() == 'dependencies' then
+									for node_i in node:children() do
+										_bnk = tostring(node_i:parameter("bnk"))
+									end
+								end
+							end
+							_unit_file:write('<unit type="wpn" slot="1" > \n')
+							_unit_file:write('	<object file="'.. _objectfile ..'" /> \n')
+							_unit_file:write('	<dependencies> \n')
+							_unit_file:write('		<depends_on bnk="'.. _bnk ..'"/> \n')
+							_unit_file:write('	</dependencies> \n')
+							_unit_file:write('	<extensions> \n')
+							_unit_file:write('		<extension name="unit_data" class="ScriptUnitData" /> \n')
+							_unit_file:write('			<extension name="base" class="AkimboWeaponBase" > \n')
+							_unit_file:write('			<var name="name_id" value="'.. _weapon_id ..'_beakimbo" /> \n')
+							_unit_file:write('		</extension> \n')
+							_unit_file:write('	</extensions> \n')
+							_unit_file:write('</unit> \n')
+						end
 						_unit_file:close()
 					end
 				end

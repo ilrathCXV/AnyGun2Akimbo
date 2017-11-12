@@ -1,6 +1,7 @@
 <unit type="wpn" slot="1" > 
 	<object file="units/pd2_dlc_grv/weapons/wpn_fps_ass_flint/wpn_fps_ass_flint" /> 
 	<dependencies> 
+		<depends_on bnk="soundbanks/weapon_flint"/> 
 	</dependencies> 
 	<extensions> 
 		<extension name="unit_data" class="ScriptUnitData" /> 

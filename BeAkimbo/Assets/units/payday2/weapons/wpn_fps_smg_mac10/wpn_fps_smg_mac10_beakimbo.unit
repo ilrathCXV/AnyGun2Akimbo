@@ -1,6 +1,7 @@
 <unit type="wpn" slot="1" > 
 	<object file="units/payday2/weapons/wpn_fps_smg_mac10/wpn_fps_smg_mac10" /> 
 	<dependencies> 
+		<depends_on bnk="soundbanks/weapon_mac10"/> 
 	</dependencies> 
 	<extensions> 
 		<extension name="unit_data" class="ScriptUnitData" /> 
