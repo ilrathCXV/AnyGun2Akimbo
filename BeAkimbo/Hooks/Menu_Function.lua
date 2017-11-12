@@ -13,6 +13,7 @@ end)
 
 Hooks:Add("MenuManagerPopulateCustomMenus", "BeAkimboOptions", function( menu_manager, nodes )
 	MenuCallbackHandler.BeAkimbo_menu_forced_update_callback = function(self, item)
+		local Version = 2
 		local mysplit = function(inputstr, sep)
 			if sep == nil then
 				sep = "%s"
@@ -29,7 +30,7 @@ Hooks:Add("MenuManagerPopulateCustomMenus", "BeAkimboOptions", function( menu_ma
 		if _file then
 			_file:write('<table name=\"BeAkimbo\"> \n')
 			_file:write('	<Localization directory="Loc" default="english.txt"/> \n')
-			_file:write('	<AssetUpdates id="21295" name="asset_updates" folder_name="BeAkimbo" version="1" provider="modworkshop"/> \n')
+			_file:write('	<AssetUpdates id="21295" name="asset_updates" folder_name="BeAkimbo" version="'.. Version ..'" provider="modworkshop"/> \n')
 			_file:write('	<Hooks directory="Hooks"> \n')
 			_file:write('		<hook file="Menu_Function.lua" source_file="lib/managers/menumanager"/> \n')
 			_file:write('		<hook file="blackmarketmanager.lua" source_file="lib/managers/blackmarketmanager"/> \n')
