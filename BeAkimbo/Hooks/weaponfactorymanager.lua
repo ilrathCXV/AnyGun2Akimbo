@@ -7,5 +7,5 @@ end
 local BeAkimbo_WeaponFactoryManager_part_data = WeaponFactoryManager._part_data
 
 function WeaponFactoryManager:_part_data(part_id, factory_id, override)
-	return BeAkimbo_WeaponFactoryManager_part_data(self, part_id:gsub("_beakimbo", ""), factory_id:gsub("_beakimbo", ""), override)
+	return BeAkimbo_WeaponFactoryManager_part_data(self, part_id, factory_id:gsub("_beakimbo", ""), override)
 end
