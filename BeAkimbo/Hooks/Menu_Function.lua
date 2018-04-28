@@ -13,7 +13,7 @@ end)
 
 Hooks:Add("MenuManagerPopulateCustomMenus", "BeAkimboOptions", function( menu_manager, nodes )
 	MenuCallbackHandler.BeAkimbo_menu_forced_update_callback = function(self, item)
-		local Version = 8
+		local Version = 11
 		local mysplit = function(inputstr, sep)
 			if sep == nil then
 				sep = "%s"
