@@ -37,7 +37,6 @@ Hooks:Add("MenuManagerPopulateCustomMenus", "BeAkimboOptions", function( menu_ma
 			_file:write('		<hook file="weaponfactorymanager.lua" source_file="lib/managers/weaponfactorymanager"/> \n')
 			_file:write('		<hook file="menucomponentmanager.lua" source_file="lib/managers/menu/menucomponentmanager"/> \n')
 			_file:write('		<hook file="weaponfactorytweakdata.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/> \n')
-			_file:write('		<hook file="blackmarketgui.lua" source_file="lib/managers/menu/blackmarketgui"/> \n')
 			_file:write('		<hook file="weapontweakdata.lua" source_file="lib/tweak_data/weapontweakdata"/> \n')
 			_file:write('		<hook file="playertweakdata.lua" source_file="lib/tweak_data/playertweakdata"/> \n')
 			_file:write('	</Hooks> \n')
@@ -59,7 +58,7 @@ Hooks:Add("MenuManagerPopulateCustomMenus", "BeAkimboOptions", function( menu_ma
 					if _factory_id then
 						local _wd = tweak_data.weapon[_weapon_id] or nil
 						local _wfd = tweak_data.weapon.factory[_factory_id] or nil
-						if _wd and not _wd.custom and not table.contains(_wd.categories, 'akimbo') and table.contains_any(_wd.categories, {'assault_rifle', 'smg', 'pistol', 'shotgun', 'lmg', 'snp'}) and _wfd and _wfd.unit then
+						if _wd and not _wd.custom and not table.contains(_wd.categories, 'akimbo') and table.contains_any(_wd.categories, {'minigun', 'assault_rifle', 'smg', 'pistol', 'shotgun', 'lmg', 'snp'}) and _wfd and _wfd.unit then
 							_new_units[_weapon_id] = _wfd.unit .. '_beakimbo'
 							local _hold_base_on = ''
 							if table.contains(_wd.categories, 'pistol') then
@@ -82,10 +81,10 @@ Hooks:Add("MenuManagerPopulateCustomMenus", "BeAkimboOptions", function( menu_ma
 							_new_named_ids['bm_'.._new_weapon_id..'_desc_long'] = _description_id
 							--Base
 							_base_states = string.format('%s %s %s %s',
-								(_wd.DAMAGE and 'DAMAGE="'.. _wd.DAMAGE ..'"' or ''), 
-								(_wd.CLIP_AMMO_MAX and 'CLIP_AMMO_MAX="'.. (_wd.CLIP_AMMO_MAX*2) ..'"' or ''), 
-								(_wd.NR_CLIPS_MAX and 'NR_CLIPS_MAX="'.. (_wd.NR_CLIPS_MAX*2) ..'"' or ''), 
-								(_wd.AMMO_MAX and 'AMMO_MAX="'.. (_wd.AMMO_MAX*2) ..'"' or '')
+								(_wd.DAMAGE and 'DAMAGE="'.. _wd.DAMAGE ..'"' or ''),
+								(_wd.CLIP_AMMO_MAX and 'CLIP_AMMO_MAX="'.. math.round(_wd.CLIP_AMMO_MAX*1.3) ..'"' or ''),
+								(_wd.NR_CLIPS_MAX and 'NR_CLIPS_MAX="'.. math.round(_wd.NR_CLIPS_MAX*1.3) ..'"' or ''),
+								(_wd.AMMO_MAX and 'AMMO_MAX="'.. math.round(_wd.AMMO_MAX*1.3) ..'"' or '')
 								)
 							_locked = string.format('%s %s', (_wd.global_value and 'global_value="'.. _wd.global_value ..'"' or ''), (_wd.texture_bundle_folder and 'texture_bundle_folder="'.. _wd.texture_bundle_folder ..'"' or ''))
 							_file:write('	<WeaponNew> \n')
@@ -149,57 +148,56 @@ Hooks:Add("MenuManagerPopulateCustomMenus", "BeAkimboOptions", function( menu_ma
 				_ptweak_file:write('end) \n')
 				_ptweak_file:close()
 			end
-			local _mod_path = Application:base_path()..'assets/mod_overrides/BeAkimbo/'			
+			local _mod_path = Application:base_path()..'assets/mod_overrides/BeAkimbo/'
 			_file:write('	<AddFiles directory="Assets"> \n')
+			os.execute(string.format('RD /S /Q "%s"', Application:nice_path(_mod_path..'/Assets/')))
 			for _weapon_id, _nu in pairs(_new_units) do
 				local _nus = mysplit(_nu, "/")
 				local _nu_last = _nus[#_nus]
 				_nus[#_nus] = nil
 				local _nu_path = string.join('/', _nus)
 				_file:write('		<unit path="'.. _nu ..'" force="true"/> \n')
-				if true then
-					os.execute('mkdir "'.. Application:nice_path(Application:base_path()..'assets/mod_overrides/BeAkimbo/Assets/'.. _nu_path, true) ..'"')
-					local _unit_file = io.open('assets/mod_overrides/BeAkimbo/Assets/'.. _nu ..'.unit', "w+")					
-					local _org_nu = _nu:gsub('_beakimbo', '')
-					local xml_node = ''
-					if DB:has('unit', _org_nu) then
-						xml_node = DB:load_node('unit', _org_nu)
-					end
-					if _unit_file then
-						if xml_node then
-							local xml_node_children = xml_node:children()
-							local _objectfile = ''
-							local _bnk = ''
-							local _ex = ''
-							local _AkimboBase = 'AkimboWeaponBase'
-							if _Use_AkimboShotgunBase[_weapon_id] then
-								_AkimboBase = 'AkimboShotgunBase'
-							end
-							for node in xml_node_children do
-								if node:name() == 'object' then
-									_objectfile = tostring(node:parameter("file"))
-								end
-								if node:name() == 'dependencies' then
-									for node_i in node:children() do
-										_bnk = tostring(node_i:parameter("bnk"))
-									end
-								end
-							end
-							_unit_file:write('<unit type="wpn" slot="1" > \n')
-							_unit_file:write('	<object file="'.. _objectfile ..'" /> \n')
-							_unit_file:write('	<dependencies> \n')
-							_unit_file:write('		<depends_on bnk="'.. _bnk ..'"/> \n')
-							_unit_file:write('	</dependencies> \n')
-							_unit_file:write('	<extensions> \n')
-							_unit_file:write('		<extension name="unit_data" class="ScriptUnitData" /> \n')
-							_unit_file:write('			<extension name="base" class="'.. _AkimboBase ..'" > \n')
-							_unit_file:write('			<var name="name_id" value="'.. _weapon_id ..'_beakimbo" /> \n')
-							_unit_file:write('		</extension> \n')
-							_unit_file:write('	</extensions> \n')
-							_unit_file:write('</unit> \n')
+				os.execute('mkdir "'.. Application:nice_path(_mod_path..'/Assets/'.. _nu_path, true) ..'"')
+				local _unit_file = io.open('assets/mod_overrides/BeAkimbo/Assets/'.. _nu ..'.unit', "w+")					
+				local _org_nu = _nu:gsub('_beakimbo', '')
+				local xml_node = ''
+				if DB:has('unit', _org_nu) then
+					xml_node = DB:load_node('unit', _org_nu)
+				end
+				if _unit_file then
+					if xml_node then
+						local xml_node_children = xml_node:children()
+						local _objectfile = ''
+						local _bnk = ''
+						local _ex = ''
+						local _AkimboBase = 'AkimboWeaponBase'
+						if _Use_AkimboShotgunBase[_weapon_id] then
+							_AkimboBase = 'AkimboShotgunBase'
 						end
-						_unit_file:close()
+						for node in xml_node_children do
+							if node:name() == 'object' then
+								_objectfile = tostring(node:parameter("file"))
+							end
+							if node:name() == 'dependencies' then
+								for node_i in node:children() do
+									_bnk = tostring(node_i:parameter("bnk"))
+								end
+							end
+						end
+						_unit_file:write('<unit type="wpn" slot="1" > \n')
+						_unit_file:write('	<object file="'.. _objectfile ..'" /> \n')
+						_unit_file:write('	<dependencies> \n')
+						_unit_file:write('		<depends_on bnk="'.. _bnk ..'"/> \n')
+						_unit_file:write('	</dependencies> \n')
+						_unit_file:write('	<extensions> \n')
+						_unit_file:write('		<extension name="unit_data" class="ScriptUnitData" /> \n')
+						_unit_file:write('			<extension name="base" class="'.. _AkimboBase ..'" > \n')
+						_unit_file:write('			<var name="name_id" value="'.. _weapon_id ..'_beakimbo" /> \n')
+						_unit_file:write('		</extension> \n')
+						_unit_file:write('	</extensions> \n')
+						_unit_file:write('</unit> \n')
 					end
+					_unit_file:close()
 				end
 			end
 			_file:write('	</AddFiles> \n')
