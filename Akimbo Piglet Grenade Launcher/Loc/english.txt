@@ -1,0 +1,5 @@
+{
+	"bm_m32_beakimbo_name":"[AB] Piglet Grenade Launcher",
+	"bm_m32_beakimbo_desc_long":" ",
+	"bm_m32_beakimbo_desc":" "
+}
