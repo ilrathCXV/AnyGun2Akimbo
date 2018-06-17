@@ -186,9 +186,13 @@ Hooks:Add("MenuManagerPopulateCustomMenus", "BeAkimboOptions", function( menu_ma
 						end
 						_unit_file:write('<unit type="wpn" slot="1" > \n')
 						_unit_file:write('	<object file="'.. _objectfile ..'" /> \n')
-						_unit_file:write('	<dependencies> \n')
-						_unit_file:write('		<depends_on bnk="'.. _bnk ..'"/> \n')
-						_unit_file:write('	</dependencies> \n')
+						if _bnk ~= "nil" then
+							_unit_file:write('	<dependencies/> \n')
+						else
+							_unit_file:write('	<dependencies> \n')
+							_unit_file:write('		<depends_on bnk="'.. _bnk ..'"/> \n')
+							_unit_file:write('	</dependencies> \n')
+						end
 						_unit_file:write('	<extensions> \n')
 						_unit_file:write('		<extension name="unit_data" class="ScriptUnitData" /> \n')
 						_unit_file:write('			<extension name="base" class="'.. _AkimboBase ..'" > \n')
