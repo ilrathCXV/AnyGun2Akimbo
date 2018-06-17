@@ -1,0 +1,5 @@
+{
+	"bm_ray_beakimbo_name":"[AB] Commando 101 Rocket Launcher",
+	"bm_ray_beakimbo_desc_long":" ",
+	"bm_ray_beakimbo_desc":" "
+}

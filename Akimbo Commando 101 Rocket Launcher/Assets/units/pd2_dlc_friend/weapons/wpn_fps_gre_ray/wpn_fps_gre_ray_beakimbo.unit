@@ -1,0 +1,12 @@
+<unit type="wpn" slot="1">
+	<object file="units/pd2_dlc_friend/weapons/wpn_fps_gre_ray/wpn_fps_gre_ray"/>
+	<dependencies/>
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData"/>
+		<extension name="base" class="AkimboWeaponBase">
+			<var name="name_id" value="ray_beakimbo"/>
+			<var name="class_alt" value="AkimboRayLauncherWeaponBase"/>
+			<var name="alt_projectile_type" value="rocket_frag"/>
+		</extension>
+	</extensions>
+</unit>
