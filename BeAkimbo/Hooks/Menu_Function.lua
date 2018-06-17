@@ -141,9 +141,11 @@ Hooks:Add("MenuManagerPopulateCustomMenus", "BeAkimboOptions", function( menu_ma
 				_ptweak_file:write('	local _crouched = self.stances.x_usp.crouched \n')
 				_ptweak_file:write('	local _steelsight = self.stances.x_usp.steelsight \n')
 				for _weapon_id, _ in pairs(_new_units) do
-					_ptweak_file:write('	self.stances.'.. _weapon_id ..'_beakimbo.standard = _standard \n')
-					_ptweak_file:write('	self.stances.'.. _weapon_id ..'_beakimbo.crouched = _crouched \n')
-					_ptweak_file:write('	self.stances.'.. _weapon_id ..'_beakimbo.steelsight = _steelsight \n')
+					_ptweak_file:write('	if self.stances.'.. _weapon_id ..'_beakimbo then \n')
+					_ptweak_file:write('		self.stances.'.. _weapon_id ..'_beakimbo.standard = _standard \n')
+					_ptweak_file:write('		self.stances.'.. _weapon_id ..'_beakimbo.crouched = _crouched \n')
+					_ptweak_file:write('		self.stances.'.. _weapon_id ..'_beakimbo.steelsight = _steelsight \n')
+					_ptweak_file:write('	end \n')
 				end
 				_ptweak_file:write('end) \n')
 				_ptweak_file:close()
