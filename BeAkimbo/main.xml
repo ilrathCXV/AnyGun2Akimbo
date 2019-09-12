@@ -1,6 +1,6 @@
 <table name="BeAkimbo"> 
 	<Localization directory="Loc" default="english.txt"/> 
-	<AssetUpdates id="21295" name="asset_updates" folder_name="BeAkimbo" version="12" provider="modworkshop"/> 
+	<AssetUpdates id="21295" name="asset_updates" folder_name="BeAkimbo" version="14" provider="modworkshop"/> 
 	<Hooks directory="Hooks"> 
 		<hook file="Menu_Function.lua" source_file="lib/managers/menumanager"/> 
 	</Hooks> 

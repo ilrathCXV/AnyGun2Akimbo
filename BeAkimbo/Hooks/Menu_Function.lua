@@ -13,7 +13,7 @@ end)
 
 Hooks:Add("MenuManagerPopulateCustomMenus", "BeAkimboOptions", function( menu_manager, nodes )
 	MenuCallbackHandler.BeAkimbo_menu_forced_update_callback = function(self, item)
-		local Version = 12
+		local Version = 14
 		local mysplit = function(inputstr, sep)
 			if sep == nil then
 				sep = "%s"
@@ -25,7 +25,7 @@ Hooks:Add("MenuManagerPopulateCustomMenus", "BeAkimboOptions", function( menu_ma
 			end
 			return t
 		end
-		local _file = io.open('assets/mod_overrides/BeAkimbo/main.xml', "w")
+		local _file = io.open('assets/mod_overrides/BeAkimbo/main.xml', "w+")
 		local banned = {saw = true, saw_secondary = true}
 		if _file then
 			_file:write('<table name=\"BeAkimbo\"> \n')
@@ -39,6 +39,7 @@ Hooks:Add("MenuManagerPopulateCustomMenus", "BeAkimboOptions", function( menu_ma
 			_file:write('		<hook file="weaponfactorytweakdata.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/> \n')
 			_file:write('		<hook file="weapontweakdata.lua" source_file="lib/tweak_data/weapontweakdata"/> \n')
 			_file:write('		<hook file="playertweakdata.lua" source_file="lib/tweak_data/playertweakdata"/> \n')
+			_file:write('		<hook file="tweakdata.lua" source_file="lib/tweak_data/tweakdata"/> \n')
 			_file:write('	</Hooks> \n')
 			local _factory_id = ""
 			local _weapon_lists = {}
