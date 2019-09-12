@@ -13,7 +13,7 @@ end)
 
 Hooks:Add("MenuManagerPopulateCustomMenus", "BeAkimboOptions", function( menu_manager, nodes )
 	MenuCallbackHandler.BeAkimbo_menu_forced_update_callback = function(self, item)
-		local Version = 14
+		local Version = 16
 		local mysplit = function(inputstr, sep)
 			if sep == nil then
 				sep = "%s"
@@ -56,7 +56,7 @@ Hooks:Add("MenuManagerPopulateCustomMenus", "BeAkimboOptions", function( menu_ma
 			for _, _weapon_id in ipairs(_weapon_lists) do
 				if not banned[_weapon_id] and not _weapon_id:find('beakimbo') then
 					_factory_id = managers.weapon_factory:get_factory_id_by_weapon_id(_weapon_id)
-					if _factory_id then
+					if _factory_id and not _factory_id:find('beakimbo') then
 						local _wd = tweak_data.weapon[_weapon_id] or nil
 						local _wfd = tweak_data.weapon.factory[_factory_id] or nil
 						if _wd and not _wd.custom and not table.contains(_wd.categories, 'akimbo') and table.contains_any(_wd.categories, {'minigun', 'assault_rifle', 'smg', 'pistol', 'shotgun', 'lmg', 'snp'}) and _wfd and _wfd.unit then
