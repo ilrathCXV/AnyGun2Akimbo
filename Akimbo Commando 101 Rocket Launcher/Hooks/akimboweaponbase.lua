@@ -23,6 +23,15 @@ Hooks:PostHook(AkimboWeaponBase, "init", "AkimboRayLauncherWeaponBase_init", fun
 		self._use_shotgun_reload = true
 		self._client_authoritative = true
 		self._projectile_type = self:weapon_tweak_data().projectile_type
+		for _, loadme in pairs({self:weapon_tweak_data().projectile_type, self.alt_projectile_type}) do
+			local data = tweak_data.blackmarket.projectiles[loadme]
+			if data then
+				local unit_name = Idstring(not Network:is_server() and data.local_unit or data.unit)
+				if not managers.dyn_resource:is_resource_ready(Idstring("unit"), unit_name, managers.dyn_resource.DYN_RESOURCES_PACKAGE) then
+					managers.dyn_resource:load(Idstring("unit"), unit_name, managers.dyn_resource.DYN_RESOURCES_PACKAGE)
+				end
+			end
+		end
 	else
 		self.class_alt = nil
 	end
@@ -41,7 +50,6 @@ function AkimboWeaponBase:_fire_raycast(unit, ver, dir, ...)
 	if self.class_alt and self.class_alt == "AkimboRayLauncherWeaponBase" then
 		if self._fire_second_gun_next and self._second_gun and alive(self._second_gun) then
 			ver = ver + _pos_offset()
-			--self._second_gun:base().super.fire(self._second_gun:base(), unit, ver, dir, ...)
 			self._fire_second_gun_next = false
 		else
 			if self._second_gun and alive(self._second_gun) then
