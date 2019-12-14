@@ -23,12 +23,22 @@ Hooks:PostHook(AkimboWeaponBase, "init", "AkimboRayLauncherWeaponBase_init", fun
 		self._use_shotgun_reload = true
 		self._client_authoritative = true
 		self._projectile_type = self:weapon_tweak_data().projectile_type
-		for _, loadme in pairs({self:weapon_tweak_data().projectile_type, self.alt_projectile_type}) do
-			local data = tweak_data.blackmarket.projectiles[loadme]
-			if data then
-				local unit_name = Idstring(not Network:is_server() and data.local_unit or data.unit)
-				if not managers.dyn_resource:is_resource_ready(Idstring("unit"), unit_name, managers.dyn_resource.DYN_RESOURCES_PACKAGE) then
-					managers.dyn_resource:load(Idstring("unit"), unit_name, managers.dyn_resource.DYN_RESOURCES_PACKAGE)
+		local ply_unit = managers.player:player_unit()
+		if not ply_unit or not alive(ply_unit) then
+			
+		else
+			local PlyStandard = ply_unit:movement() and ply_unit:movement()._states.standard
+			if not PlyStandard then
+				
+			else
+				for _, loadme in pairs({self:weapon_tweak_data().projectile_type, self.alt_projectile_type}) do
+					local data = tweak_data.blackmarket.projectiles[loadme]
+					if data then
+						local unit_name = Idstring(not Network:is_server() and data.local_unit or data.unit)
+						if not managers.dyn_resource:is_resource_ready(Idstring("unit"), unit_name, managers.dyn_resource.DYN_RESOURCES_PACKAGE) then
+							managers.dyn_resource:load(Idstring("unit"), unit_name, managers.dyn_resource.DYN_RESOURCES_PACKAGE)
+						end
+					end
 				end
 			end
 		end
