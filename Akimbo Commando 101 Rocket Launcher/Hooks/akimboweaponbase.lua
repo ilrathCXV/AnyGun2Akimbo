@@ -1,4 +1,4 @@
-Hooks:PostHook(AkimboWeaponBase, "init", "AkimboRayLauncherWeaponBase_init", function(self)
+Hooks:PostHook(AkimboWeaponBase, "create_second_gun", "AkimboRayLauncherWeaponBaseInit", function(self)
 	if tostring(self.class_alt) == "AkimboRayLauncherWeaponBase" then
 		self._adjust_throw_z = function()
 		end
@@ -23,6 +23,31 @@ Hooks:PostHook(AkimboWeaponBase, "init", "AkimboRayLauncherWeaponBase_init", fun
 		self._use_shotgun_reload = true
 		self._client_authoritative = true
 		self._projectile_type = self:weapon_tweak_data().projectile_type
+		if self._second_gun and self._second_gun:base() then
+			self._second_gun:base()._adjust_throw_z = function()
+			end
+			self._second_gun:base()._get_spawn_offset = function ()
+				return 0
+			end
+			self._second_gun:base().charge_multiplier = function ()
+				return 1
+			end
+			self._second_gun:base().projectile_speed_multiplier = function ()
+				return 1
+			end
+			self._second_gun:base().should_reload_immediately = function ()
+				return true
+			end
+			self._second_gun:base().charge_fail = function ()
+				return false
+			end
+			self._second_gun:base().shotgun_shell_data = function ()
+				return nil
+			end
+			self._second_gun:base()._use_shotgun_reload = true
+			self._second_gun:base()._client_authoritative = true
+			self._second_gun:base()._projectile_type = self.alt_projectile_type
+		end
 		local ply_unit = managers.player:player_unit()
 		if not ply_unit or not alive(ply_unit) then
 			
@@ -49,25 +74,16 @@ end)
 
 local AkimboRayLauncherWeaponBase_fire_raycast = AkimboWeaponBase._fire_raycast
 
-function AkimboWeaponBase:_fire_raycast(unit, ver, dir, ...)
-	local _pos_offset = function ()
-		local ang = math.random() * 360 * math.pi
-		local rad = math.random(20, 30)
-		return Vector3(math.cos(ang) * rad, math.sin(ang) * rad, 0)
-	end
-	local aim_pos = Utils:GetPlayerAimPos( managers.player:player_unit(), 2000)
+function AkimboWeaponBase:_fire_raycast(unit, from_pos, ...)
 	local data = {...}
 	if self.class_alt and self.class_alt == "AkimboRayLauncherWeaponBase" then
 		if self._fire_second_gun_next and self._second_gun and alive(self._second_gun) then
-			ver = ver + _pos_offset()
+			from_pos = self._second_gun:position()
 			self._fire_second_gun_next = false
 		else
-			if self._second_gun and alive(self._second_gun) then
-				self._second_gun:base()._projectile_type = self.alt_projectile_type
-			end
 			self._fire_second_gun_next = true
 		end
-		return ProjectileWeaponBase._fire_raycast(self, unit, ver, dir, ...)
+		return ProjectileWeaponBase._fire_raycast(self, unit, from_pos, ...)
 	end
 	return AkimboRayLauncherWeaponBase_fire_raycast(self, ...)
 end
