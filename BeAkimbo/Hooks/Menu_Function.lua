@@ -13,7 +13,7 @@ end)
 
 Hooks:Add("MenuManagerPopulateCustomMenus", "BeAkimboOptions", function( menu_manager, nodes )
 	MenuCallbackHandler.BeAkimbo_menu_forced_update_callback = function(self, item)
-		local Version = 16
+		local Version = 17
 		local mysplit = function(inputstr, sep)
 			if sep == nil then
 				sep = "%s"
@@ -83,10 +83,10 @@ Hooks:Add("MenuManagerPopulateCustomMenus", "BeAkimboOptions", function( menu_ma
 							--Base
 							_base_states = string.format('%s %s %s %s',
 								(_wd.DAMAGE and 'DAMAGE="'.. _wd.DAMAGE ..'"' or ''),
-								(_wd.CLIP_AMMO_MAX and 'CLIP_AMMO_MAX="'.. math.round(_wd.CLIP_AMMO_MAX*1.3) ..'"' or ''),
-								(_wd.NR_CLIPS_MAX and 'NR_CLIPS_MAX="'.. math.round(_wd.NR_CLIPS_MAX*1.3) ..'"' or ''),
-								(_wd.AMMO_MAX and 'AMMO_MAX="'.. math.round(_wd.AMMO_MAX*1.3) ..'"' or '')
-								)
+								(_wd.CLIP_AMMO_MAX and 'CLIP_AMMO_MAX="'.. math.round(_wd.CLIP_AMMO_MAX*1.66) ..'"' or ''),
+								(_wd.NR_CLIPS_MAX and 'NR_CLIPS_MAX="'.. math.round(_wd.NR_CLIPS_MAX*1.11) ..'"' or ''),
+								(_wd.AMMO_MAX and 'AMMO_MAX="'.. math.round(_wd.AMMO_MAX) ..'"' or '')
+							)
 							_locked = string.format('%s %s', (_wd.global_value and 'global_value="'.. _wd.global_value ..'"' or ''), (_wd.texture_bundle_folder and 'texture_bundle_folder="'.. _wd.texture_bundle_folder ..'"' or ''))
 							_file:write('	<WeaponNew> \n')
 							_file:write('		<weapon id="'.. _new_weapon_id ..'" based_on="'.. _weapon_id ..'" weapon_hold="'.. _hold_base_on ..'" name_id="bm_'.. _new_weapon_id..'_name" desc_id ="bm_'.. _new_weapon_id ..'_desc" description_id="bm_'.. _new_weapon_id ..'_desc_long" '.. _base_states..' '.. _locked..'> \n')
@@ -97,13 +97,41 @@ Hooks:Add("MenuManagerPopulateCustomMenus", "BeAkimboOptions", function( menu_ma
 							_file:write('				<value_node value="akimbo"/> \n')
 							_file:write('				<value_node value="'.. _wd.categories[1] ..'"/> \n')
 							_file:write('			</categories> \n')
-							--stats
-							if _wd.stats and type(_wd.stats) == "table" then
-								local stats = ''
-								for _stat, _value in ipairs(_wd.stats) do
-									stats = stats .. ' '.. _stat ..'="'.. _value ..'"'
+							--animations
+							if type(_wd.animations) == "table" then
+								local __add_string = ""
+								for __aa_i, __aa_d in pairs(_wd.animations) do
+									if type(__aa_d) == "table" then
+										log("[BeAkimbo]: clone, animations: "..__aa_i)
+									else
+										__add_string = __add_string .. ''..__aa_i..'="'..tostring(__aa_d)..'" '
+									end
 								end
-								_file:write('			<stats'.. stats ..'/> \n')
+								__add_string = __add_string .. 'reload_name_id="'..tostring(_weapon_id)..'" '
+								_file:write('			<animations '..__add_string..'/> \n')
+							end
+							--timers
+							if type(_wd.timers) == "table" then								
+								local __add_string = ""
+								for __aa_i, __aa_d in pairs(_wd.timers) do
+									if type(__aa_d) == "table" then
+										log("[BeAkimbo]: clone, timers: "..__aa_i)
+									elseif type(__aa_d) ~= "number" then
+										log("[BeAkimbo]: clone, timers: "..__aa_i.."\t"..tostring(__aa_d))
+									else
+										__add_string = __add_string .. ''..__aa_i..'="'..tostring(__aa_d*1.66)..'" '
+									end
+								end
+								_file:write('			<timers '..__add_string..'/> \n')						
+							end
+							--stats
+							if type(_wd.stats) == "table" then
+								local __add_string = ""
+								__add_string = __add_string .. ' concealment="'.. tostring(math.round(_wd.stats.concealment*0.66)) ..'"'
+								__add_string = __add_string .. ' spread="'.. tostring(math.round(_wd.stats.spread*0.66)) ..'"'
+								__add_string = __add_string .. ' spread_moving="'.. tostring(math.round(_wd.stats.spread_moving*0.66)) ..'"'
+								__add_string = __add_string .. ' recoil="'.. tostring(math.round(_wd.stats.recoil*0.66)) ..'"'
+								_file:write('			<stats'.. __add_string ..'/> \n')
 							end
 							--stats_modifiers
 							if _wd.stats_modifiers and type(_wd.stats_modifiers) == "table" then
@@ -210,6 +238,9 @@ Hooks:Add("MenuManagerPopulateCustomMenus", "BeAkimboOptions", function( menu_ma
 			_file:write('	</AddFiles> \n')
 			_file:write('</table>')
 			_file:close()
+			_new_named_ids['menu_akimbo_snp'] = '[AB] ' .. managers.localization:to_upper_text("menu_snp")
+			_new_named_ids['menu_akimbo_lmg'] = '[AB] ' .. managers.localization:to_upper_text("menu_lmg")
+			_new_named_ids['menu_akimbo_assault_rifle'] = '[AB] ' .. managers.localization:to_upper_text("menu_assault_rifle")
 			_file = io.open('assets/mod_overrides/BeAkimbo/Loc/english.txt', "w+")
 			_file:write(json.encode(_new_named_ids))
 			_file:close()
