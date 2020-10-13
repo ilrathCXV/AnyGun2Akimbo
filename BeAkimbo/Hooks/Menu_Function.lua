@@ -13,7 +13,7 @@ end)
 
 Hooks:Add("MenuManagerPopulateCustomMenus", "BeAkimboOptions", function( menu_manager, nodes )
 	MenuCallbackHandler.BeAkimbo_menu_forced_update_callback = function(self, item)
-		local Version = 17
+		local Version = 18
 		local mysplit = function(inputstr, sep)
 			if sep == nil then
 				sep = "%s"
@@ -30,7 +30,9 @@ Hooks:Add("MenuManagerPopulateCustomMenus", "BeAkimboOptions", function( menu_ma
 		if _file then
 			_file:write('<table name=\"BeAkimbo\"> \n')
 			_file:write('	<Localization directory="Loc" default="english.txt"/> \n')
-			_file:write('	<AssetUpdates id="21295" name="asset_updates" folder_name="BeAkimbo" version="'.. Version ..'" provider="modworkshop"/> \n')
+			_file:write('	<AssetUpdates id="BeAkimbo" version="'.. Version ..'"> \n')
+			_file:write('		<custom_provider version_api_url="https://drnewbie.github.io/AnyGun2Akimbo/Update/BeAkimbo.txt" download_url="https://drnewbie.github.io/AnyGun2Akimbo/Update/BeAkimbo.zip"/> \n')
+			_file:write('	</AssetUpdates> \n')
 			_file:write('	<Hooks directory="Hooks"> \n')
 			_file:write('		<hook file="Menu_Function.lua" source_file="lib/managers/menumanager"/> \n')
 			_file:write('		<hook file="blackmarketmanager.lua" source_file="lib/managers/blackmarketmanager"/> \n')
@@ -83,7 +85,7 @@ Hooks:Add("MenuManagerPopulateCustomMenus", "BeAkimboOptions", function( menu_ma
 							--Base
 							_base_states = string.format('%s %s %s %s',
 								(_wd.DAMAGE and 'DAMAGE="'.. _wd.DAMAGE ..'"' or ''),
-								(_wd.CLIP_AMMO_MAX and 'CLIP_AMMO_MAX="'.. math.round(_wd.CLIP_AMMO_MAX*1.66) ..'"' or ''),
+								(_wd.CLIP_AMMO_MAX and 'CLIP_AMMO_MAX="'.. math.round(_wd.CLIP_AMMO_MAX*2) ..'"' or ''),
 								(_wd.NR_CLIPS_MAX and 'NR_CLIPS_MAX="'.. math.round(_wd.NR_CLIPS_MAX*1.11) ..'"' or ''),
 								(_wd.AMMO_MAX and 'AMMO_MAX="'.. math.round(_wd.AMMO_MAX) ..'"' or '')
 							)
@@ -205,28 +207,30 @@ Hooks:Add("MenuManagerPopulateCustomMenus", "BeAkimboOptions", function( menu_ma
 						if _Use_AkimboShotgunBase[_weapon_id] then
 							_AkimboBase = 'AkimboShotgunBase'
 						end
+						_unit_file:write('<unit type="wpn" slot="1" > \n')
 						for node in xml_node_children do
 							if node:name() == 'object' then
-								_objectfile = tostring(node:parameter("file"))
+								_unit_file:write('	<object file="'.. tostring(node:parameter("file")) ..'" /> \n')
 							end
 							if node:name() == 'dependencies' then
+								_unit_file:write('	<dependencies> \n')
 								for node_i in node:children() do
-									_bnk = tostring(node_i:parameter("bnk"))
+									if tostring(node_i:parameter("bnk")) ~= "nil" then
+										_unit_file:write('		<depends_on bnk="'..node_i:parameter("bnk")..'"/> \n')
+									end
+									if tostring(node_i:parameter("unit")) ~= "nil" then
+										_unit_file:write('		<depends_on unit="'..node_i:parameter("unit")..'"/> \n')
+									end
+									if tostring(node_i:parameter("effect")) ~= "nil" then
+										_unit_file:write('		<depends_on effect="'..node_i:parameter("effect")..'"/> \n')
+									end
 								end
+								_unit_file:write('	</dependencies> \n')
 							end
-						end
-						_unit_file:write('<unit type="wpn" slot="1" > \n')
-						_unit_file:write('	<object file="'.. _objectfile ..'" /> \n')
-						if _bnk ~= "nil" then
-							_unit_file:write('	<dependencies/> \n')
-						else
-							_unit_file:write('	<dependencies> \n')
-							_unit_file:write('		<depends_on bnk="'.. _bnk ..'"/> \n')
-							_unit_file:write('	</dependencies> \n')
 						end
 						_unit_file:write('	<extensions> \n')
 						_unit_file:write('		<extension name="unit_data" class="ScriptUnitData" /> \n')
-						_unit_file:write('			<extension name="base" class="'.. _AkimboBase ..'" > \n')
+						_unit_file:write('		<extension name="base" class="'.. _AkimboBase ..'" > \n')
 						_unit_file:write('			<var name="name_id" value="'.. _weapon_id ..'_beakimbo" /> \n')
 						_unit_file:write('		</extension> \n')
 						_unit_file:write('	</extensions> \n')
