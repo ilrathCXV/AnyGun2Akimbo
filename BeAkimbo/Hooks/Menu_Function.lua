@@ -42,6 +42,8 @@ Hooks:Add("MenuManagerPopulateCustomMenus", "BeAkimboOptions", function( menu_ma
 			_file:write('		<hook file="weapontweakdata.lua" source_file="lib/tweak_data/weapontweakdata"/> \n')
 			_file:write('		<hook file="playertweakdata.lua" source_file="lib/tweak_data/playertweakdata"/> \n')
 			_file:write('		<hook file="tweakdata.lua" source_file="lib/tweak_data/tweakdata"/> \n')
+			_file:write('		<hook file="playerstandard.lua" source_file="lib/units/beings/player/states/playerstandard"/> \n')
+			_file:write('		<hook file="fpcameraplayerbase.lua" source_file="lib/units/cameras/fpcameraplayerbase"/> \n')
 			_file:write('	</Hooks> \n')
 			local _factory_id = ""
 			local _weapon_lists = {}
@@ -110,7 +112,7 @@ Hooks:Add("MenuManagerPopulateCustomMenus", "BeAkimboOptions", function( menu_ma
 									end
 								end
 								__add_string = __add_string .. 'reload_name_id="'..tostring(_weapon_id)..'" '
-								_file:write('			<animations '..__add_string..'/> \n')
+								_file:write('			<animations '..__add_string..' akimbo_goldeneye_reload="true" /> \n')
 							end
 							--timers
 							if type(_wd.timers) == "table" then								
@@ -121,7 +123,7 @@ Hooks:Add("MenuManagerPopulateCustomMenus", "BeAkimboOptions", function( menu_ma
 									elseif type(__aa_d) ~= "number" then
 										log("[BeAkimbo]: clone, timers: "..__aa_i.."\t"..tostring(__aa_d))
 									else
-										__add_string = __add_string .. ''..__aa_i..'="'..tostring(__aa_d*1.66)..'" '
+										__add_string = __add_string .. ''..__aa_i..'="'..tostring(__aa_d*1.33)..'" '
 									end
 								end
 								_file:write('			<timers '..__add_string..'/> \n')						
@@ -133,6 +135,7 @@ Hooks:Add("MenuManagerPopulateCustomMenus", "BeAkimboOptions", function( menu_ma
 								__add_string = __add_string .. ' spread="'.. tostring(math.round(_wd.stats.spread*0.66)) ..'"'
 								__add_string = __add_string .. ' spread_moving="'.. tostring(math.round(_wd.stats.spread_moving*0.66)) ..'"'
 								__add_string = __add_string .. ' recoil="'.. tostring(math.round(_wd.stats.recoil*0.66)) ..'"'
+								__add_string = __add_string .. ' reload="'.. tostring(math.round(_wd.stats.reload*0.66)) ..'"'
 								_file:write('			<stats'.. __add_string ..'/> \n')
 							end
 							--stats_modifiers
