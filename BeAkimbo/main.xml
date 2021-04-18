@@ -1,8 +1,8 @@
 <table name="BeAkimbo"> 
 	<Localization directory="Loc" default="english.txt"/> 
-	<AssetUpdates id="BeAkimbo" version="18"> 
-        <custom_provider version_api_url="https://drnewbie.github.io/AnyGun2Akimbo/Update/BeAkimbo.txt" download_url="https://drnewbie.github.io/AnyGun2Akimbo/Update/BeAkimbo.zip"/> 
-    </AssetUpdates> 
+	<AssetUpdates id="BeAkimbo" version="19"> 
+		<custom_provider version_api_url="https://drnewbie.github.io/AnyGun2Akimbo/Update/BeAkimbo.txt" download_url="https://drnewbie.github.io/AnyGun2Akimbo/Update/BeAkimbo.zip"/> 
+	</AssetUpdates> 
 	<Hooks directory="Hooks"> 
 		<hook file="Menu_Function.lua" source_file="lib/managers/menumanager"/> 
 	</Hooks> 

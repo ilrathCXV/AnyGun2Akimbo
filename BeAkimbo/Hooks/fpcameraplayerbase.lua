@@ -1,4 +1,4 @@
-local STANCE_MOD_GOLDENEYE = { translation = Vector3(0, 0, -100), rotation = Rotation(0, 0, 0)}
+local STANCE_MOD_GOLDENEYE = {translation = Vector3(0, 0, -100), rotation = Rotation(0, 0, 0)}
 local BEAKIMBO_goldeneye_reload_clbk_stance_entered = FPCameraPlayerBase.clbk_stance_entered
 function FPCameraPlayerBase:clbk_stance_entered(new_shoulder_stance, new_head_stance, new_vel_overshot, new_fov, new_shakers, stance_mod, ...)
     local weapon_name_id = managers.player:equipped_weapon_unit():base():get_name_id()

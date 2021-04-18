@@ -13,7 +13,7 @@ end)
 
 Hooks:Add("MenuManagerPopulateCustomMenus", "BeAkimboOptions", function( menu_manager, nodes )
 	MenuCallbackHandler.BeAkimbo_menu_forced_update_callback = function(self, item)
-		local Version = 18
+		local Version = 19
 		local mysplit = function(inputstr, sep)
 			if sep == nil then
 				sep = "%s"
@@ -192,7 +192,7 @@ Hooks:Add("MenuManagerPopulateCustomMenus", "BeAkimboOptions", function( menu_ma
 				local _nu_last = _nus[#_nus]
 				_nus[#_nus] = nil
 				local _nu_path = string.join('/', _nus)
-				_file:write('		<unit path="'.. _nu ..'" force="true"/> \n')
+				_file:write('		<unit path="'.. _nu ..'"/> \n')
 				os.execute('mkdir "'.. Application:nice_path(_mod_path..'/Assets/'.. _nu_path, true) ..'"')
 				local _unit_file = io.open('assets/mod_overrides/BeAkimbo/Assets/'.. _nu ..'.unit', "w+")					
 				local _org_nu = _nu:gsub('_beakimbo', '')
