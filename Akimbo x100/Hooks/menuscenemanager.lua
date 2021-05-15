@@ -1,17 +1,15 @@
 MenuSceneManager.new_unit_alt_list = MenuSceneManager.new_unit_alt_list or {}
 
 function MenuSceneManager:AkimboWTF_Spawn(buff_unit, factory_id, blueprint)
-	for _, alt in pairs(self.new_unit_alt_list) do
+	local b_key = tostring(buff_unit:key())
+	self.new_unit_alt_list[b_key] = self.new_unit_alt_list[b_key] or {}
+	for _, alt in pairs(self.new_unit_alt_list[b_key]) do
 		alt:unlink()
 		alt:set_slot(0)
 		World:delete_unit(alt)
 	end
-	self.new_unit_alt_list = {}
+	self.new_unit_alt_list[b_key] = {}
 	if buff_unit and buff_unit.name and factory_id and type(blueprint) == "table" then
-		if not managers.dyn_resource:is_resource_ready(Idstring("unit"), buff_unit:name(), DynamicResourceManager.DYN_RESOURCES_PACKAGE) then
-			managers.dyn_resource:load(Idstring("unit"), buff_unit:name(), DynamicResourceManager.DYN_RESOURCES_PACKAGE, false)
-			return
-		end
 		local tweak_factory = tweak_data.weapon.factory.parts
 		for _, f_id in pairs(blueprint) do
 			if type(tweak_factory[f_id].stats) == "table" and tweak_factory[f_id].stats.akimbo_wtf_buff then
@@ -31,16 +29,17 @@ function MenuSceneManager:AkimboWTF_Spawn(buff_unit, factory_id, blueprint)
 				end
 				for i = 1, akimbo_wtf_buff do
 					local new_unit_alt = spawn_weapon(buff_unit:position(), buff_unit:rotation())
-					table.insert(self.new_unit_alt_list, new_unit_alt)
+					table.insert(self.new_unit_alt_list[b_key], new_unit_alt)
 				end
-				buff_unit:link(Idstring(akimbo_wtf_link), self.new_unit_alt_list[1], self.new_unit_alt_list[1]:orientation_object():name())
+				buff_unit:link(Idstring(akimbo_wtf_link), self.new_unit_alt_list[b_key][1], self.new_unit_alt_list[b_key][1]:orientation_object():name())
 				for i = 2, akimbo_wtf_buff do
-					self.new_unit_alt_list[i-1]:link(Idstring(akimbo_wtf_link), self.new_unit_alt_list[i], self.new_unit_alt_list[i]:orientation_object():name())
+					self.new_unit_alt_list[b_key][i-1]:link(Idstring(akimbo_wtf_link), self.new_unit_alt_list[b_key][i], self.new_unit_alt_list[b_key][i]:orientation_object():name())
 				end
 				break
 			end
 		end
 	end
+	return
 end
 
 
@@ -54,7 +53,11 @@ Hooks:PostHook(MenuSceneManager, "set_character_equipped_weapon", "AkimboWTF_Men
 	end
 end)
 
-Hooks:PostHook(MenuSceneManager, "spawn_item_weapon", "AkimboWTF_MenuScene_1", function(self, factory_id, blueprint)
-	self:AkimboWTF_Spawn(self._item_unit.unit, factory_id, blueprint)
-	self:AkimboWTF_Spawn(self._item_unit.second_unit, factory_id, blueprint)
+Hooks:PostHook(MenuSceneManager, "_set_item_unit", "AkimboWTF_MenuScene_1", function(self, factory_, blueprint)
+	if self._item_unit and self._item_unit.unit and alive(self._item_unit.unit) then
+		self:AkimboWTF_Spawn(self._item_unit.unit, self._item_unit.unit:base()._factory_id, self._item_unit.unit:base()._blueprint)
+		if self._item_unit.second_unit and alive(self._item_unit.second_unit) then
+			self:AkimboWTF_Spawn(self._item_unit.second_unit, self._item_unit.second_unit:base()._factory_id, self._item_unit.second_unit:base()._blueprint)
+		end
+	end
 end)
