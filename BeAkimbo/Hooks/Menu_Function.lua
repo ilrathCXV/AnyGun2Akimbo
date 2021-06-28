@@ -26,7 +26,69 @@ Hooks:Add("MenuManagerPopulateCustomMenus", "BeAkimboOptions", function( menu_ma
 			return t
 		end
 		local _file = io.open('assets/mod_overrides/BeAkimbo/main.xml', "w+")
-		local banned = {saw = true, saw_secondary = true}
+		local banned = {
+			saw = true, 
+			saw_secondary = true, 
+		--- Including weapons w/ Akimbos already
+		-- Pistols
+			sparrow = true, 
+			b92fs = true, 
+			new_raging_bull = true, 
+			c96 = true, 
+			chinchilla = true, 
+			glock_17 = true, 
+			g26 = true,
+			g22c = true,
+			packrat = true,
+			colt_1911 = true,
+			shrew = true,
+			deagle = true,
+			ppk = true,
+			usp = true,
+			hs2000 = true,
+			mateba = true,
+			breech = true,
+			peacemaker = true,
+			p226 = true,
+			pl14 = true,
+			legacy = true,
+			beer = true,
+			czech = true,
+			stech = true,
+			holt = true,
+			model3 = true,
+			m1911 = true,
+			glock_18c = true,
+		-- SMGs
+			tec9 = true,
+			m1928 = true,
+			mp9 = true,
+			scorpion = true,
+			new_mp5 = true,
+			hajk = true,
+			sr2 = true,
+			schakal = true,
+			cobray = true,
+			p90 = true,
+			akmsu = true,
+			polymer = true,
+			mac10 = true,
+			baka = true,
+			erma = true,
+			olympic = true,
+			sterling = true,
+			mp7 = true,
+			m45 = true,
+			coal = true,
+			uzi = true,
+			shepheard = true,
+			vityaz = true,
+			pm9 = true,
+			basset = true,
+			rota = true,
+			judge = true
+		-- NOTE: can later add in custom wepaons that already have akimbo version to this list for easier modder usage
+			}
 		if _file then
 			_file:write('<table name=\"BeAkimbo\"> \n')
 			_file:write('	<Localization directory="Loc" default="english.txt"/> \n')
@@ -57,6 +119,121 @@ Hooks:Add("MenuManagerPopulateCustomMenus", "BeAkimboOptions", function( menu_ma
 					table.insert(_weapon_lists, _weapon_id)
 				end
 			end
+		-- Base game weapons
+			for _, _weapon_id in ipairs(_weapon_lists) do
+				if not banned[_weapon_id] and not _weapon_id:find('beakimbo') then
+					_factory_id = managers.weapon_factory:get_factory_id_by_weapon_id(_weapon_id)
+					if _factory_id and not _factory_id:find('beakimbo') then
+						local _wd = tweak_data.weapon[_weapon_id] or nil
+						local _wfd = tweak_data.weapon.factory[_factory_id] or nil
+						if _wd and _wd.custom and not table.contains(_wd.categories, 'akimbo') and table.contains_any(_wd.categories, {'minigun', 'assault_rifle', 'smg', 'pistol', 'shotgun', 'lmg', 'snp'}) and _wfd and _wfd.unit then
+							_new_units[_weapon_id] = _wfd.unit .. '_beakimbo'
+							local _hold_base_on = ''
+							if table.contains(_wd.categories, 'pistol') then
+								_hold_base_on = 'jowi_pistol'
+							else
+								_hold_base_on = 'x_akmsu'
+							end
+							if table.contains(_wd.categories, 'shotgun') then
+								_Use_AkimboShotgunBase[_weapon_id] = true
+							end
+							local _locked = ''
+							--Loc
+							local _new_weapon_id = _weapon_id ..'_beakimbo'
+							_new_named_ids['bm_'.._new_weapon_id..'_name'] = '[AB] ' .. managers.localization:to_upper_text(_wd.name_id)
+							local _desc_id = managers.localization:to_upper_text(tostring(_wd.desc_id))
+							if _desc_id:find('ERROR') then _desc_id = ' ' end
+							local _description_id = managers.localization:to_upper_text(tostring(_wd.description_id))
+							if _description_id:find('ERROR') then _description_id = ' ' end
+							_new_named_ids['bm_'.._new_weapon_id..'_desc'] = _desc_id
+							_new_named_ids['bm_'.._new_weapon_id..'_desc_long'] = _description_id
+							--Base
+							_base_states = string.format('%s %s %s %s',
+								(_wd.DAMAGE and 'DAMAGE="'.. _wd.DAMAGE ..'"' or ''),
+								(_wd.CLIP_AMMO_MAX and 'CLIP_AMMO_MAX="'.. math.round(_wd.CLIP_AMMO_MAX*2) ..'"' or ''),
+								(_wd.NR_CLIPS_MAX and 'NR_CLIPS_MAX="'.. math.round(_wd.NR_CLIPS_MAX*1.11) ..'"' or ''),
+								(_wd.AMMO_MAX and 'AMMO_MAX="'.. math.round(_wd.AMMO_MAX) ..'"' or '')
+							)
+							_locked = string.format('%s %s', (_wd.global_value and 'global_value="'.. _wd.global_value ..'"' or ''), (_wd.texture_bundle_folder and 'texture_bundle_folder="'.. _wd.texture_bundle_folder ..'"' or ''))
+							_file:write('	<WeaponNew> \n')
+							_file:write('		<weapon id="'.. _new_weapon_id ..'" based_on="'.. _weapon_id ..'" weapon_hold="'.. _hold_base_on ..'" name_id="bm_'.. _new_weapon_id..'_name" desc_id ="bm_'.. _new_weapon_id ..'_desc" description_id="bm_'.. _new_weapon_id ..'_desc_long" '.. _base_states..' '.. _locked..'> \n')
+							--selection_index
+							_file:write('			<use_data selection_index="2"/> \n')
+							--categories
+							_file:write('			<categories> \n')
+							_file:write('				<value_node value="akimbo"/> \n')
+							_file:write('				<value_node value="'.. _wd.categories[1] ..'"/> \n')
+							_file:write('			</categories> \n')
+							--animations
+							if type(_wd.animations) == "table" then
+								local __add_string = ""
+								for __aa_i, __aa_d in pairs(_wd.animations) do
+									if type(__aa_d) == "table" then
+										log("[BeAkimbo]: clone, animations: "..__aa_i)
+									else
+										__add_string = __add_string .. ''..__aa_i..'="'..tostring(__aa_d)..'" '
+									end
+								end
+								__add_string = __add_string .. 'reload_name_id="'..tostring(_weapon_id)..'" '
+								_file:write('			<animations '..__add_string..' akimbo_goldeneye_reload="true" /> \n')
+							end
+							--timers
+							if type(_wd.timers) == "table" then								
+								local __add_string = ""
+								for __aa_i, __aa_d in pairs(_wd.timers) do
+									if type(__aa_d) == "table" then
+										log("[BeAkimbo]: clone, timers: "..__aa_i)
+									elseif type(__aa_d) ~= "number" then
+										log("[BeAkimbo]: clone, timers: "..__aa_i.."\t"..tostring(__aa_d))
+									else
+										__add_string = __add_string .. ''..__aa_i..'="'..tostring(__aa_d*1.33)..'" '
+								--NOTE: Will look into seeing effects of removing above multiplier later on
+									end
+								end
+								_file:write('			<timers '..__add_string..'/> \n')						
+							end
+							--stats
+						--EDIT: Did away with multipliers below since Akimbos typically have identical stats (at least w/ Hinaomu's balance)
+							if type(_wd.stats) == "table" then
+								local __add_string = ""
+								__add_string = __add_string .. ' concealment="'.. tostring(_wd.stats.concealment) ..'"'
+								__add_string = __add_string .. ' spread="'.. tostring(_wd.stats.spread) ..'"'
+								__add_string = __add_string .. ' spread_moving="'.. tostring(_wd.stats.spread_moving) ..'"'
+								__add_string = __add_string .. ' recoil="'.. tostring(_wd.stats.recoil) ..'"'
+								__add_string = __add_string .. ' reload="'.. tostring(_wd.stats.reload) ..'"'
+								_file:write('			<stats'.. __add_string ..'/> \n')
+							end
+							--stats_modifiers
+							if _wd.stats_modifiers and type(_wd.stats_modifiers) == "table" then
+								local stats_modifiers = ''
+								for _stat, _value in ipairs(_wd.stats_modifiers) do
+									stats_modifiers = stats_modifiers .. ' '.. _stat ..'="'.. _value ..'"'
+								end
+								_file:write('			<stats_modifiers'.. stats_modifiers ..'/> \n')
+							end
+							--default_blueprint
+							_file:write('		</weapon> \n')
+							_cloned[Idstring(_factory_id ..'_beakimbo'):key()] = true
+							_file:write('		<factory id="'.. _factory_id ..'_beakimbo" based_on="'.. _factory_id ..'" unit="'.. _wfd.unit ..'_beakimbo"> \n')
+							_file:write('			<default_blueprint> \n')
+							for _, _part in ipairs(_wfd.default_blueprint) do
+								_file:write('				<value_node value="'.. _part ..'"/> \n')
+							end
+							_file:write('			</default_blueprint> \n')
+							--uses_parts
+							_file:write('			<uses_parts> \n')
+							for _, _part in ipairs(_wfd.uses_parts) do
+								_file:write('				<value_node value="'.. _part ..'"/> \n')
+							end
+							_file:write('			</uses_parts> \n')
+							_file:write('		</factory> \n')
+							_file:write('		<stance/> \n')
+							_file:write('	</WeaponNew> \n')
+						end
+					end
+				end
+			end
+		-- Any modded weapons (WARNING: unsure if underbarrel shotguns are safe; would recommend putting their weapon ID in 'banned')
 			for _, _weapon_id in ipairs(_weapon_lists) do
 				if not banned[_weapon_id] and not _weapon_id:find('beakimbo') then
 					_factory_id = managers.weapon_factory:get_factory_id_by_weapon_id(_weapon_id)
@@ -131,11 +308,11 @@ Hooks:Add("MenuManagerPopulateCustomMenus", "BeAkimboOptions", function( menu_ma
 							--stats
 							if type(_wd.stats) == "table" then
 								local __add_string = ""
-								__add_string = __add_string .. ' concealment="'.. tostring(math.round(_wd.stats.concealment*0.66)) ..'"'
-								__add_string = __add_string .. ' spread="'.. tostring(math.round(_wd.stats.spread*0.66)) ..'"'
-								__add_string = __add_string .. ' spread_moving="'.. tostring(math.round(_wd.stats.spread_moving*0.66)) ..'"'
-								__add_string = __add_string .. ' recoil="'.. tostring(math.round(_wd.stats.recoil*0.66)) ..'"'
-								__add_string = __add_string .. ' reload="'.. tostring(math.round(_wd.stats.reload*0.66)) ..'"'
+								__add_string = __add_string .. ' concealment="'.. tostring(_wd.stats.concealment) ..'"'
+								__add_string = __add_string .. ' spread="'.. tostring(_wd.stats.spread) ..'"'
+								__add_string = __add_string .. ' spread_moving="'.. tostring(_wd.stats.spread_moving) ..'"'
+								__add_string = __add_string .. ' recoil="'.. tostring(_wd.stats.recoil) ..'"'
+								__add_string = __add_string .. ' reload="'.. tostring(_wd.stats.reload) ..'"'
 								_file:write('			<stats'.. __add_string ..'/> \n')
 							end
 							--stats_modifiers
