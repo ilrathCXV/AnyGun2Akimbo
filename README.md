@@ -5,6 +5,7 @@ Current Issues:
 
 - Some weapons have missing parts in the model
 - Some weapons have misaligned parts in the preview (some fix themselves when using them during heists)
+- Custom weapons are missing sounds (manually adding them in via main.xml from base mods fixes it but will look into how to fix this code-wise)
 - Coming across crashes for some custom weapons (any help would be appreciated)
 
 
