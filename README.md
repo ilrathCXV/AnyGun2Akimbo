@@ -3,10 +3,8 @@ Original by Dr. Newbie http://modwork.shop/21295
 
 Current Issues: 
 
-- Some weapons have missing parts in the model
-- Some weapons have misaligned parts in the preview (some fix themselves when using them during heists)
-- Custom weapons are missing sounds (manually adding them in via main.xml from base mods fixes it but will look into how to fix this code-wise)
-- Coming across crashes for some custom weapons (any help would be appreciated)
+- Some weapons have missing/missaligned parts either in preview (some fix themselves when using them during heists) or both in preview and in-game; can see what parts are misaligned/"missing" on Proving Grounds map as they are palced dead center in front of you on the ground
+- Coming across crashes for some custom weapons (any help would be appreciated); sometimes happens from either trying to mod the weapon or trying to attach a mod to a weapon (so far noticable with mainly AMCAR-style/based custom weapons)
 
 
 Crashlog is as follows-
