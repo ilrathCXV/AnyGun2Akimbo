@@ -119,14 +119,14 @@ Hooks:Add("MenuManagerPopulateCustomMenus", "BeAkimboOptions", function( menu_ma
 					table.insert(_weapon_lists, _weapon_id)
 				end
 			end
-		-- Base game weapons
+		-- Custom Weapons
 			for _, _weapon_id in ipairs(_weapon_lists) do
 				if not banned[_weapon_id] and not _weapon_id:find('beakimbo') then
 					_factory_id = managers.weapon_factory:get_factory_id_by_weapon_id(_weapon_id)
 					if _factory_id and not _factory_id:find('beakimbo') then
 						local _wd = tweak_data.weapon[_weapon_id] or nil
 						local _wfd = tweak_data.weapon.factory[_factory_id] or nil
-						if _wd and _wd.custom and not table.contains(_wd.categories, 'akimbo') and table.contains_any(_wd.categories, {'minigun', 'assault_rifle', 'smg', 'pistol', 'shotgun', 'lmg', 'snp'}) and _wfd and _wfd.unit then
+						if _wd and _wd.custom and not table.contains(_wd.categories, 'akimbo') and table.contains_any(_wd.categories, {'assault_rifle', 'smg', 'pistol', 'shotgun', 'lmg', 'snp'}) and _wfd and _wfd.unit then
 							_new_units[_weapon_id] = _wfd.unit .. '_beakimbo'
 							local _hold_base_on = ''
 							if table.contains(_wd.categories, 'pistol') then
@@ -150,13 +150,13 @@ Hooks:Add("MenuManagerPopulateCustomMenus", "BeAkimboOptions", function( menu_ma
 							--Base
 							_base_states = string.format('%s %s %s %s',
 								(_wd.DAMAGE and 'DAMAGE="'.. _wd.DAMAGE ..'"' or ''),
-								(_wd.CLIP_AMMO_MAX and 'CLIP_AMMO_MAX="'.. math.round(_wd.CLIP_AMMO_MAX*2) ..'"' or ''),
-								(_wd.NR_CLIPS_MAX and 'NR_CLIPS_MAX="'.. math.round(_wd.NR_CLIPS_MAX*1.11) ..'"' or ''),
-								(_wd.AMMO_MAX and 'AMMO_MAX="'.. math.round(_wd.AMMO_MAX) ..'"' or '')
+								(_wd.CLIP_AMMO_MAX and 'CLIP_AMMO_MAX="'.. _wd.CLIP_AMMO_MAX*2 ..'"' or ''),
+								(_wd.NR_CLIPS_MAX and 'NR_CLIPS_MAX="'.. _wd.NR_CLIPS_MAX*0.5 ..'"' or ''),
+								(_wd.AMMO_MAX and 'AMMO_MAX="'.. (_wd.CLIP_AMMO_MAX*2)*(_wd.NR_CLIPS_MAX*0.5) ..'"' or '')
 							)
 							_locked = string.format('%s %s', (_wd.global_value and 'global_value="'.. _wd.global_value ..'"' or ''), (_wd.texture_bundle_folder and 'texture_bundle_folder="'.. _wd.texture_bundle_folder ..'"' or ''))
 							_file:write('	<WeaponNew> \n')
-							_file:write('		<weapon id="'.. _new_weapon_id ..'" based_on="'.. _weapon_id ..'" weapon_hold="'.. _hold_base_on ..'" name_id="bm_'.. _new_weapon_id..'_name" desc_id ="bm_'.. _new_weapon_id ..'_desc" description_id="bm_'.. _new_weapon_id ..'_desc_long" '.. _base_states..' '.. _locked..'> \n')
+							_file:write('		<weapon id="'.. _new_weapon_id ..'" based_on="'.. _wd.based_on ..'" weapon_hold="'.. _hold_base_on ..'" name_id="bm_'.. _new_weapon_id..'_name" desc_id ="bm_'.. _new_weapon_id ..'_desc" description_id="bm_'.. _new_weapon_id ..'_desc_long" '.. _base_states..' '.. _locked..'> \n')
 							--selection_index
 							_file:write('			<use_data selection_index="2"/> \n')
 							--categories
@@ -174,7 +174,8 @@ Hooks:Add("MenuManagerPopulateCustomMenus", "BeAkimboOptions", function( menu_ma
 										__add_string = __add_string .. ''..__aa_i..'="'..tostring(__aa_d)..'" '
 									end
 								end
-								__add_string = __add_string .. 'reload_name_id="'..tostring(_weapon_id)..'" '
+							-- Can re-add line if you wish to not have the reload sounds/see the regular animation happening off-screen
+								--__add_string = __add_string .. 'reload_name_id="'..tostring(_wd._reload_name_id)..'" ' 
 								_file:write('			<animations '..__add_string..' akimbo_goldeneye_reload="true" /> \n')
 							end
 							--timers
@@ -187,20 +188,18 @@ Hooks:Add("MenuManagerPopulateCustomMenus", "BeAkimboOptions", function( menu_ma
 										log("[BeAkimbo]: clone, timers: "..__aa_i.."\t"..tostring(__aa_d))
 									else
 										__add_string = __add_string .. ''..__aa_i..'="'..tostring(__aa_d*1.33)..'" '
-								--NOTE: Will look into seeing effects of removing above multiplier later on
 									end
 								end
 								_file:write('			<timers '..__add_string..'/> \n')						
 							end
 							--stats
-						--EDIT: Did away with multipliers below since Akimbos typically have identical stats (at least w/ Hinaomu's balance)
 							if type(_wd.stats) == "table" then
 								local __add_string = ""
 								__add_string = __add_string .. ' concealment="'.. tostring(_wd.stats.concealment) ..'"'
 								__add_string = __add_string .. ' spread="'.. tostring(_wd.stats.spread) ..'"'
 								__add_string = __add_string .. ' spread_moving="'.. tostring(_wd.stats.spread_moving) ..'"'
 								__add_string = __add_string .. ' recoil="'.. tostring(_wd.stats.recoil) ..'"'
-								__add_string = __add_string .. ' reload="'.. tostring(_wd.stats.reload) ..'"'
+								--__add_string = __add_string .. ' reload="'.. tostring(_wd.stats.reload) ..'"' To try to avoid any wonky reload times
 								_file:write('			<stats'.. __add_string ..'/> \n')
 							end
 							--stats_modifiers
@@ -233,14 +232,14 @@ Hooks:Add("MenuManagerPopulateCustomMenus", "BeAkimboOptions", function( menu_ma
 					end
 				end
 			end
-		-- Any modded weapons (WARNING: unsure if underbarrel shotguns are safe; would recommend putting their weapon ID in 'banned')
+		-- Payday 2 Base Weapons
 			for _, _weapon_id in ipairs(_weapon_lists) do
 				if not banned[_weapon_id] and not _weapon_id:find('beakimbo') then
 					_factory_id = managers.weapon_factory:get_factory_id_by_weapon_id(_weapon_id)
 					if _factory_id and not _factory_id:find('beakimbo') then
 						local _wd = tweak_data.weapon[_weapon_id] or nil
 						local _wfd = tweak_data.weapon.factory[_factory_id] or nil
-						if _wd and not _wd.custom and not table.contains(_wd.categories, 'akimbo') and table.contains_any(_wd.categories, {'minigun', 'assault_rifle', 'smg', 'pistol', 'shotgun', 'lmg', 'snp'}) and _wfd and _wfd.unit then
+						if _wd and not _wd.custom and not table.contains(_wd.categories, 'akimbo') and table.contains_any(_wd.categories, {'assault_rifle', 'smg', 'pistol', 'shotgun', 'lmg', 'snp'}) and _wfd and _wfd.unit then
 							_new_units[_weapon_id] = _wfd.unit .. '_beakimbo'
 							local _hold_base_on = ''
 							if table.contains(_wd.categories, 'pistol') then
@@ -264,9 +263,9 @@ Hooks:Add("MenuManagerPopulateCustomMenus", "BeAkimboOptions", function( menu_ma
 							--Base
 							_base_states = string.format('%s %s %s %s',
 								(_wd.DAMAGE and 'DAMAGE="'.. _wd.DAMAGE ..'"' or ''),
-								(_wd.CLIP_AMMO_MAX and 'CLIP_AMMO_MAX="'.. math.round(_wd.CLIP_AMMO_MAX*2) ..'"' or ''),
-								(_wd.NR_CLIPS_MAX and 'NR_CLIPS_MAX="'.. math.round(_wd.NR_CLIPS_MAX*1.11) ..'"' or ''),
-								(_wd.AMMO_MAX and 'AMMO_MAX="'.. math.round(_wd.AMMO_MAX) ..'"' or '')
+								(_wd.CLIP_AMMO_MAX and 'CLIP_AMMO_MAX="'.. _wd.CLIP_AMMO_MAX*2 ..'"' or ''),
+								(_wd.NR_CLIPS_MAX and 'NR_CLIPS_MAX="'.. _wd.NR_CLIPS_MAX*0.5 ..'"' or ''),
+								(_wd.AMMO_MAX and 'AMMO_MAX="'.. (_wd.CLIP_AMMO_MAX*2)*(_wd.NR_CLIPS_MAX*0.5) ..'"' or '')
 							)
 							_locked = string.format('%s %s', (_wd.global_value and 'global_value="'.. _wd.global_value ..'"' or ''), (_wd.texture_bundle_folder and 'texture_bundle_folder="'.. _wd.texture_bundle_folder ..'"' or ''))
 							_file:write('	<WeaponNew> \n')
@@ -312,7 +311,7 @@ Hooks:Add("MenuManagerPopulateCustomMenus", "BeAkimboOptions", function( menu_ma
 								__add_string = __add_string .. ' spread="'.. tostring(_wd.stats.spread) ..'"'
 								__add_string = __add_string .. ' spread_moving="'.. tostring(_wd.stats.spread_moving) ..'"'
 								__add_string = __add_string .. ' recoil="'.. tostring(_wd.stats.recoil) ..'"'
-								__add_string = __add_string .. ' reload="'.. tostring(_wd.stats.reload) ..'"'
+								--__add_string = __add_string .. ' reload="'.. tostring(_wd.stats.reload) ..'"' To try to avoid any wonky reload times
 								_file:write('			<stats'.. __add_string ..'/> \n')
 							end
 							--stats_modifiers
